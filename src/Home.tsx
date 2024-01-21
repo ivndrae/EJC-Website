@@ -9,10 +9,10 @@ import mail from './assets/mail.svg'
 function Home() {
   const navigate = useNavigate();
   return (
-    <div className="h-screen w-full bg-[#982216] p-7 flex flex-col">
+    <div className="h-full w-full bg-[#982216] p-7 flex flex-col min-h-screen select-none">
       <div className="flex justify-end">
 
-        <div className="flex gap-16 text-white font-bold italic">
+        <div className="flex gap-16 text-white font-bold italic ">
           <details className="dropdown">
             <summary className="m-1 btn text-white text-lg font-bold bg-transparent border-none">About us</summary>
             <ul className="p-2 menu dropdown-content z-[1] rounded-box w-60 bg-">
@@ -24,17 +24,10 @@ function Home() {
             <summary className="m-1 btn text-white text-lg font-bold bg-transparent border-none">Our Work</summary>
             <ul className="p-2 menu dropdown-content z-[1] rounded-box w-60 bg-">
               <li><a onClick={() => navigate("/publications")}>Publications</a></li>
-              <li><a></a></li>
+              <li><a onClick={() => navigate("/newsletter")}>Newsletter</a></li>
             </ul>
           </details>
-          <details className="dropdown">
-            <summary className="m-1 btn text-white text-lg font-bold bg-transparent border-none">Events</summary>
-            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-60 bg-">
-              <li><a>Speaker Series</a></li>
-              <li><a>Workshops</a></li>
-              <li><a>Hackathons</a></li>
-            </ul>
-          </details>
+          <button className="font-bold italic text-lg border-none hover:bg-black rounded-md py-0.5 px-4" onClick={() => navigate("/events")}>EVENTS</button>
           <button className="font-bold italic text-lg border-none hover:bg-black rounded-md py-0.5 px-4" onClick={() => navigate("/resources")}>RESOURCES</button>
         </div>
       </div>
@@ -60,7 +53,6 @@ function Home() {
       <div className="flex justify-center text-white font-['JetBrains_Mono']">
         Connect with us!
       </div>
-
     </div>
   )
 }
