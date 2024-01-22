@@ -15,20 +15,20 @@ function Home() {
         <div className="flex gap-16 text-white font-bold italic ">
           <details className="dropdown">
             <summary className="m-1 btn text-white text-lg font-bold bg-transparent border-none">About us</summary>
-            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-60 bg-">
+            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max">
               <li><a onClick={() => navigate("/about")}>What is Encode Justice?</a></li>
               <li><a onClick={() => navigate("/team")}>Meet Our Team</a></li>
             </ul>
           </details>
           <details className="dropdown">
             <summary className="m-1 btn text-white text-lg font-bold bg-transparent border-none">Our Work</summary>
-            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-60 bg-">
+            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max">
               <li><a onClick={() => navigate("/publications")}>Publications</a></li>
               <li><a onClick={() => navigate("/newsletter")}>Newsletter</a></li>
             </ul>
           </details>
-          <button className="font-bold italic text-lg border-none hover:bg-black rounded-md py-0.5 px-4" onClick={() => navigate("/events")}>EVENTS</button>
-          <button className="font-bold italic text-lg border-none hover:bg-black rounded-md py-0.5 px-4" onClick={() => navigate("/resources")}>RESOURCES</button>
+          <button className="font-bold italic text-lg border-none hover:bg-black rounded-md px-4" onClick={() => navigate("/events")}>EVENTS</button>
+          <button className="font-bold italic text-lg border-none hover:bg-black rounded-md px-4" onClick={() => navigate("/resources")}>RESOURCES</button>
         </div>
       </div>
       <div className="flex mt-32 justify-center">

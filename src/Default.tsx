@@ -28,24 +28,24 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
             </div>
 
             <div className="p-0">
-                <div className="bg-[#982216] flex justify-center w-full h-1/3">
+                <div className="navbar-end bg-[#982216] flex justify-center w-full ">
                     <div className="flex justify-center gap-32 text-white font-bold italic ">
                         <details className=" flex dropdown">
                             <summary className="m-1 btn text-white text-xl font-bold bg-transparent border-none rounded">About us</summary>
-                            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-60 bg-black">
+                            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max bg-black">
                                 <li><a onClick={() => navigate("/about")}>What is Encode Justice?</a></li>
                                 <li><a onClick={() => navigate("/team")}>Meet Our Team</a></li>
                             </ul>
                         </details>
                         <details className=" flex dropdown">
                             <summary className="m-1 btn text-white text-xl font-bold bg-transparent border-none rounded">Our Work</summary>
-                            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-60 bg-black">
+                            <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max bg-black">
                                 <li><a onClick={() => navigate("/publications")}>Publications</a></li>
                                 <li><a onClick={() => navigate("/newsletter")}>Newsletter</a></li>
                             </ul>
                         </details>
-                        <button className="font-bold italic text-lg border-none hover:bg-black rounded-md py-0.5 px-4" onClick={() => navigate("/events")}>EVENTS</button>
-                        <button className="font-bold italic text-xl border-none hover:bg-black rounded-md py-0.5 px-4" onClick={() => navigate("/resources")}>RESOURCES</button>
+                        <button className="font-bold italic text-xl border-none hover:bg-black rounded-md px-4" onClick={() => navigate("/events")}>EVENTS</button>
+                        <button className="font-bold italic text-xl border-none hover:bg-black rounded-md px-4" onClick={() => navigate("/resources")}>RESOURCES</button>
                     </div>
                 </div>
 
