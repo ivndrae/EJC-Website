@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import logo from './assets/logo.svg'
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Content() {
   return (
