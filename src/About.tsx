@@ -25,11 +25,11 @@ function About() {
               <div className="container mx-auto w-full h-full">
                 <div className="relative wrap overflow-hidden p-10 h-full">
                   <div className="absolute h-full" style={{ right: '50%' }}>
-                    <div className="= border-red-800 h-full border-2 rounded-full"></div>
+                    <div className="= border-red-800 h-full border-2 "></div>
                   </div>
 
                   <div className="absolute h-full" style={{ left: '50%' }}>
-                    <div className=" border-red-800 h-full border-2 rounded-full"></div>
+                    <div className=" border-red-800 h-full border-2 "></div>
                   </div>
                   <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline animate-fadeIn">
                     <div className="order-1 w-5/12"></div>
@@ -42,7 +42,7 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline animate-fadeIn">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1  w-5/12 px-1 py-4 text-left">
                       <p className="mb-3 text-base text-red-800">June 2021</p>
@@ -53,7 +53,7 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline animate-fadeIn">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
                       <p className="mb-3 text-base text-red-800"> August 2021</p>
@@ -64,7 +64,7 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline animate-fadeIn">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1  w-5/12 px-1 py-4 text-left">
                       <p className="mb-3 text-base text-red-800">October 2021</p>
@@ -75,7 +75,7 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline animate-fadeIn">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
                       <p className="mb-3 text-base text-red-800"> March 2022</p>
@@ -87,7 +87,7 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline animate-fadeIn">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1  w-5/12 px-1 py-4 text-left">
                       <p className="mb-3 text-base text-red-800">October 2022</p>
@@ -98,7 +98,7 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline animate-fadeIn">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
                       <p className="mb-3 text-base text-red-800">January 2023</p>

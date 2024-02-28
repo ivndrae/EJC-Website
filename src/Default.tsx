@@ -80,7 +80,7 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
             })()}
           </div>
         </div>
-        <label htmlFor="my-drawer-4" className="fixed flex right-0 top-0 z-10 mt-4 w-24 drawer-button btn bg-transparent border-none lg:hidden">
+        <label htmlFor="my-drawer-4" className="fixed right-0 top-0 flex z-10 mt-4 w-24 drawer-button btn bg-transparent border-none lg:hidden">
           <svg
             className={`fill-white h-8 w-8 ${isOpen ? "hidden" : "block"}`}
             viewBox="0 0 24 24"
@@ -99,7 +99,7 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+        <ul className="menu p-4 w-80 min-h-full bg-[#1D1D24] text-base-content">
           <div className="flex flex-col items-end m-2">
             <div
               className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto ${isOpen ? "block" : "hidden"}`}

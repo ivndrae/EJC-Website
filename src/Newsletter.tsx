@@ -19,7 +19,7 @@ function onFormSubmit(event: FormEvent) {
 
 function Newsletters( volume: string, link: string) {
   return (
-    <div className="collapse collapse-arrow odd:bg-base-200 even:bg-base-300">
+    <div className="collapse collapse-arrow odd:bg-[#1E1E20] even:bg-[#1A1A1B]">
     <input type="checkbox" className="peer" />
     <div className="collapse-title text-primary-content peer-checked:bg-red-800 peer-checked:text-secondary-content">
      {volume}
@@ -51,15 +51,15 @@ function Newsletter() {
                 <h4 className="lg:text-3xl text-xl font-bold italic font-['Lato']">SIGN UP FOR OUR MAILING LIST!</h4>
                 <div>
                   <div>Name (First, Last):</div>
-                  <input className="w-full h-7 placeholder:text-gray-500" type="text" name="Name" placeholder="e.g. John Smith" />
+                  <input className="w-full h-7 placeholder:text-gray-500 bg-[#323234]" type="text" name="Name" placeholder="e.g. John Smith" />
                 </div>
                 <div>
                   <div>Email address:</div>
-                  <input className="w-full h-7 placeholder:text-gray-500" type="text" name="Email" placeholder="example@encodejustice.ca" />
+                  <input className="w-full h-7 placeholder:text-gray-500 bg-[#323234]" type="text" name="Email" placeholder="example@encodejustice.ca" />
                 </div>
                 <div>
                   <div>Message:</div>
-                  <textarea className="w-full h-32 placeholder:text-gray-500" name="Message" placeholder="Anything you'd like us to know e.g. events ideas, topics of interest, desire to get involved with our team,etc." />
+                  <textarea className="w-full h-32 placeholder:text-gray-500 bg-[#323234]" name="Message" placeholder="Anything you'd like us to know e.g. events ideas, topics of interest, desire to get involved with our team,etc." />
                 </div>
                 <div className='flex justify-center'>
                   <input className="flex justify-center italic font-bold text-xl w-1/2 bg-red-600 bg-opacity-40 lg:w-1/3 h-9 border border-red-700 drop-shadow-lg" type="submit" value="SUBSCRIBE" id="submit" />
@@ -73,16 +73,16 @@ function Newsletter() {
         VIEW SOME OF OUR PAST NEWSLETTERS:
       </div>
       <div className=" font-mono font-bold md:text-xl text-center">
-        {Newsletters("VOL. 1 : AI Ethics Unleashed!", "http://eepurl.com/iB6V3I")}
-        {Newsletters("VOL. 2 : Decoding AI Ethics!", "http://eepurl.com/iDiGtI")}
-        {Newsletters("VOL. 3 : Discovering the AI Community!", "http://eepurl.com/iDRnMI")}
-        {Newsletters("VOL. 4 : New Horizons!", "http://eepurl.com/iEfmQU")}
-        {Newsletters("VOL. 5 : AI Innovation Dilemmas", "http://eepurl.com/iEQfyU")}
-        {Newsletters("VOL. 6 : Conflicting Views", "http://eepurl.com/iFC9Cs")}
-        {Newsletters("VOL. 7 : EJC Wrapped", "http://eepurl.com/iFC9Cs")}
-        {Newsletters("VOL. 8 : Reflections, Resolutions, and Responsible Innovation", "http://eepurl.com/iH5LaQ")}
-        {Newsletters("VOL. 9 : Rocky Regulations", "http://eepurl.com/iIwzZQ")}
-        {Newsletters("VOL. 10 : Exploring New Frontiers", "http://eepurl.com/iIZNe6")}
+        {Newsletters("VOL. 1 : AI Ethics Unleashed!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=aeda36a1a0")}
+        {Newsletters("VOL. 2 : Decoding AI Ethics!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=9e42e1d7fe")}
+        {Newsletters("VOL. 3 : Discovering the AI Community!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=82893950cc")}
+        {Newsletters("VOL. 4 : New Horizons!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=81938f0327")}
+        {Newsletters("VOL. 5 : AI Innovation Dilemmas", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=5161e165d8")}
+        {Newsletters("VOL. 6 : Conflicting Views", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=2a0485acfc")}
+        {Newsletters("VOL. 7 : EJC Wrapped", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=c58486726f")}
+        {Newsletters("VOL. 8 : Reflections, Resolutions, and Responsible Innovation", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=0c06d663b6")}
+        {Newsletters("VOL. 9 : Rocky Regulations", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=bfe69fbd1f")}
+        {Newsletters("VOL. 10 : Exploring New Frontiers", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=a4fcd54051")}
       </div>
       
     </Default>

@@ -6,11 +6,12 @@ import Publications from "./Publications"
 import Resources from "./Resources"
 import Newsletter from "./Newsletter"
 import Events from "./Events"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
@@ -21,7 +22,7 @@ function App() {
         <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/events" element={<Events />} />
       </Routes>
-    </Router>
+    </HashRouter>
   )
 }
 

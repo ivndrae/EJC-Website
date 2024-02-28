@@ -4,13 +4,13 @@ import { useState } from 'react';
 
 function Content() {
   return (
-    <div className="h-full w-full fixed inset-0 bg-[#982216] p-7 flex flex-col select-none">
+    <div className="h-full w-full fixed inset-0 bg-[#982216] p-7 flex flex-col select-none ">
       <div className="flex flex-1 container mx-auto p-4 justify-center">
         <div className="flex flex-col md:flex-row items-center justify-center md:ml-20 md:mb-20 ">
-          <img className="flex w-48 lg:w-64 animate-fadeIn" src={logo} />
+          <img className="flex w-40 lg:w-64 animate-fadeIn" src={logo} />
           <div className="lg:m-16">
-            <p className=" text-white sm:text-3xl text-6xl md:text-8xl italic font-black text-center tracking-widest font-['Lato'] p-5 animate-fadeIn">ENCODE JUSTICE<br />CANADA</p>
-            <p className=" text-white sm:text-lg text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">Fighting for Justice in the age of Artificial Intelligence.</p>
+            <p className=" text-white text-5xl md:text-6xl lg:text-8xl italic font-black text-center tracking-widest font-['Lato'] p-5 animate-fadeIn">ENCODE JUSTICE<br />CANADA</p>
+            <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">Fighting for Justice in the age of Artificial Intelligence.</p>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ function Home() {
     <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
       <div className="drawer-content">
-        <div className="fixed right-0 top-0 z-10 hidden lg:flex">
+        <div className="fixed top-0 right-0 z-10 hidden lg:flex">
           <div className="flex flex-col items-end m-2">
             <div
               className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto ${isOpen ? "block" : "hidden"}`}
@@ -99,7 +99,7 @@ function Home() {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+        <ul className="menu p-4 w-80 min-h-full  bg-[#1D1D24] text-base-content">
           <div className="flex flex-col items-end m-2">
             <div
               className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto ${isOpen ? "block" : "hidden"}`}
