@@ -1,7 +1,6 @@
 import Default from './Default';
-import int1pic from './assets/Interview1.jpg'
 
-function Interview(imgSrc: string, title: string, interviewee: string, bio: string, link: string) {
+function Interview(title: string, interviewee: string, bio: string, link: string) {
     return (
         <div className="flex flex-col justify-center md:flex-row p-2">
             <div className="flex flex-col basis-2/3">
@@ -28,7 +27,7 @@ function Interviews() {
     return (
         <Default>
             <div className="flex flex-col text-white p-1">
-                {Interview(int1pic, "Exploring Natural Language Processing and the Future of Ethical AI", "Elinor Poole-Dayan", "Elinor is currently a Master’s student at the MIT Center for Constructive Communication focusing on natural language processing (NLP) issues on fairness, safety, and social good applications. Completing her undergraduate degree from McGill in 2023 in Honours Mathematics and Computer Science, Elinor’s focus in NLP stemmed from her interests in linguistics and math.", "EPD_interview.htm")}
+                {Interview("Exploring Natural Language Processing and the Future of Ethical AI", "Elinor Poole-Dayan", "Elinor is currently a Master’s student at the MIT Center for Constructive Communication focusing on natural language processing (NLP) issues on fairness, safety, and social good applications. Completing her undergraduate degree from McGill in 2023 in Honours Mathematics and Computer Science, Elinor’s focus in NLP stemmed from her interests in linguistics and math.", "EPD_interview.htm")}
             </div>
         </Default>
 
