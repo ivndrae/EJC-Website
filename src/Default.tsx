@@ -55,6 +55,7 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
                   <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max bg-black">
                     <li><a onClick={() => navigate("/publications")}>Publications</a></li>
                     <li><a onClick={() => navigate("/newsletter")}>Newsletter</a></li>
+                    <li><a onClick={() => navigate("/interviews")}>Interviews</a></li>
                   </ul>
                 </details>
                 <button className="font-bold italic text-xl border-none hover:bg-black rounded-md px-4" onClick={() => navigate("/events")}>EVENTS</button>

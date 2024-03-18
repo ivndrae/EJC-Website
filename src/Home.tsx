@@ -59,18 +59,19 @@ function Home() {
               className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto ${isOpen ? "block" : "hidden"}`}
             >
               <div className="text-sm text-white font-bold italic p-4 lg:flex-grow">
-                <details className="dropdown px-6">
-                  <summary className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none">About us</summary>
-                  <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max">
+                <details className="dropdown dropdown-hover px-6">
+                  <summary className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none ">About us</summary>
+                  <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max bg-black">
                     <li><a onClick={() => navigate("/about")}>What is Encode Justice?</a></li>
                     <li><a onClick={() => navigate("/team")}>Meet Our Team</a></li>
                   </ul>
                 </details>
-                <details className="dropdown px-6">
+                <details className="dropdown dropdown-hover px-6">
                   <summary className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none">Our Work</summary>
-                  <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max">
+                  <ul className="p-2 menu dropdown-content z-[1] rounded-box w-max bg-black">
                     <li><a onClick={() => navigate("/publications")}>Publications</a></li>
                     <li><a onClick={() => navigate("/newsletter")}>Newsletter</a></li>
+                    <li><a onClick={() => navigate("/interviews")}>Interviews</a></li>
                   </ul>
                 </details>
                 <button className="m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/events")}>EVENTS</button>

@@ -1,10 +1,10 @@
 import Default from './Default';
 
-function About() {
+function Events() {
     return (
         <Default>
         </Default>
     )
 }
 
-export default About
+export default Events

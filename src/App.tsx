@@ -6,6 +6,7 @@ import Publications from "./Publications"
 import Resources from "./Resources"
 import Newsletter from "./Newsletter"
 import Events from "./Events"
+import Interviews from "./Interviews"
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/interviews" element={<Interviews />} />
       </Routes>
     </HashRouter>
   )
