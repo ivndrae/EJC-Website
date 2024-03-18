@@ -110,6 +110,7 @@ function Home() {
                 <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/team")}>Meet Our Team</button>
                 <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/publications")}>Publications</button>
                 <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/newsletter")}>Newsletter</button>
+                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/interviews")}>Interviews</button>
                 <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/events")}>EVENTS</button>
                 <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/resources")}>RESOURCES</button>
               </div>
