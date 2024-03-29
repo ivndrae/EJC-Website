@@ -7,8 +7,8 @@ function Card(imgSrc: string, title: string, description: string, link: string, 
         <div className="flex p-5 justify-center md:w-full">
             <div className="card w-56 md:w-72 bg-[#242629] shadow-xl">
                 <figure><img src={imgSrc} /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">{title}</h2>
+                <div className="card-body text-white">
+                    <h2 className="card-title text-white">{title}</h2>
                     <p >{description}</p>
                     <div className="card-actions justify-center">
                         <a href={link}><button className={button}>{action}</button></a>
