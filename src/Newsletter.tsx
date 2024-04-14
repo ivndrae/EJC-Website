@@ -75,14 +75,14 @@ function Newsletter() {
       <div className=" font-mono font-bold md:text-xl text-center">
         {Newsletters("VOL. 1 : AI Ethics Unleashed!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=aeda36a1a0")}
         {Newsletters("VOL. 2 : Decoding AI Ethics!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=9e42e1d7fe")}
-        {Newsletters("VOL. 3 : Discovering the AI Community!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=82893950cc")}
         {Newsletters("VOL. 4 : New Horizons!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=81938f0327")}
         {Newsletters("VOL. 5 : AI Innovation Dilemmas", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=5161e165d8")}
-        {Newsletters("VOL. 6 : Conflicting Views", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=2a0485acfc")}
         {Newsletters("VOL. 7 : EJC Wrapped", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=c58486726f")}
         {Newsletters("VOL. 8 : Reflections, Resolutions, and Responsible Innovation", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=0c06d663b6")}
-        {Newsletters("VOL. 9 : Rocky Regulations", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=bfe69fbd1f")}
-        {Newsletters("VOL. 10 : Exploring New Frontiers", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=a4fcd54051")}
+        {Newsletters("VOL. 12 : Join our Slack Community!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=ef1647673b" )}
+        {Newsletters("VOL. 16 : Milestone Achievements", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=dbe0d4bf92")}
+        {Newsletters("VOL. 17: Spotlight on Policymakers","https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=99cc27a1ea")}
+        {Newsletters("VOL. 19 : Total Eclipse", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=b148d0ccfe")}
       </div>
       
     </Default>
