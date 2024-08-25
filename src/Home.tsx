@@ -42,7 +42,7 @@ function Home() {
         <div className="fixed top-0 right-0 z-10 hidden lg:flex">
           <div className="flex flex-col items-end m-2">
             <div
-              className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto ${isOpen ? "block" : "hidden"}`}
+              className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
             >
               <div className="text-sm text-white font-bold italic p-4 lg:flex-grow">
                 <div className="dropdown dropdown-hover px-6">
@@ -70,14 +70,14 @@ function Home() {
         <Content />
         <label htmlFor="my-drawer-4" className="fixed flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border-none lg:hidden">
           <svg
-            className={`fill-white h-10 w-10 ${isOpen ? "hidden" : "block"}`}
+            className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
           <svg
-            className={`fill-white h-8 w-8 ${isOpen ? "block" : "hidden"}`}
+            className={`fill-white h-8 w-8 bg-transparent ${isOpen ? "block" : "hidden"}`}
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -90,7 +90,7 @@ function Home() {
         <ul className="menu p-4 w-80 min-h-full  bg-[#121212] text-base-content">
           <div className="flex flex-col items-end m-2">
             <div
-              className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto ${isOpen ? "block" : "hidden"}`}
+              className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
             >
               <div className="text-sm text-white font-bold italic lg:flex-grow">
                 <br></br>
