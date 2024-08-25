@@ -5,6 +5,6 @@ List of updates:
 - Fixed icons (twitter logo, ejc logo)
 - Hamburger Menu scrolling issue, header (main+subnavbar)
 - Navbar: hover + dropdown menu & buttons
-- Ipdated 2024-2025 execs
+- Updated 2024-2025 execs
 - Added alumni section in meet the teams
 - Events page updated
