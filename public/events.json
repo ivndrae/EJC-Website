@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Stevan Harnad : What AI Is & Isn't, and Can & Can't Do",
+        "date": "2023-11-08T17:00",
+        "endDate":"2023-11-08T19:00",
+        "location":"Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "Speaker Series",
+        "description": "Join Encode Justice Canada’s first Speaker Series event of the year featuring Professor Stevan Harnad, a Hungarian cognitive scientist whose research focuses on cognition, categorization, communication, and consciousness. He often discusses important topics such as categorical perception, the Turing Test, the symbol grounding problem and language acquisition. He was the founder of the scientific journal Behavioural and Brain Sciences, as well as the open-access journals Pscycoloquy, CogPrints, American Scientist Open Access Forum. He is passionate about animal rights and veganism, and is the Editor-in-Chief of the refereed journal Animal Sentience. Harnad is currently a professor at UQAM and teaches PSYC 538 (Categorization, Communication and Consciousness) at McGill.🧠",
+        "thumbnail": "stevanharnad.png"
+    },
+    {
+        "name": "AI in Healthcare",
+        "date": "2024-03-28T17:30",
+        "endDate":"2024-03-28T18:30",
+        "location":"M3-17A, McLennan Library",
+        "category": "Tea & Talk",
+        "description": "Our Events Team presents two contrasting views and provide curated articles for lively chats. Don’t forget your laptop for easy access to articles and note-taking, along with your mug for tea, cookies, and engaging conversations!",
+        "thumbnail": "teaandtalk_2.png"
+    },
+    {
+        "name": "MUTEK Forum 2024",
+        "date": "2024-08-20T09:30",
+        "endDate":"2024-08-23T17:30",
+        "location":"Monument-National and the Society for Arts and Technology",
+        "category": "Conference",
+        "description": "EJC is excited to announce that we are presenting a panel at the 10th edition of the MUTEK Forum! This international gathering and marketplace of ideas for digital culture, art, technology, and society is taking place from August 20th to August 23rd at the Monument-National and the Société des arts technologiques [SAT] EJC's Cleo Norris will be moderating the panel 'Shaping Spaces: Community, Sustainability, AI, and Justice,'. We are honoured to provide a Gen Z perspective on human-centered technological futures alongside 90 international speakers and experts in AI, XR, sustainability, music, architecture and video games.",
+        "thumbnail": "mutek.png"
+    },
+    {
+        "name": "Alexis Morin-Martel : Machine Learning in Court Decisions",
+        "date": "2024-04-03T17:30",
+        "endDate":"2024-04-03T19:30",
+        "location":"Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "Speaker Series",
+        "description": "Exploring the frontier where law meets technology! Encode Justice Canada proudly presents Alexis Morin-Martel, a PhD candidate from McGill, as part of our Speaker Series. Alexis unravels the intricate relationship between machine learning algorithms and court decisions. Delve deep into his research on AI’s role in bail decisions and its impact on judges’ trustworthiness. Stay for snacks and a stimulating conversation!",
+        "thumbnail": "alexis.png"
+    },
+    {
+        "name": "AI & Robotics Workshop",
+        "date": "2024-04-02T17:30",
+        "endDate":"2024-04-02T19:00",
+        "location":"McIntyre Medical Building 210",
+        "category": "Workshop",
+        "description": "The Montreal Youth core team of Women in AI & Robotics, in collaboration with McGill Robotics, McWiCS - McGill Women in Computer Science, Women in Tech - WIT and Encode Justice Canada is bringing you an AI & Robotics Workshop where you'll gain valuable hands-on skills and knowledge on computervision, reinforcementlearning, and ROS programming language. ",
+        "thumbnail": "airoboticsworkshop.png"
+    }
+]

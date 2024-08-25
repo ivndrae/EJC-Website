@@ -4,7 +4,7 @@ function Interview(title: string, interviewee: string, bio: string, link: string
     return (
         <div className="flex flex-col justify-center md:flex-row p-2">
             <div className="flex flex-col basis-2/3">
-                <div className="flex mt-5 bg-[#222430] p-5 lg:p-8 rounded-lg gap-2 text-white ">
+                <div className="flex mt-8 bg-[#222430] p-5 lg:p-8 rounded-lg gap-2 text-white shadow-2xl shadow-stone-800 ">
                     <div className="flex flex-col w-full md:top-36  px-8">
                         <p className="text-3xl md:text-4xl  mb-2 font-bold font-['JetBrains_Mono'] italic uppercase text-center">{title}</p>
                         <p className="uppercase font-bold font-['KoHo'] mt-4">About {interviewee}:</p>

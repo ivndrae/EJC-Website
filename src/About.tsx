@@ -7,9 +7,9 @@ function About() {
   return (
     <Default>
       <section>
-        <div className="bg-black text-white ">
+        <div className="bg-[#121212] text-white ">
           <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
-            <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+            <div className="flex flex-col w-full md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
               <p className=" text-red-800 uppercase tracking-loose font-bold">About us</p>
               <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-bold font-['Lato']">We are the Canadian Chapter of Encode Justice</p>
               <p className="text-sm md:text-base text-gray-50 mb-4 font-['KoHo']">
