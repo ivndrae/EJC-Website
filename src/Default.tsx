@@ -37,7 +37,7 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
                 <img className="flex w-8 h-8 md:w-12 md:h-12 ml-2 mt-2" src={logo2} />
                 <div className="flex ml-3 mt-2 text-lg md:ml-6 md:text-2xl text-white font-bold font-['JetBrains_Mono']"> ENCODE JUSTICE CANADA </div>
               </button>
-              <label htmlFor="my-drawer-4" className="flex mt-4 w-22 drawer-button btn bg-transparent border-none lg:hidden">
+              <label htmlFor="my-drawer-4" className="flex mt-4 w-22 drawer-button btn bg-none border-none lg:hidden">
                 <svg
                   className={`fill-white h-8 w-8 ${isOpen ? "hidden" : "block"}`}
                   viewBox="0 0 24 24"
