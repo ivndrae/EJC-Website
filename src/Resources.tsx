@@ -5,7 +5,7 @@ import thumbnail from './assets/vidthumbnail.png';
 function Card(imgSrc: string, title: string, description: string, link: string, button: string, action: string) {
     return (
         <div className="flex p-5 justify-center md:w-full">
-            <div className="card bg-base-100 image-full w-56 shadow-xl">
+            <div className="card bg-base-100 image-full w-56 shadow-xl z-0">
                 <figure>
                     <img src={imgSrc} />
                 </figure>
