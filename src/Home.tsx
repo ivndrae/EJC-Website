@@ -10,7 +10,7 @@ function Content() {
           <img className="border flex w-[11rem] lg:w-[15rem] animate-fadeIn rotate-2" src={logo} />
           <div className="flex flex-col border">
             <p className="text-white text-5xl md:text-6xl lg:text-8xl  font-black text-center tracking-widest font-['Lato'] p-2 animate-fadeIn">encode justice<br />canada</p>
-            <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">Fighting for Justice in the age of Artificial Intelligence.</p>
+            <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">safe and equitable AI.</p>
           </div>          
         </div>
         <div className="border relative w-full text-white max-w-screen-md" >
