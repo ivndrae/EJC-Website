@@ -4,15 +4,27 @@ import { useState } from 'react';
 
 function Content() {
   return (
-    <div className="h-full w-full fixed inset-0 bg-[#982216] p-7 flex flex-col select-none ">
-      <div className="flex flex-1 container mx-auto p-5 justify-center">
-        <div className="flex flex-col md:flex-row items-center justify-center mb-2 gap-6 lg:gap-12">
-          <img className="flex w-[11rem] lg:w-[15rem] animate-fadeIn rotate-2" src={logo} />
-          <div className="flex flex-col">
-            <p className=" text-white text-5xl md:text-6xl lg:text-8xl italic font-black text-center tracking-widest font-['Lato'] p-2 animate-fadeIn">ENCODE JUSTICE<br />CANADA</p>
+    <div className="h-full w-full fixed inset-0 bg-[#A6242F] p-7 flex flex-col select-none ">
+      <div className="border flex-col flex-1 container mx-auto p-5 justify-center">
+        <div className="border border-blue-300 border-8 flex items-center justify-center">
+          <img className="border flex w-[11rem] lg:w-[15rem] animate-fadeIn rotate-2" src={logo} />
+          <div className="flex flex-col border">
+            <p className="text-white text-5xl md:text-6xl lg:text-8xl  font-black text-center tracking-widest font-['Lato'] p-2 animate-fadeIn">encode justice<br />canada</p>
             <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">Fighting for Justice in the age of Artificial Intelligence.</p>
-          </div>
+          </div>          
         </div>
+        <div className="border relative w-full text-white max-w-screen-md" >
+            <p className="text-white text-2xl md:text-2xl font-bold">
+              We are the Canadian Chapter of Encode Justice
+            </p>
+            <p>
+              Encode Justice is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through
+              political advocacy, community organizing, educational programming, and content creation.
+            </p>
+          </div>
+          <p className="border text-right text-white ml-96 ">
+            <span> Our mission </span> is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
+            </p>
       </div>
       <div className="fixed bottom-0 left-0 w-full text-white p-4 m-1 flex items-center">
         <div className="flex flex-col w-full">
@@ -39,21 +51,21 @@ function Home() {
     <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
       <div className="drawer-content">
-        <div className="fixed top-0 right-0 z-10 hidden lg:flex">
+        <div className="border lowercase fixed top-0 right-0 z-10 hidden lg:flex">
           <div className="flex flex-col items-end m-2">
             <div
-              className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
+              className={` w-full flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
             >
-              <div className="text-sm text-white font-bold italic p-4 lg:flex-grow">
+              <div className="text-sm text-white font-bold p-4 lg:flex-grow ">
                 <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none ">About us</div>
+                  <div tabIndex={0} role="button" className="m-1 btn text-white text-lg bg-transparent border-none lowercase">about us</div>
                   <ul tabIndex={0} className="p-2 menu dropdown-content z-[1] rounded w-max bg-[#121212] shadow">
                     <li><a onClick={() => navigate("/about")}>Who We Are</a></li>
                     <li><a onClick={() => navigate("/team")}>Meet Our Team</a></li>
                   </ul>
                 </div>
                 <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none">Our Work</div>
+                  <div tabIndex={0} role="button" className="m-1 btn text-white text-lg bg-transparent border-none lowercase">Our Work</div>
                   <ul tabIndex={0} className="p-2 menu dropdown-content z-[1] rounded w-max bg-[#121212] shadow">
                     <li><a onClick={() => navigate("/newsletter")}>Newsletter</a></li>
                     <li><a onClick={() => navigate("/podcast")}>Podcast</a></li>
@@ -61,8 +73,8 @@ function Home() {
                     <li><a onClick={() => navigate("/interviews")}>Interviews</a></li>
                   </ul>
                 </div>
-                <button className="m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-[#121212] rounded-md px-6" onClick={() => navigate("/events")}>EVENTS</button>
-                <button className="m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-[#121212] rounded-md px-6" onClick={() => navigate("/resources")}>RESOURCES</button>
+                <button className="m-1 btn bg-transparent  text-white text-lg border-none hover:bg-[#121212] rounded-md px-6 lowercase" onClick={() => navigate("/events")}>EVENTS</button>
+                <button className="m-1 btn bg-transparent text-white text-lg border-none hover:bg-[#121212] rounded-md px-6 lowercase" onClick={() => navigate("/resources")}>RESOURCES</button>
               </div>
             </div>
           </div>
@@ -92,21 +104,21 @@ function Home() {
             <div
               className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
             >
-              <div className="text-sm text-white font-bold italic lg:flex-grow">
+              <div className="text-sm text-white font-bold lg:flex-grow">
                 <br></br>
                 <text className="text-lg m-4 underline underline-offset-2">About Us</text>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/about")}>&gt; Who We Are</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/team")}>&gt; Meet Our Team</button>
+                <button className="flex m-1 btn bg-transparent font-bold text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/about")}>&gt; Who We Are</button>
+                <button className="flex m-1 btn bg-transparent font-bold text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/team")}>&gt; Meet Our Team</button>
                 <br></br>
                 <text className=" text-lg m-4 underline underline-offset-2">Our Work</text>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/newsletter")}>&gt; Newsletter</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/publications")}>&gt; Publications</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/podcast")}>&gt; Podcast</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/interviews")}>&gt; Interviews</button>
+                <button className="flex m-1 btn bg-transparent font-bold text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/newsletter")}>&gt; Newsletter</button>
+                <button className="flex m-1 btn bg-transparent font-bold  text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/publications")}>&gt; Publications</button>
+                <button className="flex m-1 btn bg-transparent font-bold  text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/podcast")}>&gt; Podcast</button>
+                <button className="flex m-1 btn bg-transparent font-bold text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/interviews")}>&gt; Interviews</button>
                 <br></br>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6 underline underline-offset-2" onClick={() => navigate("/events")}>&gt; EVENTS</button>
+                <button className="flex m-1 btn bg-transparent font-bold  text-white text-lg border-none hover:bg-black rounded-md px-6 underline underline-offset-2" onClick={() => navigate("/events")}>&gt; EVENTS</button>
                 <br></br>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6 underline underline-offset-2" onClick={() => navigate("/resources")}>&gt; RESOURCES</button>
+                <button className="flex m-1 btn bg-transparent font-bold text-white text-lg border-none hover:bg-black rounded-md px-6 underline underline-offset-2" onClick={() => navigate("/resources")}>&gt; RESOURCES</button>
               </div>
             </div>
           </div>
