@@ -4,28 +4,40 @@ import { useState } from 'react';
 
 function Content() {
   return (
-    <div className="h-full w-full fixed inset-0 bg-[#A6242F] p-7 flex flex-col select-none ">
-      <div className="border flex-col flex-1 container mx-auto p-5 justify-center">
-        <div className="border border-blue-300 border-8 flex items-center justify-center">
-          <img className="border flex w-[11rem] lg:w-[15rem] animate-fadeIn rotate-2" src={logo} />
+    <div className="h-full w-full fixed inset-0 bg-[#A6242F] p-7 flex flex-col select-none overflow-y-auto">
+      <div className="border-red-300 border-4 flex-col flex-1 container mx-auto p-5 justify-center">
+        <div className="border-blue-300 border-8 flex items-center justify-center mt-[20%]">
+          <img className="border-yellow-300 border-2 flex w-[10rem] lg:w-[10rem] rotate-2 mr-10 mb-7" src={logo} />
           <div className="flex flex-col border">
-            <p className="text-white text-5xl md:text-6xl lg:text-8xl  font-black text-center tracking-widest font-['Lato'] p-2 animate-fadeIn">encode justice<br />canada</p>
-            <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">safe and equitable AI.</p>
+
+
+
+            <p className="text-white text-5xl lg:text-6xl  font-black text-center tracking-wider font-['Lato']">encode justice<br />canada |</p>
+            <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] ">Fighting for Justice in the age of Artificial Intelligence.</p>
           </div>          
         </div>
-        <div className="border relative w-full text-white max-w-screen-md" >
-            <p className="text-white text-2xl md:text-2xl font-bold">
+        <div className="border relative w-full text-white max-w-screen-md mt-[50vh]" >
+            <p className="text-white text-5xl md:text-5xl font-bold">
               We are the Canadian Chapter of Encode Justice
             </p>
-            <p>
+            <p className="text-2xl leading-10">
               Encode Justice is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through
               political advocacy, community organizing, educational programming, and content creation.
             </p>
           </div>
-          <p className="border text-right text-white ml-96 ">
-            <span> Our mission </span> is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
+          <div className="flex justify-between">
+            <span></span>
+            <p className="border text-right text-white w-[50vw] mt-[60vh] text-2xl leading-10">
+              <span className="text-4xl font-bold"> Our mission </span> is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
             </p>
+          </div>
+          
+          <div className="border-green-300 border-4 mt-[30vh]">
+            <div className="text-white text-5xl md:text-5xl font-bold text-center">Our Partners</div>
+            <div>partners</div>
+          </div>
       </div>
+      
       <div className="fixed bottom-0 left-0 w-full text-white p-4 m-1 flex items-center">
         <div className="flex flex-col w-full">
           <div className="flex gap-1 md:gap-3 justify-center items-center m-3">
