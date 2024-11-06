@@ -10,3 +10,4 @@ List of updates:
 - Events page updated
 - Resources Page Bug in Small Devices Fixed
 
+

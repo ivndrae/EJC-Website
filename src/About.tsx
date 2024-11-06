@@ -104,7 +104,29 @@ function About() {
                       <p className="mb-3 text-base text-red-800">January 2023</p>
                       <h4 className="mb-3 font-bold text-lg md:text-2xl">Speaker Series Launch</h4>
                       <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-                      EJC hosted its inaugural Speaker Series : Wine-and-Cheese style conversations with local AI experts, featuring speakers from Mila, ReelyActive, and IBM, etc. 
+                      EJC started its inaugural Speaker Series : Wine-and-Cheese style conversations with local AI experts, featuring speakers from Mila, ReelyActive, and IBM, etc. 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between items-center w-full right-timeline animate-fadeIn">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1  w-5/12 px-1 py-4 text-left">
+                      <p className="mb-3 text-base text-red-800">June 2024</p>
+                      <h4 className="mb-3 font-bold  text-lg md:text-2xl text-left">CBC Radio Feature</h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      EJC's co-directors Cella Wardrop and Cleo Norris were featured on CBC Radio Canada's Spark podcast to discuss youth perspectives on AI.<a href='https://www.cbc.ca/listen/live-radio/1-55-spark/clip/16076549-three-reasons-hopeful-future-tech' className='underline text-red-800'><br></br>Listen here</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline animate-fadeIn">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                      <p className="mb-3 text-base text-red-800">August 2024</p>
+                      <h4 className="mb-3 font-bold text-lg md:text-2xl">MUTEK Forum</h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      EJC presented at the 10th edition of the MUTEK Forum 
                       </p>
                     </div>
                   </div>

@@ -1,18 +1,29 @@
 import cella from './assets/cella.jpg'
-import andrae from './assets/andrae.jpg'
+import andrae from './assets/Andrae.jpg'
 import thuy from './assets/Thuy.jpg'
 import cleo from './assets/Cleo.png'
 import julia from './assets/Julia.jpg'
 import sophie from './assets/Sophie.jpg'
 import sofia from './assets/Sofia.jpg'
 import molka from './assets/molka.jpg'
-import aimee from './assets/aimee.jpg'
-import roberto from './assets/Roberto.jpeg'
+import aimee from './assets/Aimee.jpg'
+import roberto from './assets/Roberto.jpg'
 import hamidah from './assets/hamidah.jpeg'
 import itai from './assets/Itai.png'
 import sara from './assets/Sara.png'
 import dane from './assets/Dane.png'
 import chloe from './assets/Chloe.png'
+import whiming from './assets/WhiMing.jpg'
+import sarah from './assets/Sarah.jpg'
+import sydney from './assets/Sydney.jpg'
+import anna from './assets/Anna.jpg'
+import kanika from './assets/Kanika.jpg'
+import abby from './assets/Abby.jpg'
+import isabella from './assets/Isabella.jpg'
+import alix from './assets/Alix.jpg'
+import emma from './assets/Emma.jpg'
+import jovan from './assets/Jovan.png'
+import nika from './assets/Nika.jpg'
 import Default from './Default';
 
 function Person(imgSrc: string, name: string, position: string, bio: string) {
@@ -48,24 +59,37 @@ function Alumni(imgSrc: string, name: string, position: string, year: string) {
 function Team() {
     return (
         <Default>
-            <div className="flex m-16 bg-[#222430] p-5 lg:p-14 justify-center text-white text-3xl md:text-5xl mb-5 italic font-black  text-center tracking-widest font-['Lato'] lg:underline lg:underline-offset-8">MEET THE 2024-2025 EXECUTIVE TEAM</div>
+            <div className="flex m-16 bg-[#222430] p-5 lg:p-14 justify-center text-white text-3xl md:text-5xl mb-5 italic font-black  text-center tracking-widest font-['Lato'] lg:underline lg:underline-offset-8 shadow-2xl shadow-stone-800">MEET THE 2024-2025 EXECUTIVE TEAM</div>
             <div className="flex flex-col text-white p-3 lg:mx-3">
-                {Person(cella, "Cella Wardrop", "Director", "Cella grew up in the UK and is currently a fourth-year student studying Honours Sociology, Economics, and Social Entrepreneurship at McGill University. She is fascinated by technological innovation and AI ethics. During her time at EJC, she has co-authored four briefs published by the Montreal AI Ethics Institute.")}
+                {Person(cella, "Cella Wardrop", "Director", "Cella is studying Honours Sociology, Economics and Entrepreneurship at McGill University. Graduating in May 2025, she is passionate about AI governance, ethics, and the future of human-computer interactions. She has published work in the Montreal AI Ethics Institute, featured on CBC's Spark podcast, and is currently writing her undergraduate thesis on LLMs. She has international work experience in diverse industries and is pursuing graduate opportunities in Europe.")}
                 <div className="text-white drop-shadow-lg text-3xl md:text-5xl mb-5 italic font-black pt-12 text-center tracking-widest font-['Lato'] underline underline-offset-8">
                     CONTENT TEAM
                 </div>
-                {Person(thuy, "Le Thuy Duong Nguyen", "Co-Director of Content (Briefs)", "Thuy is a fourth-year undergraduate student studying Cognitive Science with a minor in International Development Studies. Originally from Hanoi, Vietnam, she has lived in Geneva, Stockholm, and Ottawa before coming to Montreal for her studies. She's passionate about the intersection of neuroscience and AI for socially beneficial applications. From working at an Open Science lab to empowering and amplifying youth voices on the topic of AI regulation at the two Model United Nations conferences hosted by McGill Students, SSUNS and McMUN, she firmly believes in the power of inclusive dialogue in shaping a better world. She hopes to do the same for EJC, promoting a human-centered, ethical foundation for AI innovation in Canada and beyond.")}
-                {Person(aimee, "Aimee Lee", "Co-Director of Content (Podcast)", "Aimee is a third year student in Desautels studying Finance, IT Management, and World Cinemas. Her interest in AI and tech was jumpstarted by ChatGPT and COMP202, and she remains in awe of the speed in which AI is developing. Her role is EJC is underscored by a commitment to making AI more accessible and digestible. In her free time, she loves learning new musical instruments (currently: harmonica), crocheting, and being outdoors.")}
-                {Person(roberto, "Roberto Concepcion", "Content Writer / Podcast Coordinator", "Roberto is a U3 student at McGill University studying International Development, Sociology, and Communications. Their academic interests lie in the intersection of technology and development by understanding how technologies carry sociopolitical ideologies that shape social dynamics. Roberto is interested in AI ethics because they are invested in contributing toward a positive impact in the social and equitable aspects of the technology industry through research and creating accessible content for younger audiences. Through their involvement in EJC, they are excited to be part of a global movement of harnessing technologies for social good.")}
-                {Person(sofia, "Sofia Woo", "Content Writer", "Sofia Woo is a McGill graduate from San Francisco who studied Honors History and minored in Political Science. Through working with EJC, Sofia hopes to increase AI ethics literacy amongst McGill students and beyond.")}
+                {Person(aimee, "Aimee Lee", "Director of Content (Podcast)", "Aimee is a third year student in Desautels studying Finance, IT Management, and World Cinemas. Her interest in AI and tech was jumpstarted by ChatGPT and COMP202, and she remains in awe of the speed in which AI is developing. Her role is EJC is underscored by a commitment to making AI more accessible and digestible. In her free time, she loves learning new musical instruments (currently: harmonica), crocheting, and being outdoors.")}
+                {Person(roberto, "Roberto Concepcion", "Podcast Coordinator", "Roberto is a third-year undergraduate at McGill pursuing a degree in International Development Studies, Sociology, and Management. Roberto’s interests lie in understanding the sociological and political implications of technology. They are particularly interested in the responsible applications of AI in the entertainment industry and the gendered aspects of LLMs. As a podcast coordinator at EJC, Roberto hopes to communicate ideas surrounding AI ethics in an accessible and entertaining format.")}
+                {Person(isabella,"Isabella Arcuri","Podcast Coordinator","Isabella is a U3 student at McGill studying Honors International Development and Computer Science. As co-director of the EJC podcast, she brings her fascination with AI and its societal impacts to the forefront, spreading awareness of the ethical challenges and transformative potential of emerging AI and ML technologies.")}
+                {Person(sofia, "Sofia Woo", "Podcast Coordinator", "Sofia Woo is a McGill graduate from San Francisco who studied Honors History and minored in Political Science. Through working with EJC, Sofia hopes to increase AI ethics literacy amongst McGill students and beyond.")}
+                {Person(thuy, "Le Thuy Duong Nguyen", "Director of Content (Briefs)", "Thuy is a fourth-year undergraduate student studying Cognitive Science with a minor in International Development Studies. Originally from Hanoi, Vietnam, she has lived in Geneva, Stockholm, and Ottawa before coming to Montreal for her studies. She's passionate about the intersection of neuroscience and AI for socially beneficial applications. From working at an Open Science lab to empowering and amplifying youth voices on the topic of AI regulation at the two Model United Nations conferences hosted by McGill Students, SSUNS and McMUN, she firmly believes in the power of inclusive dialogue in shaping a better world. She hopes to do the same for EJC, promoting a human-centered, ethical foundation for AI innovation in Canada and beyond.")}
+                {Person(alix,"Alix Faulkner","Writer", "Alix is a third year Honours Sociology student with a minor is Social Studies of Medicine at McGill University. Her interest in AI developed after beginning research on deepfake pornogrpahy for a course, where she became interested in the current legal frameworks, or lack thereof, surrounding AI in Canada. Through EJC, Alix hopes to learn and educate those around her on the possibilities and risks of AI implementation into our everyday lives.")}
+                {Person(emma, "Emma Simon", "Writer","Emma is a first-year at McGill studying Cognitive Science. Her interest in AI overlaps with a general interest in technology and how it adds to (or detracts from) society. She hopes to make AI information more accessible and improve popular understanding of the field, allowing for more independent, personal judgement of this explosion of development.")}
+                {Person(abby,"Abby Buller", "Writer","Abby is pursuing her master’s degree in electrical engineering at McGill. She has a keen interest in the intersection of AI, philosophy, and law, and is passionate about empowering folks in the age of AI through education. When she’s not working on her research, she loves teaching dance, camping, and baking for her friends!")}
                 <div className="text-white drop-shadow-lg text-3xl md:text-5xl mb-5 italic font-black pt-12 text-center tracking-widest font-['Lato'] underline underline-offset-8">
                     EVENTS TEAM
                 </div>
-                {Person(sophie, "Sophie Potvin", "Events Lead", "Sophie is a U2 student majoring in cognitive science. Eager to learn more about the challenges encountered with the rise of AI, she wants to promote education on the topic of AI ethics. Organizing events will be a way for her, to gather people around some powerful conversations and interrogations, hoping to understand the changing world a little bit more.")}
+                {Person(sophie, "Sophie Potvin", "Lead Events Coordinator", "Sophie is a U2 student majoring in Cognitive Science. Eager to learn more about responsible AI and the challenges encountered with the rise of technology, she wants to spark people’s interest on the topic. She believes that everyone should be part of the discussion concerning today’s society and that together, we can understand the changing world a little bit more.")}
+                {Person(anna,"Anna Zhou", "Events Coordinator","Anna is a second-year student majoring in Cognitive Science with a minor in Economics. She grew up in Shanghai and came to Canada for her studies. Daily interactions with AI-powered tools and algorithms have inspired her to seek deeper insights into the potential concerns that may accompany the conveniences they provide, as well as the aspects that may be neglected in the rapidly growing field of AI. Anna aims to explore topics in AI ethics and policy with the audience during EJC events. She wants to engage in discussions and listen to diverse perspectives from individuals. ")}
+                {Person(sydney, "Sydney Toffa", "Events Coordinator","Sydney is a fourth-year undergraduate student at McGill University studying Honours Cognitive Science with a minor in Psychology. She is passionate about the ethical use of AI and she hopes to advance the discussion around its exploration versus exploitation. Her fascination with the brain and mind shape her perspective on AI and she firmly believes that using AI responsibly is a conversation to be shared by all.")}
                 <div className="text-white drop-shadow-lg text-3xl md:text-5xl mb-5 italic font-black pt-12 text-center tracking-widest font-['Lato'] underline underline-offset-8">
-                    COMMUNICATIONS TEAM
+                    WEB TEAM
                 </div>
                 {Person(andrae, "Andrae Wang", "Director of Web Operations", "Coming from Hong Kong, Andrae is currently in her final year at McGill University, with a major in Cognitive Science and a minor in Economics. As AI continues to evolve rapidly and prove its transformative potential, she recognizes the importance of AI literacy. Her firm belief lies in leveraging technology to benefit humanity, ensuring its responsible and ethical development. Through EJC, she hopes to bridge the knowledge gap in AI and spark impactful discussions.")}
+                {Person(whiming, "Whi-Ming Joseph","Web Designer","Whi-Ming, born and raised in the South Shore of Montreal, is studying in his third year in Computer Science at Concordia University. He dreads the day that AI takes over, so he would like to help guide the conversation towards safe and equitable AI for everyone through design. He believes good design is important because it attracts people, which is necessary to have a conversation and make change")}
+                <div className="text-white drop-shadow-lg text-3xl md:text-5xl mb-5 italic font-black pt-12 text-center tracking-widest font-['Lato'] underline underline-offset-8">
+                    OUTREACH TEAM
+                </div>
+                {Person(kanika,"Kanika Singh Pundir","Co-director of Marketing","Kanika Singh Pundir is a third-year computer science major, passionate about bridging the gap between technology and ethical responsibility. She believes in the power of community and is committed to fostering awareness and inspiring change across Canada. By managing Encode Justice Canada’s social media, she aims to connect, inform, and engage young people in the movement for ethical technology.")}
+                {Person(nika,"Nika Aghili","Co-director of Marketing","Nika is a third-year economics student at Concordia University with a strong interest in technology and its social impact. As Co-Director of Marketing at Encode Justice Canada, she is excited to work on initiatives that promote fairness and ethical standards in AI. Outside of school, Nika loves playing pool and is always up for a game.")}
+                {Person(jovan,"Jovan Rohac","Director of Partnerships", "Jovan is a U2 student at McGill University, pursuing a dual degree in Economics and Computer Science. His passion for artificial intelligence stems from a keen interest in exploring the balance between innovation and ethics, emphasizing the importance of public policy in the AI landscape. In his spare time, Jovan enjoys hiking and running, with aspirations to tackle ultra-marathons in the future.")}
             </div>
             <div className="flex m-16 bg-[#222430] p-5 lg:p-14 justify-center text-white text-3xl md:text-5xl mb-5 italic font-black  text-center tracking-widest font-['Lato'] underline underline-offset-8"> EJC ALUMNI</div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-3 my-2">
