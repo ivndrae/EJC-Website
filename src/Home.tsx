@@ -5,10 +5,10 @@ import { useState } from 'react';
 function Content() {
   return (
     <div className="h-full w-full fixed inset-0 bg-[#A6242F] p-7 flex flex-col select-none overflow-y-auto">
-      <div className="border-red-300 border-4 flex-col flex-1 container mx-auto p-5 justify-center">
-        <div className="border-blue-300 border-8 flex items-center justify-center mt-[20%]">
-          <img className="border-yellow-300 border-2 flex w-[10rem] lg:w-[10rem] rotate-2 mr-10 mb-7" src={logo} />
-          <div className="flex flex-col border">
+      <div className=" flex-col flex-1 container mx-auto p-5 justify-center">
+        <div className=" flex items-center justify-center mt-[20%]">
+          <img className=" flex w-[10rem] lg:w-[10rem] rotate-2 mr-10 mb-7" src={logo} />
+          <div className="flex flex-col">
 
 
 
@@ -16,7 +16,7 @@ function Content() {
             <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] ">Fighting for Justice in the age of Artificial Intelligence.</p>
           </div>          
         </div>
-        <div className="border relative w-full text-white max-w-screen-md mt-[50vh]" >
+        <div className="relative w-full text-white max-w-screen-md mt-[50vh]" >
             <p className="text-white text-5xl md:text-5xl font-bold">
               We are the Canadian Chapter of Encode Justice
             </p>
@@ -27,12 +27,12 @@ function Content() {
           </div>
           <div className="flex justify-between">
             <span></span>
-            <p className="border text-right text-white w-[50vw] mt-[60vh] text-2xl leading-10">
+            <p className="text-right text-white w-[50vw] mt-[60vh] text-2xl leading-10">
               <span className="text-4xl font-bold"> Our mission </span> is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
             </p>
           </div>
           
-          <div className="border-green-300 border-4 mt-[30vh]">
+          <div className=" mt-[30vh]">
             <div className="text-white text-5xl md:text-5xl font-bold text-center">Our Partners</div>
             <div>partners</div>
           </div>
@@ -63,7 +63,7 @@ function Home() {
     <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
       <div className="drawer-content">
-        <div className="border lowercase fixed top-0 right-0 z-10 hidden lg:flex">
+        <div className="lowercase fixed top-0 right-0 z-10 hidden lg:flex">
           <div className="flex flex-col items-end m-2">
             <div
               className={` w-full flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
