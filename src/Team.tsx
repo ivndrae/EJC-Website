@@ -1,5 +1,5 @@
 import cella from './assets/cella.jpg'
-import andrae from './assets/Andrae.jpg'
+import andrae from './assets/andrae.jpg'
 import thuy from './assets/Thuy.jpg'
 import cleo from './assets/Cleo.png'
 import julia from './assets/Julia.jpg'
