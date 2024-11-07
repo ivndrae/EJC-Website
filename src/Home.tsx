@@ -71,11 +71,12 @@ window.addEventListener('scroll', () => {
   const currentScrollY = window.scrollY
   if(currentScrollY > lastScrollY){
     console.log('scroll Down')
-
-    navbar?.classList.add('hidden')
+    navbar?.setAttribute("id", "hidden")
+    // navbar?.classList.add('hidden')
   } else{
     console.log('scroll Up')
-    navbar?.classList.remove('hidden')
+    navbar?.removeAttribute("id")
+    // navbar?.classList.remove('hidden')
   }
   lastScrollY = currentScrollY
 })
@@ -87,7 +88,7 @@ function Home() {
     <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
       <div className="drawer-content">
-        <nav className="lowercase fixed top-0 right-0 z-10 lg:flex">
+        <nav id='' className="lowercase fixed top-0 right-0 z-10 lg:flex">
           <div className="flex flex-col items-end m-2">
             <div
               className={` w-full flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
