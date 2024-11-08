@@ -13,7 +13,14 @@ function Content() {
             <img className=" flex w-[10rem] lg:w-[10rem] rotate-2 mr-10 mb-7" src={logo} />
             <div className="flex flex-col">
               <p className="text-white text-5xl lg:text-6xl  font-black text-center tracking-wider font-['Lato'] ">
-                encode justice<br/>canada |
+                encode justice<br/> 
+                <span className="relative w-[max-content] font-mono
+before:absolute before:inset-0 before:animate-typewriter
+before:bg-[#A6242F]
+after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
+after:bg-white">
+                  canada
+                </span>
               </p>
               <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] ">
                 Fighting for Justice in the age of Artificial Intelligence.
