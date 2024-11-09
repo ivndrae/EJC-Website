@@ -23,6 +23,7 @@ import alix from './assets/Alix.jpg'
 import emma from './assets/Emma.jpg'
 import jovan from './assets/Jovan.png'
 import nika from './assets/Nika.jpg'
+import sarah from './assets/Sarah.jpg'
 import Default from './Default';
 
 function Person(imgSrc: string, name: string, position: string, bio: string) {
@@ -83,6 +84,7 @@ function Team() {
                 </div>
                 {Person(andrae, "Andrae Wang", "Director of Web Operations", "Coming from Hong Kong, Andrae is currently in her final year at McGill University, with a major in Cognitive Science and a minor in Economics. As AI continues to evolve rapidly and prove its transformative potential, she recognizes the importance of AI literacy. Her firm belief lies in leveraging technology to benefit humanity, ensuring its responsible and ethical development. Through EJC, she hopes to bridge the knowledge gap in AI and spark impactful discussions.")}
                 {Person(whiming, "Whi-Ming Joseph","Web Designer","Whi-Ming, born and raised in the South Shore of Montreal, is studying in his third year in Computer Science at Concordia University. He dreads the day that AI takes over, so he would like to help guide the conversation towards safe and equitable AI for everyone through design. He believes good design is important because it attracts people, which is necessary to have a conversation and make change")}
+                {Person(sarah,"Sarah Matmati","Web Developer", "Sarah Matmati is currently in her third year at McGill Univserity studying Computer Science with a concetration in Artifical Intelligence. She is originally from France and grew up in the US. She thinks AI literacy is very important for our generation and for our future and she hopes that by being involved with EJC's website she will be able to reach more people and spread this message.")}
                 <div className="text-white drop-shadow-lg text-3xl md:text-5xl mb-5 italic font-black pt-12 text-center tracking-widest font-['Lato'] underline underline-offset-8">
                     OUTREACH TEAM
                 </div>
