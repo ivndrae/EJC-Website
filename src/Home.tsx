@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 import logo from './assets/EJC_White_Clear.svg';
 import { useState } from 'react';
 import { useEffect, useRef } from "react";
-import line from './assets/'
 
 function Content() {
   const animationRef = useRef<HTMLDivElement>(null);
@@ -70,7 +69,7 @@ after:bg-white">
       </div>
     
     <div>
-    <div className="border-blue-300 border-4 fixed bottom-0 right-0 text-white bg-[#8C1616] -z-10 w-full h-[60vh] pt-36 px-20">
+    <div className="border-blue-100 border-4 fixed bottom-0 right-0 text-white bg-[#b33f3f] -z-10 w-full h-[60vh] pt-36 px-20">
       <div className="text-white text-[2.75rem] md:text-[2.75rem] font-bold">
         Let's get to know each<br/> other <span className="italic">better</span>
       </div>
