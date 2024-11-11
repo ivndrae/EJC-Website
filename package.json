@@ -14,14 +14,18 @@
     "@fontsource/koho": "^5.0.8",
     "@fontsource/lato": "^5.0.15",
     "bootstrap-icons": "^1.11.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.16.0",
-    "react-scroll-trigger": "^0.6.14"
+    "react-scroll-trigger": "^0.6.14",
+    "reactstrap": "^9.2.3"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
@@ -31,8 +35,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.4.14",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  }
+    "vite": "^4.5.5"
+  },
+  "description": "List of updates: - Background color: Black -> Grey (wider range of depth and elevation, enhanced accessibility, high standard of usability) - Rounded boxes in the Submission Form for a smoother ui - Animated loading icon after hitting submit button and before confirmation prompt appears - Fixed icons (twitter logo, ejc logo) - Hamburger Menu scrolling issue, header (main+subnavbar) - Navbar: hover + dropdown menu & buttons - Updated 2024-2025 execs - Added alumni section in meet the teams - Events page updated - Resources Page Bug in Small Devices Fixed",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }
