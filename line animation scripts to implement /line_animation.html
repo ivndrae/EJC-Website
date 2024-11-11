@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Line Animation</title>
+<style>
+  body {
+    background-color: #c8322f; /* Match the background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  svg {
+    max-width: 100%;
+  }
+  #line {
+    stroke: white;
+    stroke-width: 2;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw 2s ease forwards;
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<svg width="500" height="200" viewBox="0 0 500 200">
+  <path id="line" d="M10 80 Q 95 10, 180 80 T 350 80" fill="none"/>
+</svg>
+
+</body>
+</html>
