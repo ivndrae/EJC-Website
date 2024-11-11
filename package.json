@@ -18,7 +18,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.16.0",
     "react-scroll-trigger": "^0.6.14",
-    "reactstrap": "^9.2.3"
+    "reactstrap": "^9.2.3",
+    "scroll-svg": "^1.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.9",

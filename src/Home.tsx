@@ -1,25 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import logo from './assets/EJC_White_Clear.svg';
 import { useState } from 'react';
-import { useEffect, useRef } from "react";
+//import scrollSvg from 'scroll-svg';
+
 
 function Content() {
-  const animationRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (animationRef.current) {
-        const rect = animationRef.current.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-          setIsVisible(true); // Trigger the animation when section is in view
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //const svgPath = document.querySelector('#scroll-line') as SVGPathElement
+  
 
   return (
     <>
