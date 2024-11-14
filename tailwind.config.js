@@ -1,16 +1,17 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// @type {import('tailwindcss').Config} 
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
-
-    },
-  },
-  theme: {
-    extend: {
+      textColor: {
+        skin : {
+          base: 'var(--color-text-base)',
+          muted: 'var(--color-text-muted)'
+        }
+      },
       animation: {
         typewriter: 'typewriter 2s steps(6) forwards',
         caret: 'typewriter 2s steps(6) forwards, blink 1.5s steps(6) infinite 2s',
