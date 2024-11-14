@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import logo from './assets/EJC_White_Clear.svg';
+import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
 import { useState } from 'react';
 
 function Content() {
@@ -9,50 +9,58 @@ function Content() {
     <>
       <div className= "bg-[#A6242F] absolute w-full h-[10rem]"></div>
       <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] p-7 flex flex-col select-none mb-[50vh] rounded-[5rem] relative z-20">
-        <nav id='' className="lowercase fixed top-0 right-0 p-4">
-          <div className="flex items-end m-2">
-            <div className='text-skin-muted'> hello </div>
-            <div className={` w-full lg:flex ${isOpen ? "block" : "hidden"}`}>
-              <div className="text-white font-bold ">
-                <div className="dropdown dropdown-hover">
-                  <div tabIndex={0} role="button" className="btn text-white text-lg  border-none lowercase bg-inherit hover:bg-transparent hover:text-[]">
+        <nav id='' className="lowercase fixed top-0 right-0">
+          <div className="flex items-end">
+            <div className={'w-full lg:flex ${isOpen ? "block" : "hidden" '}>
+              <div className="text-white font-bold lowercase space-x-12 ">
+                <div className="dropdown dropdown-hover hover:bg-transparent">
+                  <div tabIndex={0} role="button" className="btn text-white text-lg   lowercase bg-inherit  hover:text-[#A6242F] border-none">
                     ABOUT US
                   </div>
                   <ul tabIndex={0} className="menu dropdown-content rounded w-max bg-[#A6242F]">
                     <li>
-                      <a onClick={() => navigate("/about")}>
+                      <a className='hover:text-[#f2bbbb]'
+                        onClick={() => navigate("/about")}>
                         WHO WE ARE
                       </a>
                     </li>
                     <li>
-                      <a onClick={() => navigate("/team")}>
+                      <a className='hover:text-[#A6242F] hover:bg-gray-200'
+                        onClick={() => navigate("/team")}>
                         MEET OUR TEAM
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="m-1 btn text-white text-lg bg-transparent border-none lowercase">
+                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#f2bbbb] hover:bg-transparent">
                     OUR WORK
                   </div>
-                  <ul tabIndex={0} className="p-2 menu dropdown-content rounded w-max bg-[#A6242F]">
+                  <ul tabIndex={0} className="menu dropdown-content w-max bg-[#A6242F]">
                     <li>
-                      <a onClick={() => navigate("/podcast")}>
+                      <a 
+                        className='hover:text-[#f2bbbb] hover:bg-inherit'
+                        onClick={() => navigate("/podcast")}>
                         PODCAST
                       </a>
                     </li>
                     <li>
-                      <a onClick={() => navigate("/publications")}>
+                      <a 
+                        className='hover:text-[#f2bbbb] hover:bg-inherit'
+                        onClick={() => navigate("/publications")}>
                         PUBLICATIONS
                       </a>
                     </li>
                   </ul>
                 </div>
-                <button className="m-1 btn bg-transparent  text-white text-lg border-none hover:bg-[#121212] rounded-md px-6 lowercase" 
-                  onClick={() => navigate("/events")}>
-                  EVENTS
-                </button>
-                <button className="m-1 btn bg-transparent text-white text-lg border-none hover:bg-[#121212] rounded-md px-6 lowercase" 
+                <div className="dropdown dropdown-hover px-6">
+                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#f2bbbb] hover:bg-[#8C1616]"
+                  onClick={() => navigate("/resources")}>
+                    EVENTS
+                  </div>
+                </div>
+              
+                <button className="btn bg-transparent text-white text-lg border-none hover:text-[#f2bbbb] hover:bg-transparent lowercase" 
                   onClick={() => navigate("/resources")}>
                   RESOURCES
                 </button>
@@ -101,28 +109,46 @@ function Content() {
           </div>
         </div>
       </div>
-      <div className=" bg-[#8C1616] fixed bottom-0 right-0 text-white  w-full h-[60vh] pt-36 px-20 z-10">
-        <div className=" text-white text-[2.75rem] md:text-[2.75rem] font-bold">
+      <div className=" bg-[#8C1616] fixed bottom-0 right-0 text-white  w-full h-[60vh] pt-36 px-20 z-10 text-[#f2bbbb]">
+        <div className="text-[2.75rem] md:text-[2.75rem] font-bold mb-14">
           Let's get to know each<br/> other <span className="italic">better</span>
         </div>
-        <div className="border-red-300 border-4 flex">        
-          <div className="border-yellow-300 border-2 flex-col w-[33.33%]">
-            <div>
-              <a className="w-14 h-14" href="https://www.instagram.com/encodecanada/"><i className="bi-instagram text-4xl"></i></a>
-              <a className="w-14 h-14" href="https://twitter.com/EncodeCanada"><i className=" bi-twitter-x text-4xl"></i></a>
-              <a className="w-14 h-14" href="https://www.facebook.com/encodejustice/"><i className="bi-facebook text-4xl"></i></a>
-              <a className="w-14 h-14" href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><i className="bi-linkedin text-4xl"></i></a>
+        <div className="flex">        
+          <div className=" w-[33.33%]">
+            <div className='flex space-x-[12%]'>
+              <a href="https://www.instagram.com/encodecanada/"><i className="bi-instagram text-4xl font-thin"></i></a>
+
+              <a className=' fill-current' href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text">
+              <svg svg className='w-10 fill-current text-[#f2bbbb]' xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 26.8v184H177z" clip-rule="evenodd"/></svg>
+              </a>
+
+              <a href="https://twitter.com/EncodeCanada"><i className=" bi-twitter-x text-4xl"></i></a>
+              {/* <a href="https://www.facebook.com/encodejustice/"><i className="bi-facebook text-4xl"></i></a>
+              <a href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><i className="bi-linkedin text-4xl"></i></a> */}
+              <a className="w-14 h-14" href="https://www.facebook.com/encodejustice/">
+              <svg className='w-10 fill-current' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xml:space="preserve">
+                <path d="M81.7 165.1h34V305a5 5 0 0 0 5 5h57.6a5 5 0 0 0 5-5V165.8h39a5 5 0 0 0 5-4.5l6-51.5a5 5 0 0 0-5-5.5h-45V72c0-9.8 5.2-14.7 15.6-14.7h29.4a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5h-42.4c-7 0-31.5 1.4-50.8 19.2a53.3 53.3 0 0 0-17.7 47.3v37.8H81.7a5 5 0 0 0-5 5V160a5 5 0 0 0 5 5z"/>
+              </svg>
+              </a>
+              
+
             </div>
-            <a className="" href="mailto:encodejusticecanada@gmail.com">encodejusticecanada@gmail.com</a>  
+            <a className="text-[1.35rem]" href="mailto:encodejusticecanada@gmail.com">encodejusticecanada@gmail.com</a>  
           </div>
-          <div className="border-blue-300 border-2 text-white font-['JetBrains_Mono'] w-[33.33%]">
+          <div className=" w-[33.33%] text-center m-auto text-[1.5rem]">
             Join our <a href="">Slack!</a>
           </div>
-          <div className='border-green-400 border-2 w-[33.33%]'>
+          <div className=' w-[33.33%] text-[1.5rem] '>
             Subscribe to our newsletter to stay connected with the latest updates from the Encode Justice community.
-            <div>
-              <input type="text" placeholder='Email Address' className='bg-transparent border-white'/>
+            <div className='flex space-x-4'>
+              <div className='border-[3px] rounded-full w-[80%] border-current'>
+                <input type="text" placeholder='Email Address' className='bg-transparent'/>
+              </div>
+              <div className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full w-[10%] text-center text-[#8C1616]'>
+                -&gt;
+              </div>
             </div>
+
             
           </div>
         </div>

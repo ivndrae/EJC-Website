@@ -1,5 +1,5 @@
 import Default from './Default';
-import articlelogo from './assets/AI logo.png';
+import articlelogo from './assets/logos/partners/AI logo.png';
 import thumbnail from './assets/vidthumbnail.png';
 
 function Card(imgSrc: string, title: string, description: string, link: string, button: string, action: string) {
