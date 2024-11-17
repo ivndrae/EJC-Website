@@ -19,7 +19,7 @@ function Content() {
                   </div>
                   <ul tabIndex={0} className="menu dropdown-content rounded w-max bg-[#A6242F]">
                     <li>
-                      <a className='hover:text-[#f2bbbb]'
+                      <a className='hover:text-[#A6242F] hover:bg-gray-200'
                         onClick={() => navigate("/about")}>
                         WHO WE ARE
                       </a>
@@ -33,20 +33,20 @@ function Content() {
                   </ul>
                 </div>
                 <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#f2bbbb] hover:bg-transparent">
+                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200'">
                     OUR WORK
                   </div>
                   <ul tabIndex={0} className="menu dropdown-content w-max bg-[#A6242F]">
                     <li>
                       <a 
-                        className='hover:text-[#f2bbbb] hover:bg-inherit'
+                        className='hover:text-[#A6242F] hover:bg-gray-200'
                         onClick={() => navigate("/podcast")}>
                         PODCAST
                       </a>
                     </li>
                     <li>
                       <a 
-                        className='hover:text-[#f2bbbb] hover:bg-inherit'
+                        className='hover:text-[#A6242F] hover:bg-gray-200'
                         onClick={() => navigate("/publications")}>
                         PUBLICATIONS
                       </a>
@@ -54,13 +54,13 @@ function Content() {
                   </ul>
                 </div>
                 <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#f2bbbb] hover:bg-[#8C1616]"
+                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200"
                   onClick={() => navigate("/resources")}>
                     EVENTS
                   </div>
                 </div>
               
-                <button className="btn bg-transparent text-white text-lg border-none hover:text-[#f2bbbb] hover:bg-transparent lowercase" 
+                <button className="btn bg-transparent text-white text-lg border-none hover:text-[#A6242F] hover:bg-gray-200 lowercase" 
                   onClick={() => navigate("/resources")}>
                   RESOURCES
                 </button>
@@ -109,7 +109,7 @@ function Content() {
           </div>
         </div>
       </div>
-      <div className=" bg-[#8C1616] fixed bottom-0 right-0 text-white  w-full h-[60vh] pt-36 px-20 z-10 text-[#f2bbbb]">
+      <div className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-[60vh] pt-36 px-20 z-10 text-[#F2BBBB]">
         <div className="text-[2.75rem] md:text-[2.75rem] font-bold mb-14">
           Let's get to know each<br/> other <span className="italic">better</span>
         </div>
@@ -119,7 +119,7 @@ function Content() {
               <a href="https://www.instagram.com/encodecanada/"><i className="bi-instagram text-4xl font-thin"></i></a>
 
               <a className=' fill-current' href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text">
-              <svg svg className='w-10 fill-current text-[#f2bbbb]' xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 26.8v184H177z" clip-rule="evenodd"/></svg>
+              <svg svg className='w-10 fill-current' xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 26.8v184H177z" clip-rule="evenodd"/></svg>
               </a>
 
               <a href="https://twitter.com/EncodeCanada"><i className=" bi-twitter-x text-4xl"></i></a>
@@ -145,7 +145,7 @@ function Content() {
                 <input type="text" placeholder='email address' className='bg-transparent placeholder-[#ffffff64] ml-4'/>
               </div>
               <div className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full w-[10%] text-center text-[#8C1616]'>
-              <svg className='fill-current text-[#8C1616]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41Z" data-name="3-Arrow Right"/></svg>
+              <i className="bi-arrow-right"></i>
               </div>
             </div>
 
