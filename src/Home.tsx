@@ -12,9 +12,9 @@ function Content() {
         <nav id='' className="lowercase fixed top-0 right-0 m-4">
           <div className="flex items-end">
             <div className={'w-full lg:flex ${isOpen ? "block" : "hidden" '}>
-              <div className="text-white font-bold lowercase space-x-7 lg:space-x-12 ">
+              <div className="text-[#f2f2f2] font-bold lowercase space-x-7 lg:space-x-12 ">
                 <div className="dropdown dropdown-hover hover:bg-transparent">
-                  <div tabIndex={0} role="button" className="btn text-white text-lg   lowercase bg-inherit  hover:text-[#A6242F] border-none">
+                  <div tabIndex={0} role="button" className="btn text-[#f2f2f2] text-lg   lowercase bg-inherit  hover:text-[#A6242F] border-none focus:text-[#A6242F] focus:bg-gray-200">
                     ABOUT US
                   </div>
                   <ul tabIndex={0} className="menu dropdown-content rounded w-max bg-[#A6242F]">
@@ -33,7 +33,7 @@ function Content() {
                   </ul>
                 </div>
                 <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200'">
+                  <div tabIndex={0} role="button" className="btn text-[#f2f2f2] text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200 focus:text-[#A6242F] focus:bg-gray-200">
                     OUR WORK
                   </div>
                   <ul tabIndex={0} className="menu dropdown-content w-max bg-[#A6242F]">
@@ -54,13 +54,13 @@ function Content() {
                   </ul>
                 </div>
                 <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="btn text-white text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200"
+                  <div tabIndex={0} role="button" className="btn text-[#f2f2f2] text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200"
                   onClick={() => navigate("/resources")}>
                     EVENTS
                   </div>
                 </div>
               
-                <button className="btn bg-transparent text-white text-lg border-none hover:text-[#A6242F] hover:bg-gray-200 lowercase" 
+                <button className="btn bg-transparent text-[#f2f2f2] text-lg border-none hover:text-[#A6242F] hover:bg-gray-200 lowercase" 
                   onClick={() => navigate("/resources")}>
                   RESOURCES
                 </button>
@@ -72,23 +72,23 @@ function Content() {
           <div className=" flex items-center justify-center mt-[20%]">
             <img className=" flex w-[10rem] lg:w-[10rem] rotate-2 mr-10 mb-7" src={logo} />
             <div className="flex flex-col">
-              <p className="text-white text-5xl lg:text-6xl font-black text-center tracking-wider font-['Lato']">
+              <p className="text-[#f2f2f2] text-5xl lg:text-6xl font-black text-center tracking-wider font-['Lato']">
                 encode justice<br/>
                 <span className="relative w-[max-content] font-mono
                   before:absolute before:inset-0 before:animate-typewriter
                 before:bg-[#A6242F]
                   after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
-                after:bg-white">
+                after:bg-[#f2f2f2]">
                   canada
                 </span>
               </p>
-              <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo']">
+              <p className=" text-[#f2f2f2] text-lg lg:text-xl text-center md:mt-5 font-['KoHo']">
                 Fighting for Justice in the age of Artificial Intelligence.
               </p>
             </div>
           </div>
-          <div className="relative w-full text-white max-w-screen-md mt-[50vh] ">
-            <p className="text-white text-5xl md:text-5xl font-bold">
+          <div className="relative w-full text-[#f2f2f2] max-w-screen-md mt-[50vh] ">
+            <p className="text-[#f2f2f2] text-5xl md:text-5xl font-bold">
               We are the Canadian Chapter of Encode Justice
             </p>
             <p className="text-2xl leading-10">
@@ -97,24 +97,24 @@ function Content() {
           </div>
           <div className="flex justify-between">
             <span></span>
-            <p className="text-right text-white w-[50vw] mt-[60vh] text-2xl leading-10">
+            <p className="text-right text-[#f2f2f2] w-[50vw] mt-[60vh] text-2xl leading-10">
               <span className="text-4xl font-bold"> Our mission </span> is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
             </p>
           </div>
           <div className=" mt-[30vh]">
-            <div className="text-white text-5xl md:text-5xl font-bold text-center">
+            <div className="text-[#f2f2f2] text-5xl md:text-5xl font-bold text-center">
               We've Worked With
             </div>
             <div>partners</div>
           </div>
         </div>
       </div>
-      <div className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-[60vh] pt-36 px-20 z-10 text-[#F2BBBB]">
-        <div className="text-[2.75rem] md:text-[2.75rem] font-bold mb-14">
+      <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-[60vh] pt-36 px-20 z-10 text-[#F2BBBB]">
+        <div className="text-[2.75rem] md:text-[2.75rem] font-bold">
           Let's get to know each<br/> other <span className="italic">better</span>
         </div>
         <div className="flex">        
-          <div className=" w-[33.33%]">
+          <div className=" w-[33.33%] m-auto">
             <div className='flex space-x-[12%]'>
               <a href="https://www.instagram.com/encodecanada/"><i className="bi-instagram text-4xl font-thin"></i></a>
 
@@ -135,24 +135,20 @@ function Content() {
             </div>
             <a className="text-[1.35rem]" href="mailto:encodejusticecanada@gmail.com">encodejusticecanada@gmail.com</a>  
           </div>
-          <div className=" w-[33.33%] text-center m-auto text-[1.5rem]">
+          <div className=" w-[33.33%] text-center m-auto text-[1.75rem] pr-32">
             Join our <a href="">Slack!</a>
           </div>
-          <div className=' w-[33.33%] text-[1.5rem] '>
+          <div className=' w-[33.33%] text-[1.5rem] mb-20 px-7'>
             Subscribe to our newsletter to stay connected with the latest updates from the Encode Justice community.
-            <div className='flex space-x-4'>
-              <div className='border-[3px] rounded-full w-[80%] border-current text-white'>
-                <input type="text" placeholder='email address' className='bg-transparent placeholder-[#ffffff64] ml-4'/>
-              </div>
-              <div className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full w-[10%] text-center text-[#8C1616]'>
+            <div className='flex space-x-4 pt-4'>
+              <input type="text" placeholder='email address' className=' border-[#f2bbbb] bg-transparent placeholder-[#ffffff64] pl-4 rounded-full border-[3px] w-[80%] outline-none focus:border-white hover:border-white'/>
+              <div className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full w-[12.5%] text-center text-[#8C1616]'>
               <i className="bi-arrow-right"></i>
               </div>
             </div>
-
-            
           </div>
         </div>
-      </div>
+      </footer>
     </>
   )
 }
