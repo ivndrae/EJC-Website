@@ -78,7 +78,8 @@ window.addEventListener('scroll', () => {
   const currentScrollY = window.scrollY
   if(currentScrollY > lastScrollY){
     console.log('scroll Down')
-    navbar?.setAttribute("id", "hidden")
+    // navbar?.setAttribute("id", "hidden")
+    // navbar?.style.visibility = "hidden"
     // navbar?.classList.add('hidden')
   } else{
     console.log('scroll Up')
