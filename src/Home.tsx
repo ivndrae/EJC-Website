@@ -9,7 +9,7 @@ function Content() {
         <div className="flex flex-col md:flex-row items-center justify-center mb-2 gap-6 lg:gap-12">
           <img className="flex w-[11rem] lg:w-[15rem] animate-fadeIn rotate-2" src={logo} />
           <div className="flex flex-col">
-            <p className=" text-white text-5xl md:text-6xl lg:text-8xl italic font-black text-center tracking-widest font-['Lato'] p-2 animate-fadeIn">ENCODE JUSTICE<br />CANADA</p>
+            <p className=" text-white text-5xl md:text-6xl lg:text-8xl italic font-black text-center tracking-widest font-['Lato'] p-2 animate-fadeIn">ENCODE yessirr JUSTICE<br />CANADA</p>
             <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">Fighting for Justice in the age of Artificial Intelligence.</p>
           </div>
         </div>
