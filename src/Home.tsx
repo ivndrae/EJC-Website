@@ -9,10 +9,10 @@ function Content() {
     <>
       <div className= "bg-[#A6242F] absolute w-full h-[10rem]"></div>
       <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] p-7 flex flex-col select-none mb-[50vh] rounded-[5rem] relative z-20">
-        <nav id='' className="lowercase fixed top-0 right-0">
+        <nav id='' className="lowercase fixed top-0 right-0 m-4">
           <div className="flex items-end">
             <div className={'w-full lg:flex ${isOpen ? "block" : "hidden" '}>
-              <div className="text-white font-bold lowercase space-x-12 ">
+              <div className="text-white font-bold lowercase space-x-7 lg:space-x-12 ">
                 <div className="dropdown dropdown-hover hover:bg-transparent">
                   <div tabIndex={0} role="button" className="btn text-white text-lg   lowercase bg-inherit  hover:text-[#A6242F] border-none">
                     ABOUT US
@@ -103,7 +103,7 @@ function Content() {
           </div>
           <div className=" mt-[30vh]">
             <div className="text-white text-5xl md:text-5xl font-bold text-center">
-              Our Partners
+              We've Worked With
             </div>
             <div>partners</div>
           </div>
@@ -141,11 +141,11 @@ function Content() {
           <div className=' w-[33.33%] text-[1.5rem] '>
             Subscribe to our newsletter to stay connected with the latest updates from the Encode Justice community.
             <div className='flex space-x-4'>
-              <div className='border-[3px] rounded-full w-[80%] border-current'>
-                <input type="text" placeholder='Email Address' className='bg-transparent'/>
+              <div className='border-[3px] rounded-full w-[80%] border-current text-white'>
+                <input type="text" placeholder='email address' className='bg-transparent placeholder-[#ffffff64] ml-4'/>
               </div>
               <div className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full w-[10%] text-center text-[#8C1616]'>
-                -&gt;
+              <svg className='fill-current text-[#8C1616]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41Z" data-name="3-Arrow Right"/></svg>
               </div>
             </div>
 
