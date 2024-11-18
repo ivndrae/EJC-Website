@@ -87,22 +87,6 @@ function Newsletter() {
           </div>
         </div>
       </div>
-      <div className=" flex mt-5 ml-5 mb-2 text-white font-['Lato'] font-bold italic text-lg lg:text-3xl underline underline-offset-4 pt-5">
-        VIEW SOME OF OUR PAST NEWSLETTERS:
-      </div>
-      <div className=" font-mono font-bold md:text-xl text-center">
-        {Newsletters("VOL. 1 : AI Ethics Unleashed!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=aeda36a1a0")}
-        {Newsletters("VOL. 2 : Decoding AI Ethics!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=9e42e1d7fe")}
-        {Newsletters("VOL. 4 : New Horizons!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=81938f0327")}
-        {Newsletters("VOL. 5 : AI Innovation Dilemmas", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b")}
-        {Newsletters("VOL. 7 : EJC Wrapped", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=c58486726f")}
-        {Newsletters("VOL. 8 : Reflections, Resolutions, and Responsible Innovation", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=0c06d663b6")}
-        {Newsletters("VOL. 12 : Join our Slack Community!", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=ef1647673b")}
-        {Newsletters("VOL. 16 : Milestone Achievements", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=dbe0d4bf92")}
-        {Newsletters("VOL. 17: Spotlight on Policymakers", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=99cc27a1ea")}
-        {Newsletters("VOL. 19 : Total Eclipse", "https://us21.campaign-archive.com/?u=e794d084cccdb0c0cf51b425e&id=b148d0ccfe")}
-      </div>
-
     </Default>
   )
 }
