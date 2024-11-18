@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
 import { useState } from 'react';
 
+
 function Content() {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -95,6 +96,14 @@ function Content() {
               Encode Justice is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through political advocacy, community organizing, educational programming, and content creation.
             </p>
           </div>
+          <svg width="50%" height="200%" viewBox="0 0 100 100">
+            <path id="line" d="M10,50 L50,30 L80,60 L90,80 L50,90" stroke="white" stroke-width="1" fill="none" />
+            <animate attributeName="d" begin="0s" dur="50s" values="M10,50 L50,30 L80,60 L90,80 L50,90;
+            M10,48 L50,32 L80,62 L90,82 L50,92;
+            M10,52 L50,28 L80,58 L90,78 L50,88;
+            M10,50 L50,30 L80,60 L90,80 L50,90;
+            M10,50 L50,30 L80,60 L90,80 L50,90" repeatCount="indefinite" />
+          </svg>
           <div className="flex justify-between">
             <span></span>
             <p className="text-right text-white w-[50vw] mt-[60vh] text-2xl leading-10">
