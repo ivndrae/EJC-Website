@@ -16,8 +16,24 @@
 .animate-fadeIn {
   animation: fadeIn 3s;
 }
+.my-svg {
+  background-color: rgba(0, 0, 0, 0.1); /* Light background for contrast */
+  border: 1px solid #ccc; /* Optional border around the SVG */
+}
 
-.path {
+.line {
+  stroke: blue; /* Change stroke color */
+  stroke-width: 2; /* Change stroke width */
+  transition: stroke 0.3s ease; /* Smooth transition for hover effect */
+}
 
+.line:hover {
+  stroke: red; /* Change stroke color on hover */
+}
 
+/* Optional: Add styles for the SVG container */
+@media (max-width: 600px) {
+  .my-svg {
+      height: 150px; /* Adjust height for small screens */
+  }
 }
