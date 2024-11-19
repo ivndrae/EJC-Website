@@ -5,6 +5,7 @@ import './index.css';
 
 
 function Home() {
+  const navigate = useNavigate();
   return (
   <>
     {/* <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} /> */}
@@ -126,11 +127,11 @@ function Home() {
           <div className=" w-[33.33%] m-auto">
             <div className='flex space-x-[12%]'>
               <a href="https://www.instagram.com/encodecanada/"><i className="bi-instagram text-4xl font-thin hover:text-[#f2f2f2]"></i></a>
-              <a className=' fill-current hover:text-[#f2f2f2]' href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><svg className='w-10 fill-current' xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 26.8v184H177z" clip-rule="evenodd"/></svg></a>
+              <a className=' fill-current hover:text-[#f2f2f2]' href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><svg className='w-10 fill-current' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512"><path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 26.8v184H177z" clipRule="evenodd"/></svg></a>
               <a href="https://twitter.com/EncodeCanada"><i className=" bi-twitter-x text-4xl hover:text-[#f2f2f2]"></i></a>
               {/* <a href="https://www.facebook.com/encodejustice/"><i className="bi-facebook text-4xl"></i></a>
               <a href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><i className="bi-linkedin text-4xl"></i></a> */}
-              <a className="w-14 h-14" href="https://www.facebook.com/encodejustice/"><svg className='w-10 fill-current hover:text-[#f2f2f2]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xml:space="preserve"><path d="M81.7 165.1h34V305a5 5 0 0 0 5 5h57.6a5 5 0 0 0 5-5V165.8h39a5 5 0 0 0 5-4.5l6-51.5a5 5 0 0 0-5-5.5h-45V72c0-9.8 5.2-14.7 15.6-14.7h29.4a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5h-42.4c-7 0-31.5 1.4-50.8 19.2a53.3 53.3 0 0 0-17.7 47.3v37.8H81.7a5 5 0 0 0-5 5V160a5 5 0 0 0 5 5z"/></svg></a>
+              <a className="w-14 h-14" href="https://www.facebook.com/encodejustice/"><svg className='w-10 fill-current hover:text-[#f2f2f2]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xmlSpace="preserve"><path d="M81.7 165.1h34V305a5 5 0 0 0 5 5h57.6a5 5 0 0 0 5-5V165.8h39a5 5 0 0 0 5-4.5l6-51.5a5 5 0 0 0-5-5.5h-45V72c0-9.8 5.2-14.7 15.6-14.7h29.4a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5h-42.4c-7 0-31.5 1.4-50.8 19.2a53.3 53.3 0 0 0-17.7 47.3v37.8H81.7a5 5 0 0 0-5 5V160a5 5 0 0 0 5 5z"/></svg></a>
             </div>
             <a className="text-[1.35rem] hover:text-[#f2f2f2]" href="mailto:encodejusticecanada@gmail.com">encodejusticecanada@gmail.com</a>  
           </div>
