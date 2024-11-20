@@ -6,87 +6,55 @@ import { useState } from 'react';
 
 function Home() {
   const navigate = useNavigate();
+  const [isOpenHamburg, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   return (
   <>
-    <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
+    <input id="hamburg" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpenHamburg(e.target.checked) }} />
+    <input id="about_us_menu" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
+    
       <div className= "bg-[#A6242F] absolute w-full h-[10rem]"></div>
       <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none mb-[50vh] rounded-[5rem] relative z-20 overflow-x-hidden">
         <nav id='' className="lowercase absolute top-0 w-full p-7 sm:flex">
           <div className='flex justify-between'>
             <span>logo?</span>
             <div>
-              <label htmlFor='my-drawer-4' className='text-[#f2f2f2bb] text-4xl hover:text-white focus:text-white focus:outline-none sm:hidden'><i className="bi bi-list "></i></label>
+              <label htmlFor='hamburg' className='text-[#f2f2f2bb] text-4xl hover:text-white focus:text-white focus:outline-none sm:hidden'><i className="bi bi-list "></i></label>
             </div>
           </div>
-          
-          <div className={`text-[#f2f2f2bb] text-2xl flex justify-end py-3 absolute right-[-50px]  ${isOpen ? 'block' : 'hidden'} sm:flex sm:right-0`}>
-            <div className='w-full sm:flex'>
-              <a href="" className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-5 '>about us</a>
-              <a href="" className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-5 '>our work</a>
-              <a href="" className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-5 '>events</a>
-              <a href="" className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-5 '>resources</a>
+          <div className={`text-[#f2f2f2bb] text-2xl flex justify-end py-3 absolute right-[-50px]  ${isOpenHamburg ? 'block duration-700' : 'translate-x-[100%] duration-700'} sm:flex sm:right-0 sm:translate-x-0 sm:duration-0 z-50`}>
+            <div className='w-full sm:flex bg-[#8C1616]'>
+              <div className='relative sm:px-12'>
+
+                <label htmlFor='about_us_menu' className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-0 hover:cursor-pointer'>about us</label>
+                <div className={`sm:absolute sm:px-0 ${isOpen ? 'block' : 'hidden'}`}>
+                  {/* <label htmlFor='about_us_menu' className='fixed bg-green-200 h-full w-full right-0 left-0 top-0 bottom-0'></label> */}
+                  <div className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-0 hover:cursor-pointer ' onClick={() => navigate("/about")}>who we are</div>
+                  <div className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-0 hover:cursor-pointer' onClick={() => navigate("/team")}>meet our team</div>
+                </div>
+              </div>
+              
+              <div className='relative sm:px-12'>
+                <div className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-0 hover:cursor-pointer'>our work</div>
+                <div className='sm:absolute'>
+                  <div className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-0 hover:cursor-pointer' onClick={() => navigate("/podcast")}>podcast</div>
+                  <div className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-0 hover:cursor-pointer' onClick={() => navigate("/publications")}>publications</div>
+                </div>
+              </div>
+              
+              
+              <div className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-12 hover:cursor-pointer' onClick={() => navigate("/events")}>events</div>
+              <div className='block hover:bg-[#8C1616]  hover:text-white focus:text-white focus:outline-none px-10 pr-36 pb-2 sm:px-12 hover:cursor-pointer' onClick={() => navigate("/resources")}>resources</div>
+              
             </div>
           </div>
-            {/* <div className=" text-[#f2f2f2] font-bold lowercase space-x-7 lg:space-x-12 ">
-              <div className="dropdown dropdown-hover hover:bg-transparent">
-                <div tabIndex={0} role="button" className="block btn text-[#f2f2f2] text-lg   lowercase bg-inherit  hover:text-[#A6242F] border-none focus:text-[#A6242F] focus:bg-gray-200">
-                  ABOUT US
-                </div>
-                <ul tabIndex={0} className="menu dropdown-content rounded w-max bg-[#A6242F]">
-                  <li>
-                    <a className='hover:text-[#A6242F] hover:bg-gray-200'
-                      onClick={() => navigate("/about")}>
-                      WHO WE ARE
-                    </a>
-                  </li>
-                  <li>
-                    <a className='hover:text-[#A6242F] hover:bg-gray-200'
-                      onClick={() => navigate("/team")}>
-                      MEET OUR TEAM
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="dropdown dropdown-hover px-6">
-                <div tabIndex={0} role="button" className="btn text-[#f2f2f2] text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200 focus:text-[#A6242F] focus:bg-gray-200 block">
-                  OUR WORK
-                </div>
-                <ul tabIndex={0} className="menu dropdown-content w-max bg-[#A6242F]">
-                  <li>
-                    <a 
-                      className='hover:text-[#A6242F] hover:bg-gray-200'
-                      onClick={() => navigate("/podcast")}>
-                      PODCAST
-                    </a>
-                  </li>
-                  <li>
-                    <a 
-                      className='hover:text-[#A6242F] hover:bg-gray-200'
-                      onClick={() => navigate("/publications")}>
-                      PUBLICATIONS
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="dropdown dropdown-hover px-6">
-                <div tabIndex={0} role="button" className="block btn text-[#f2f2f2] text-lg bg-transparent border-none lowercase hover:text-[#A6242F] hover:bg-gray-200"
-                onClick={() => navigate("/resources")}>
-                  EVENTS
-                </div>
-              </div>
-            
-              <button className="block btn bg-transparent text-[#f2f2f2] text-lg border-none hover:text-[#A6242F] hover:bg-gray-200 lowercase" 
-                onClick={() => navigate("/resources")}>
-                RESOURCES
-              </button>
-            </div> */}
         </nav>
-        <div className=" flex-col flex-1 container mx-auto p-5 justify-center">
-          <div className=" flex items-center justify-center mt-[20%]">
-            <img className=" flex w-[10rem] lg:w-[10rem] rotate-2 mr-10 mb-7" src={logo} />
+
+        <div className=" flex-col container mx-auto p-5 justify-center">
+          <div className="sm:flex items-center justify-center mt-[20vh]">
+            <img className="w-[10rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
             <div className="flex flex-col">
-              <p className="text-[#f2f2f2] text-5xl lg:text-6xl font-black text-center tracking-wider font-['Lato']">
+              <p className="text-[#f2f2f2] text-5xl font-black text-center tracking-wider font-['Lato']">
                 encode justice<br/>
                 <span className="relative w-[max-content] font-mono
                   before:absolute before:inset-0 before:animate-typewriter
@@ -96,27 +64,27 @@ function Home() {
                   canada
                 </span>
               </p>
-              <p className=" text-[#f2f2f2] text-lg lg:text-xl text-center md:mt-5 font-['KoHo']">
+              <p className=" text-[#f2f2f2] text-lg text-center mt-5 font-['KoHo']">
                 Fighting for Justice in the age of Artificial Intelligence.
               </p>
             </div>
           </div>
           <div className="relative w-full text-[#f2f2f2] max-w-screen-md mt-[50vh] ">
-            <p className="text-[#f2f2f2] text-5xl md:text-5xl font-bold">
+            <p className="text-[#f2f2f2] text-[2.5rem] leading-none sm:text-5xl font-bold">
               We are the Canadian Chapter of Encode Justice
             </p>
             <p className="text-2xl leading-10">
               Encode Justice is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through political advocacy, community organizing, educational programming, and content creation.
             </p>
           </div>
-          <div className="flex justify-between">
+          <div className="flex sm:justify-between">
             <span></span>
-            <p className="text-right text-[#f2f2f2] w-[50vw] mt-[60vh] text-2xl leading-10">
-              <span className="text-4xl font-bold"> Our mission </span> is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
+            <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10">
+              <span className="text-[2rem] sm:text-4xl font-bold"> Our mission </span> is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
             </p>
           </div>
           <div className=" mt-[30vh]">
-            <div className="text-[#f2f2f2] text-5xl md:text-5xl font-bold text-center">
+            <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center">
               We've Worked With
             </div>
             <div>partners</div>
@@ -124,7 +92,7 @@ function Home() {
         </div>
       </div>
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-[60vh] pt-36 px-20 z-10 text-[#F2BBBB]">
-        <div className="text-[2.75rem] md:text-[2.75rem] font-bold">Let's get to know each<br/> other <span className="italic">better</span></div>
+        <div className="text-[2.75rem] font-bold">Let's get to know each<br/> other <span className="italic">better</span></div>
         <div className="flex">        
           <div className=" w-[33.33%] m-auto">
             <div className='flex space-x-[12%]'>
