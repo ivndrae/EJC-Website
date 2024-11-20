@@ -1,24 +1,26 @@
 import { useNavigate } from 'react-router-dom';
 import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
-import { useState } from 'react';
 import './index.css';
+import { useState } from 'react';
 
 
 function Home() {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
   return (
   <>
-    {/* <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} /> */}
+    <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
       <div className= "bg-[#A6242F] absolute w-full h-[10rem]"></div>
       <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none mb-[50vh] rounded-[5rem] relative z-20 overflow-x-hidden">
         <nav id='' className="lowercase absolute top-0 w-full p-7">
           <div className='flex justify-between'>
             <span></span>
             <div>
-              <button className='text-[#f2f2f2bb] text-4xl hover:text-white focus:text-white focus:outline-none '><i className="bi bi-list "></i></button>
+              <label htmlFor='my-drawer-4' className='text-[#f2f2f2bb] text-4xl hover:text-white focus:text-white focus:outline-none '><i className="bi bi-list "></i></label>
             </div>
           </div>
-          <div className={"text-white text-2xl flex justify-end py-3 absolute right-[-50px] ${isOpen ? 'hidden' : 'block'}"}>
+          
+          <div className={`text-white text-2xl flex justify-end py-3 absolute right-[-50px] ${isOpen ? 'block' : 'hidden'}`}>
             <div className='w-full'>
               <a href="" className='block hover:bg-[#8C1616] px-10 pr-36 pb-2'>about us</a>
               <a href="" className='block hover:bg-[#8C1616] px-10 pr-36 pb-2'>our work</a>
