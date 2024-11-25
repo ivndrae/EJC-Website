@@ -1,3 +1,9 @@
 - navbar animation only works when u edit tailwind (ex.: change smthn, then undo the change)
-
+- back to top
+- hamburger menu sticky
+-padding paragraphs, sides and titles
+- 2x emails y padding
+on-scroll sections
+-logo bigger
+-name section for newsletter
 - we should/could make our own resources. we make a vid on what ai is, etc.
