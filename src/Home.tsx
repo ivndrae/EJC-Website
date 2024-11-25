@@ -3,6 +3,9 @@ import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
 import './index.css';
 import { useState } from 'react';
 
+const backToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
 function Home() {
   const navigate = useNavigate();
@@ -44,7 +47,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <label htmlFor="my-drawer-4" className="fixed flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border-none md:hidden selection:outline-none">
+        <label htmlFor="my-drawer-4" className="absolute flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border-none md:hidden selection:outline-none">
           <svg
             className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
             viewBox="0 0 24 24"
@@ -53,7 +56,7 @@ function Home() {
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
           <svg
-            className={`fill-white h-8 w-8 bg-transparent ${isOpen ? "block" : "hidden"}`}
+            className={`fill-white h-8 w-8 bg-transparent ${isOpen ? "block fixed" : "hidden"}`}
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -91,9 +94,9 @@ function Home() {
 
         <div className=" flex-col container mx-auto p-5 justify-center sm:pt-[10vh]">
           <div className="sm:flex items-center justify-center mt-[20vh]">
-            <img className="w-[10rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
+            <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
             <div className="flex flex-col">
-              <p className="text-[#f2f2f2] text-5xl font-black text-center tracking-wider font-['Lato']">
+              <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
                 encode justice<br/>
                 <span className="relative w-[max-content] font-mono
                   before:absolute before:inset-0 before:animate-typewriter
@@ -103,7 +106,7 @@ function Home() {
                   canada
                 </span>
               </p>
-              <p className=" text-[#f2f2f2] text-lg text-center mt-5 font-['KoHo']">
+              <p className=" text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
                 Fighting for Justice in the age of Artificial Intelligence.
               </p>
             </div>
@@ -127,6 +130,9 @@ function Home() {
               We've Worked With
             </div>
             <div>partners</div>
+          </div>
+          <div onClick={backToTop} className='border-4 border-green-200 hover:cursor-pointer text-white text-center '>
+            <div className='border-4 fill-white h-10'><svg className='absolute border-4 border-yellow-200 mx-auto w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500"><path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/></svg></div>
           </div>
         </div>
       </div>
