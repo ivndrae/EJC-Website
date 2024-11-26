@@ -2,6 +2,13 @@ import { useNavigate } from 'react-router-dom';
 import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
 import { useState } from 'react';
 import './index.css';
+import maieiLogo from '/src/assets/logos/partners/MAIEI.png';
+import mcgillAI from '/src/assets/logos/partners/mcgillAI.png'; 
+import mila from '/src/assets/logos/partners/mila (black).png'; 
+import Mutek from '/src/assets/logos/partners/MUTEK.png';
+import womInRob from '/src/assets/logos/partners/Women in Robotics.png'; 
+import Mcgill from '/src/assets/logos/partners/Mcgill.png';
+import SACS from '/src/assets/logos/partners/SACS.png'; 
 
 
 function Home() {
@@ -120,7 +127,46 @@ function Home() {
             <div className="text-[#f2f2f2] text-5xl md:text-5xl font-bold text-center">
               We've Worked With
             </div>
-            <div>partners</div>
+            <div>partners
+            <div className="grid grid-cols-4 gap-x-6 gap-y-4">
+                <img src={maieiLogo} 
+                alt="MAIEI Logo" 
+                style={{ width: "300px", height: "auto", marginTop: "10px" }} 
+                className="  hover:scale-125 transition-transform duration-500" />
+
+
+                <img src={mcgillAI} 
+                alt="McGill AI Society Logo" 
+                style={{ width: "300px", height: "auto", marginTop: "30px", marginLeft: "30px" }} 
+                className="  hover:scale-125 transition-transform duration-500" />
+
+                <img src={mila} 
+                alt="Mila Logo in black" 
+                style={{ width: "300px", height: "auto", marginTop: "10px" }} 
+                className=" hover:scale-125 transition-transform duration-500" />
+                
+                <img src={Mutek} 
+                alt="Mutek Logo" 
+                style={{ width: "300px", height: "auto", marginTop: "10px" }} 
+                className=" hover:scale-125 transition-transform duration-500" />
+
+                <img src={womInRob} 
+                alt="Women In Robotics Logo" 
+                style={{ width: "300px", height: "auto", marginTop: "10px" }} 
+                className="  hover:scale-125 transition-transform duration-500" />
+
+                <img src={Mcgill} 
+                alt="McGill University Logo" 
+                style={{ width: "300px", height: "auto", marginTop: "10px" }} 
+                className=" hover:scale-125 transition-transform duration-500" />
+
+                <img src={SACS} 
+                alt="SACS logo" 
+                style={{ width: "300px", height: "auto", marginTop: "10px" }} 
+                className="hover:scale-125 transition-transform duration-500" />
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
