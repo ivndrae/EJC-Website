@@ -1,11 +1,27 @@
 import { useNavigate } from 'react-router-dom';
+import { FormEvent, useState } from 'react';
 import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
 import './index.css';
-import { useState } from 'react';
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxr7wlZr-Gwb6kGEHshGmrwN5fNxhDBGrhK4aTWGTIO6_EnHQGGa_kEcJmxKDuuVnuHHg/exec'
 
 const backToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+function onFormSubmit(event: FormEvent){
+  event.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(event.target as HTMLFormElement) })
+      .then(response => {
+        if (response.ok) {
+          alert("Thank you! Your are now subscribed to EJC's Newsletter.")
+          window.location.reload();
+        } else {
+          alert(`Could not submit form data: ${response.status}`)
+        }
+      })
+      .catch(error => console.error('Error!', error.message))
+}
 
 function Home() {
   const navigate = useNavigate();
@@ -131,7 +147,7 @@ function Home() {
             </div>
             <div>partners</div>
           </div>
-          <div onClick={backToTop} className='hover:cursor-pointer text-[#f2bbbb] hover:text-white text-center h-20 w-56 m-auto mt-12'>
+          <div onClick={backToTop} className='duration-500 hover:cursor-pointer text-[#f2bbbb] hover:text-white text-center h-20 w-56 m-auto mt-12'>
           <div className='relative fill-current h-10 flex justify-center text-lg'>back to top<svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500"><path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/></svg></div>
           </div>
         </div>
@@ -142,23 +158,28 @@ function Home() {
           <div className=" space-y-7 flex flex-col sm:flex-row">        
             <div className="md:w-[33.33%] mt-[5%] items-center">
               <div className='flex space-x-[12%] text-[2rem] md:text-4xl items-center justify-center sm:justify-start'>
-                <a href="https://www.instagram.com/encodecanada/"><i className="bi-instagram font-thin hover:text-[#f2f2f2]"></i></a>
-                <a className=' fill-current hover:text-[#f2f2f2]' href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><svg className='w-9 md:w-10 fill-current' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512"><path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 26.8v184H177z" clipRule="evenodd"/></svg></a>
-                <a href="https://twitter.com/EncodeCanada"><i className=" bi-twitter-x hover:text-[#f2f2f2]"></i></a>
+                <a href="https://www.instagram.com/encodecanada/"><i className="bi-instagram font-thin hover:text-[#f2f2f2] duration-300 "></i></a>
+                <a className=' fill-current hover:text-[#f2f2f2] duration-300' href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><svg className='w-9 md:w-10 fill-current' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512"><path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 26.8v184H177z" clipRule="evenodd"/></svg></a>
+                <a href="https://twitter.com/EncodeCanada"><i className=" bi-twitter-x hover:text-[#f2f2f2] duration-300"></i></a>
                 {/* <a href="https://www.facebook.com/encodejustice/"><i className="bi-facebook text-4xl"></i></a>
                 <a href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><i className="bi-linkedin text-4xl"></i></a> */}
-                <a className=" w-9 md:w-10" href="https://www.facebook.com/encodejustice/"><svg className='w-10 fill-current hover:text-[#f2f2f2]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xmlSpace="preserve"><path d="M81.7 165.1h34V305a5 5 0 0 0 5 5h57.6a5 5 0 0 0 5-5V165.8h39a5 5 0 0 0 5-4.5l6-51.5a5 5 0 0 0-5-5.5h-45V72c0-9.8 5.2-14.7 15.6-14.7h29.4a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5h-42.4c-7 0-31.5 1.4-50.8 19.2a53.3 53.3 0 0 0-17.7 47.3v37.8H81.7a5 5 0 0 0-5 5V160a5 5 0 0 0 5 5z"/></svg></a>
+                <a className=" w-9 md:w-10" href="https://www.facebook.com/encodejustice/"><svg className='w-10 fill-current hover:text-[#f2f2f2] duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xmlSpace="preserve"><path d="M81.7 165.1h34V305a5 5 0 0 0 5 5h57.6a5 5 0 0 0 5-5V165.8h39a5 5 0 0 0 5-4.5l6-51.5a5 5 0 0 0-5-5.5h-45V72c0-9.8 5.2-14.7 15.6-14.7h29.4a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5h-42.4c-7 0-31.5 1.4-50.8 19.2a53.3 53.3 0 0 0-17.7 47.3v37.8H81.7a5 5 0 0 0-5 5V160a5 5 0 0 0 5 5z"/></svg></a>
               </div>
-              <a className="text-[1.2rem] md:text-[1.35rem] hover:text-[#f2f2f2] flex text-center" href="mailto:encodejusticecanada@gmail.com"><div className='m-auto sm:m-0'>encodejusticecanada@gmail.com</div></a>  
+              <a className="text-[1.2rem] md:text-[1.35rem] hover:text-[#f2f2f2] flex text-center duration-300" href="mailto:encodejusticecanada@gmail.com"><div className='m-auto sm:m-0'>encodejusticecanada@gmail.com</div></a>  
             </div>
-            <div className="md:w-[33.33%] text-center md:m-auto text-[1.35rem] md:text-[1.75rem] md:pr-30 md:py-5">Join our <a className="hover:text-[#f2f2f2] hover:underline" href="https://join.slack.com/t/encode-canada/shared_invite/zt-2qi3jy5si-trHbvtoDuc_r2ybjdmypAg" target='_blank'><i class="bi bi-slack"></i> Slack! </a></div>
-            <div className=' md:w-[33.33%] text-[1.25rem] md:text-[1.5rem] leading-6 px-3 md:px-7 mr-10'>
+            <div className="md:w-[33.33%] text-center md:m-auto text-[1.35rem] md:text-[1.75rem] md:pr-30 md:py-5">Join our <a className="hover:text-[#f2f2f2] hover:underline duration-300" href="https://join.slack.com/t/encode-canada/shared_invite/zt-2qi3jy5si-trHbvtoDuc_r2ybjdmypAg" target='_blank'><i class="bi bi-slack"></i> Slack! </a></div>
+            
+            <form method="post" action="" name="contact-form" onSubmit={onFormSubmit} className=' md:w-[33.33%] text-[1.25rem] md:text-[1.5rem] leading-6 px-3 md:px-7 mr-10'>
               Subscribe to our newsletter to stay connected with the latest updates from the Encode Justice community.
-              <div className='flex space-x-4 pt-4'>
-                <input type="text" placeholder='email address' className=' border-[#f2bbbb] bg-transparent placeholder-[#ffffff64] pl-4 rounded-full border-[3px] w-[80%] outline-none focus:border-white hover:border-white'/>
-                <div className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full w-[12.5%] text-center text-[#8C1616] hover:cursor-pointer hover:bg-[#f2f2f2] hover:border-[#f2f2f2]' onClick={() => navigate("/newsletter")}><i className="bi-arrow-right"></i></div>
+              <div className='flex space-x-4 pt-4 items-end'>
+                <div className='rounded-[20px] border-[3px] border-[#f2bbbb] hover:border-white duration-300'>
+                  <input name="Name" type="text" placeholder='name' className='bg-transparent placeholder-[#ffffff64] hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white hover:border-white text-white'/>
+                  <hr className='w-[90%] m-auto border-inherit border-[1.5px]' />
+                  <input name="Email" type="text" placeholder='email address' className='bg-transparent placeholder-[#ffffff64] hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white hover:border-white text-white'/>
+                </div>
+                <button type="submit" id="submit" className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full w-[12.5%] h-9 text-center text-[#8C1616] hover:cursor-pointer hover:bg-[#f2f2f2] hover:border-[#f2f2f2] duration-300 '><i className="bi-arrow-right"></i></button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </footer>
