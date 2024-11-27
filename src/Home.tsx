@@ -17,7 +17,7 @@ function Home() {
     <input id="about_us_menu" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
     
       <div className= "bg-[#A6242F] absolute w-full h-[10rem] z-20"></div>
-      <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none mb-[60vh] sm:mb-[50vh] rounded-[5rem] relative z-20 overflow-x-hidden">
+      <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none mb-[60vh] sm:mb-[50vh] rounded-[5rem] relative z-20 overflow-hidden">
         <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked); } } />
       <nav className="drawer-content">
@@ -131,8 +131,8 @@ function Home() {
             </div>
             <div>partners</div>
           </div>
-          <div onClick={backToTop} className='border-4 border-green-200 hover:cursor-pointer text-white text-center '>
-            <div className='border-4 fill-white h-10'><svg className='absolute border-4 border-yellow-200 mx-auto w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500"><path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/></svg></div>
+          <div onClick={backToTop} className='hover:cursor-pointer text-[#f2bbbb] hover:text-white text-center h-20 w-56 m-auto mt-12'>
+          <div className='relative fill-current h-10 flex justify-center text-lg'>back to top<svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500"><path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/></svg></div>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ function Home() {
               </div>
               <a className="text-[1.2rem] md:text-[1.35rem] hover:text-[#f2f2f2] flex text-center" href="mailto:encodejusticecanada@gmail.com"><div className='m-auto sm:m-0'>encodejusticecanada@gmail.com</div></a>  
             </div>
-            <div className="md:w-[33.33%] text-center md:m-auto text-[1.35rem] md:text-[1.75rem] md:pr-30 md:py-5">Join our <a className="hover:text-[#f2f2f2] hover:underline" href="">Slack!</a></div>
+            <div className="md:w-[33.33%] text-center md:m-auto text-[1.35rem] md:text-[1.75rem] md:pr-30 md:py-5">Join our <a className="hover:text-[#f2f2f2] hover:underline" href="https://join.slack.com/t/encode-canada/shared_invite/zt-2qi3jy5si-trHbvtoDuc_r2ybjdmypAg" target='_blank'><i class="bi bi-slack"></i> Slack! </a></div>
             <div className=' md:w-[33.33%] text-[1.25rem] md:text-[1.5rem] leading-6 px-3 md:px-7 mr-10'>
               Subscribe to our newsletter to stay connected with the latest updates from the Encode Justice community.
               <div className='flex space-x-4 pt-4'>

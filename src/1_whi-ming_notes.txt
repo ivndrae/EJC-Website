@@ -4,3 +4,4 @@
 - on-scroll sections
 - name section for newsletter
 - we should/could make our own resources. we make a vid on what ai is, etc.
+-slack logo
