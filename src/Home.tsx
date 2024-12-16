@@ -31,9 +31,9 @@ function Home() {
   <>
     <input id="hamburg" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpenHamburg(e.target.checked) }} />
     <input id="about_us_menu" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
-    
+    <div className='relative'>
       <div className= "bg-[#A6242F] absolute w-full h-[10rem] z-20"></div>
-      <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none mb-[70vh] sm:mb-[50vh] rounded-[5rem] relative z-20 overflow-hidden px-5 md:px-20">
+      <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none rounded-[5rem] relative z-20 overflow-hidden px-5 md:px-20">
         <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked); } } />
       <nav className="drawer-content">
@@ -109,7 +109,7 @@ function Home() {
     </div>
 
         <div className=" flex-col container mx-auto p-5 justify-center sm:pt-[10vh]">
-          <div className="sm:flex items-center justify-center mt-[20vh]">
+          <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20">
             <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
             <div className="flex flex-col">
               <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
@@ -127,7 +127,7 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className="w-full text-[#f2f2f2] max-w-screen-md mt-[50vh] ">
+          <div className="w-full text-[#f2f2f2] max-w-screen-md">
             <p className="text-[#f2f2f2] text-[2.5rem] leading-none sm:text-5xl font-bold">
               We are the Canadian Chapter of Encode Justice
             </p>
@@ -151,6 +151,8 @@ function Home() {
           <div className='relative fill-current h-10 flex justify-center text-lg'>back to top<svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500"><path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/></svg></div>
           </div>
         </div>
+      </div>
+      <div className='h-[600px] sm:h-[500px]'></div>
       </div>
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full md:pt-36 md:px-20 z-10 text-[#F2BBBB]">
         <div className='absolute bottom-0 mb-16 md:mb-12'>

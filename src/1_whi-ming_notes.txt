@@ -1,5 +1,4 @@
 - footer
-- fix sectioning (onload logo fills whole screen, on different heights footer looks good)
 - pictures in between paragraphs
 
 - we should/could make our own resources. we make a vid on what ai is, etc.
