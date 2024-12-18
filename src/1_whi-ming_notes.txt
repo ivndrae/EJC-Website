@@ -1,4 +1,3 @@
-- footer
 - pictures in between paragraphs
 
 - we should/could make our own resources. we make a vid on what ai is, etc.

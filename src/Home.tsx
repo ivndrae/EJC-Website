@@ -159,8 +159,8 @@ function Home() {
         <div className='absolute bottom-0 mb-[100px] lg:mb-[100px] w-full px-[30px] lg:px-[200px]'>
         <img className="absolute rotate-2 opacity-[0.07] min-w-[1250px] -right-[500px] top-[325px] lg:min-w-[2000px] lg:-left-[200px] lg:top-[100px]" src={logo} />
           <div className='relative'>
-          <div className="md:tracking-wider leading-8 md:leading-[3rem] text-[1.95rem] md:text-[3rem] font-bold mb-[75px] lg:mb-[50px]">Let's get to know each<br/> other <span className="italic">better</span></div>
-          <div className="space-y-[55px] lg:space-y-7 flex flex-col lg:flex-row  justify-between w-full">        
+          <div className="md:tracking-wider leading-8 md:leading-[3rem] text-[1.95rem] md:text-[3rem] font-bold mb-[75px]">Let's get to know each<br/> other <span className="italic">better</span></div>
+          <div className="space-y-[55px] lg:space-y-[0px] flex flex-col lg:flex-row  justify-between w-full">        
             <div className="flex flex-col justify-between space-y-[10px]">
               <div className='flex space-x-[12%] text-[2rem] lg:text-4xl'>
                 <a href="https://www.instagram.com/encodecanada/"><i className="bi-instagram font-thin hover:text-[#f2f2f2] duration-300 "></i></a>
