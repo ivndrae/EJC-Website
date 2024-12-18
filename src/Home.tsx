@@ -113,7 +113,7 @@ function Home() {
             <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
             <div className="flex flex-col">
               <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
-                encode justice<br/>
+                encode<br/>
                 <span className="relative w-[max-content] font-mono
                   before:absolute before:inset-0 before:animate-typewriter
                 before:bg-[#A6242F]
@@ -129,11 +129,11 @@ function Home() {
           </div>
           <div className="w-full text-[#f2f2f2] max-w-screen-md">
             <p className="text-[#f2f2f2] text-[2.5rem] leading-none sm:text-5xl font-bold">
-              We are the Canadian Chapter of Encode Justice
+              We are the Canadian Chapter of Encode 
             </p>
             <br />
             <p className="text-2xl leading-10">
-              Encode Justice is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through political advocacy, community organizing, educational programming, and content creation.
+              Encode is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through political advocacy, community organizing, educational programming, and content creation.
             </p>
           </div>
           <div className="flex sm:justify-between">
@@ -172,7 +172,7 @@ function Home() {
             <div className="md:w-[33.33%] text-center md:m-auto text-[1.35rem] md:text-[1.75rem] md:pr-30 md:py-5">Join our <a className="hover:text-[#f2f2f2] hover:underline duration-300" href="https://join.slack.com/t/encode-canada/shared_invite/zt-2qi3jy5si-trHbvtoDuc_r2ybjdmypAg" target='_blank'><i class="bi bi-slack"></i> Slack! </a></div>
             
             <form method="post" action="" name="contact-form" onSubmit={onFormSubmit} className=' md:w-[33.33%] text-[1.25rem] md:text-[1.5rem] leading-6 px-10 md:px-7 mr-10 w-full'>
-              Subscribe to our newsletter to stay connected with the latest updates from the Encode Justice community.
+              Subscribe to our newsletter to stay connected with the latest updates from the Encode community.
               <div className='flex space-x-4 pt-4 items-end mt-3'>
                 <div className='rounded-[20px] border-[3px] border-[#f2bbbb] hover:border-white duration-300'>
                   <input name="Name" type="text" placeholder='name' className='bg-transparent placeholder-[#ffffff64] hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white hover:border-white text-white'/>
