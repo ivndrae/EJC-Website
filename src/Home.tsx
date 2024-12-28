@@ -129,7 +129,7 @@ function Home() {
           </div>
           <div className="w-full text-[#f2f2f2] max-w-screen-md">
             <p className="text-[#f2f2f2] text-[2.5rem] leading-none sm:text-5xl font-bold">
-              We are the Canadian Chapter of Encode 
+              We are the Canadian Chapter <br/> of Encode 
             </p>
             <br />
             <p className="text-2xl leading-10">
@@ -183,12 +183,16 @@ function Home() {
             <form method="post" action="" name="contact-form" onSubmit={onFormSubmit} className=' md:w-[400px] text-[1.25rem] md:text-[1.5rem] leading-6'>
               Subscribe to our newsletter to stay <br className='md:hidden'/> connected with the latest updates <br className='md:hidden'/> from the Encode community.
               <div className='flex space-x-4 mt-7'>
-                <div className='rounded-[20px] border-[3px] border-[#f2bbbb] hover:border-white duration-300'>
-                  <input name="Name" type="text" placeholder='name' className='bg-transparent placeholder-[#ffffff64] hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white hover:border-white text-white'/>
-                  <hr className='w-[90%] m-auto border-inherit border-[1.5px]' />
-                  <input name="Email" type="text" placeholder='email address' className='bg-transparent placeholder-[#ffffff64] hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white hover:border-white text-white'/>
+                <div className='space-y-4'>
+                  <input name="Name" type="text" placeholder='name' className='rounded-[10px] border-[3px] border-[#f2bbbb] hover:border-white duration-300 bg-transparent placeholder-[#ffffff64] hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white hover:border-white text-white'/>
+                  
+                  <input name="Email" type="text" placeholder='email address' className='rounded-[10px] border-[3px] border-[#f2bbbb] hover:border-white duration-300 bg-transparent placeholder-[#ffffff64] hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white hover:border-white text-white'/>
                 </div>
-                <button type="submit" id="submit" className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full min-w-[60px] h-9 text-center text-[#8C1616] hover:cursor-pointer hover:bg-[#f2f2f2] hover:border-[#f2f2f2] duration-300'><i className="bi-arrow-right"></i></button>
+                <div className='flex flex-col justify-between'>
+                  <span></span>
+                  <button type="submit" id="submit" className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full min-w-[60px] h-9 text-center text-[#8C1616] hover:cursor-pointer hover:bg-[#f2f2f2] hover:border-[#f2f2f2] duration-300'><i className="bi-arrow-right"></i></button>
+                </div>
+                
               </div>
             </form>
           </div>
