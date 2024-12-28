@@ -12,24 +12,26 @@ const backToTop = () => {
 
 
 
-function onFormSubmit(event: FormEvent){
-  event.preventDefault();
-  fetch(scriptURL, { method: 'POST', body: new FormData(event.target as HTMLFormElement) })
-      .then(response => {
-        if (response.ok) {
-          alert("Thank you! Your are now subscribed to EJC's Newsletter.")
-          window.location.reload();
-        } else {
-          alert(`Could not submit form data: ${response.status}`)
-        }
-      })
-      .catch(error => console.error('Error!', error.message))
-}
 
 function Home() {
   const navigate = useNavigate();
   const [isOpenHamburg, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  function onFormSubmit(event: FormEvent){
+    event.preventDefault();
+    setIsSubmitting(true);
+    fetch(scriptURL, { method: 'POST', body: new FormData(event.target as HTMLFormElement) })
+        .then(response => {
+          if (response.ok) {
+            alert("Thank you! Your are now subscribed to EJC's Newsletter.")
+            window.location.reload();
+          } else {
+            alert(`Could not submit form data: ${response.status}`)
+          }
+        })
+        .catch(error => console.error('Error!', error.message))
+  }
   return (
   <>
     <input id="hamburg" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpenHamburg(e.target.checked) }} />
@@ -198,7 +200,15 @@ function Home() {
                   </div>
                   <div className='flex flex-col justify-between'>
                     <span></span>
-                    <button type="submit" id="submit" className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full min-w-[60px] h-9 text-center text-[#8C1616] hover:cursor-pointer hover:bg-[#f2f2f2] hover:border-[#f2f2f2] duration-300'><i className="bi-arrow-right"></i></button>
+                    <button type="submit" id="submit" className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] rounded-full min-w-[60px] h-9 text-center text-[#8C1616] hover:cursor-pointer hover:bg-[#f2f2f2] hover:border-[#f2f2f2] duration-300'>
+                      <div className={`${isSubmitting ? 'hidden' : 'block'}`}>
+                        <i className="bi-arrow-right"></i>
+                      </div>
+                      <div className={`${isSubmitting ? 'block' : 'hidden'}`}>
+                      <img className="animate-spin ml-[15px]" src={loading}></img>
+                      </div>
+                      
+                    </button>
                   </div>               
                 </div>
               </form>
