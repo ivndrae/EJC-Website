@@ -151,6 +151,51 @@ function Home() {
             <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center">
               We've Worked With
             </div>
+            <div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
+  
+              <a href="https://montrealethics.ai/">
+                <img
+                  src={maieiLogo}
+                  alt="MAIEI Logo"
+                  className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:mx-auto"
+                />
+              </a>
+
+              <a href="https://mutek.org/">
+                <img
+                  src={Mutek}
+                  alt="Mutek Logo"
+                  className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 sm:h-24 mx-auto"
+                />
+              </a>
+
+              <a href="https://www.womeninairobotics.de/">
+                <img
+                  src={womInRob}
+                  alt="Women In Robotics Logo"
+                  className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:mx-auto"
+                />
+              </a>
+
+              <a href="https://www.mcgill.ca/">
+                <img
+                  src={Mcgill}
+                  alt="McGill University Logo"
+                  className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:mt-12 mx-auto"
+                />
+              </a>
+
+              <a href="https://www.building21.ca/" className="col-start-1 sm:col-start-2 sm:col-span-1 mx-auto">
+                <img
+                  src={B21}
+                  alt="Building 21 logo"
+                  className="hover:scale-125 transition-transform duration-500 w-36 h-auto mt-2 mx-auto"
+                />
+              </a>
+            </div>
+
           </div>
           <div onClick={backToTop} className='duration-500 hover:cursor-pointer text-[#f2bbbb] hover:text-white text-center h-20 w-56 m-auto mt-12'>
           <div className='relative fill-current h-10 flex justify-center text-lg'>back to top<svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500"><path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/></svg></div>
