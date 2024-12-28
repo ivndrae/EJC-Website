@@ -128,7 +128,7 @@ function Home() {
             <div className="text-[#f2f2f2] text-5xl md:text-5xl font-bold text-center">
               We've Worked With
             </div>
-            <div>partners
+            <div>
             <div className="grid grid-cols-4 gap-x-4 gap-y-4 p-4">
                 <a href="https://montrealethics.ai/" >
                 <img
