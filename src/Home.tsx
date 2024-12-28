@@ -128,21 +128,13 @@ function Home() {
             </div>
             <div>
 
-            <div className="grid grid-cols-3 sm:grid-cols-3 gap-4 p-4">
-
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
+  
             <a href="https://montrealethics.ai/">
               <img
                 src={maieiLogo}
                 alt="MAIEI Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-12 mx-auto"
-              />
-            </a>
-
-            <a href="https://mcgillai.com/">
-              <img
-                src={mcgillAI}
-                alt="McGill AI Society Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:mx-auto"
               />
             </a>
 
@@ -150,7 +142,7 @@ function Home() {
               <img
                 src={Mutek}
                 alt="Mutek Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto sm:h-24 mt-10 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 sm:h-24 mx-auto"
               />
             </a>
 
@@ -158,15 +150,7 @@ function Home() {
               <img
                 src={womInRob}
                 alt="Women In Robotics Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 mx-auto"
-              />
-            </a>
-
-            <a href="https://www.cogsci-mcgill.com/">
-              <img
-                src={SACS}
-                alt="SACS logo"
-                className="hover:scale-125 transition-transform duration-500 w-20 sm:w-36 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:mx-auto"
               />
             </a>
 
@@ -174,18 +158,19 @@ function Home() {
               <img
                 src={Mcgill}
                 alt="McGill University Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-12 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:mt-12 mx-auto"
               />
             </a>
 
-            <a href="https://www.building21.ca/" className="col-start-2" >
+            <a href="https://www.building21.ca/" className="col-start-1 sm:col-start-2 sm:col-span-1 mx-auto">
               <img
                 src={B21}
                 alt="Building 21 logo"
-                className="hover:scale-125 transition-transform duration-500 w-36 h-auto mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-36 h-auto mt-2 mx-auto"
               />
             </a>
-            </div>
+          </div>
+
           </div>
         </div>
       </div>
