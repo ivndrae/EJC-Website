@@ -125,89 +125,81 @@ function Home() {
             </p>
           </div>
           <div className=" mt-[30vh]">
+
             <div className="text-[#f2f2f2] text-5xl md:text-5xl font-bold text-center">
               We've Worked With
             </div>
             <div>
-            <div className="grid grid-cols-4 gap-x-4 gap-y-4 p-4">
-                <a href="https://montrealethics.ai/" >
-                <img
-                  src={maieiLogo}
-                  alt="MAIEI Logo"
-                  style={{ width: "300px", height: "100px", marginTop: "50px" }}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
 
-                <a href="https://mcgillai.com/" >
-                <img
-                  src={mcgillAI}
-                  alt="McGill AI Society Logo"
-                  style={{ width: "300px", height: "auto" }}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
-
-                <a href="https://mila.quebec/en" >
-                <img
-                  src={mila}
-                  alt="Mila Logo in black"
-                  style={{ width: "300px", height: "auto", marginTop: "50px" }}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
-
-
-                <a href="https://mutek.org/">
-                <img
-                  src={Mutek}
-                  alt="Mutek Logo"
-                  style={{ width: "300px", height: "100px", marginTop: '40px' }}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
-
-                <a href="https://www.womeninairobotics.de/">
-                <img
-                  src={womInRob}
-                  alt="Women In Robotics Logo"
-                  style={{ width: "300px", height: "auto" }}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
-
-                <a href="https://www.cogsci-mcgill.com/" >
-                <img
-                  src={SACS}
-                  alt="SACS logo"
-                  style={{ width: "150px", height: "auto", marginLeft: '75px' }}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
-
-              <a href="https://www.mcgill.ca/">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            <a href="https://montrealethics.ai/">
               <img
-                  src={Mcgill}
-                  alt="McGill University Logo"
-                  style={{ width: "300px", height: "auto", marginTop: '50px'}}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
+                src={maieiLogo}
+                alt="MAIEI Logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-24 mt-12 mx-auto"
+              />
+            </a>
 
-                <a href="https://www.building21.ca/">
-                <img
-                  src={B21}
-                  alt="Building 21 logo"
-                  style={{ width: "300px", height: "200px", paddingRight: '100px', marginLeft:'50px'}}
-                  className="hover:scale-125 transition-transform duration-500"
-                />
-                </a>
-              </div>
+            <a href="https://mcgillai.com/">
+              <img
+                src={mcgillAI}
+                alt="McGill AI Society Logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 mx-auto"
+              />
+            </a>
 
+            <a href="https://mila.quebec/en">
+              <img
+                src={mila}
+                alt="Mila Logo in black"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-12 mx-auto"
+              />
+            </a>
+
+            <a href="https://mutek.org/">
+              <img
+                src={Mutek}
+                alt="Mutek Logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-20 sm:h-24 mt-10 mx-auto"
+              />
+            </a>
+
+            <a href="https://www.womeninairobotics.de/">
+              <img
+                src={womInRob}
+                alt="Women In Robotics Logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 mx-auto"
+              />
+            </a>
+
+            <a href="https://www.cogsci-mcgill.com/">
+              <img
+                src={SACS}
+                alt="SACS logo"
+                className="hover:scale-125 transition-transform duration-500 w-20 sm:w-36 mx-auto"
+              />
+            </a>
+
+            <a href="https://www.mcgill.ca/">
+              <img
+                src={Mcgill}
+                alt="McGill University Logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-12 mx-auto"
+              />
+            </a>
+
+            <a href="https://www.building21.ca/">
+              <img
+                src={B21}
+                alt="Building 21 logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-48 mx-auto"
+              />
+            </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-[60vh] pt-36 px-20 z-10 text-[#F2BBBB]">
         <div className="text-[2.75rem] md:text-[2.75rem] font-bold">Let's get to know each<br/> other <span className="italic">better</span></div>
         <div className="flex">        
