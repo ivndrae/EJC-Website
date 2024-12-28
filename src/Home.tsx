@@ -160,7 +160,7 @@ function Home() {
       <div className='h-[650px] md:h-[700px] lg:h-[500px]'></div>
       </div>
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-10 text-[#F2BBBB] ">
-        <div className='absolute bottom-0 mb-[100px] lg:mb-[100px] w-full px-[30px] lg:px-[200px]'>
+        <div className='absolute bottom-0 mb-[15%] md:mb-[100px] w-full px-[30px] lg:px-[200px]'>
           <img className="absolute rotate-2 opacity-[0.07] min-w-[1250px] -right-[500px] top-[325px] lg:min-w-[2000px] lg:-left-[200px] lg:top-[100px]" src={logo} />
           <div className='relative'>
             <div className="md:tracking-wider leading-8 md:leading-[3rem] text-[1.95rem] md:text-[3rem] font-bold mb-[75px]">
@@ -207,7 +207,6 @@ function Home() {
                       <div className={`${isSubmitting ? 'block' : 'hidden'}`}>
                       <img className="animate-spin ml-[15px]" src={loading}></img>
                       </div>
-                      
                     </button>
                   </div>               
                 </div>
