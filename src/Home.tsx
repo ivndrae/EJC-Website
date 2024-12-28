@@ -131,7 +131,7 @@ function Home() {
             </div>
             <div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            <div className="grid grid-cols-3 sm:grid-cols-3   gap-4 p-4">
             <a href="https://montrealethics.ai/">
               <img
                 src={maieiLogo}
@@ -145,14 +145,6 @@ function Home() {
                 src={mcgillAI}
                 alt="McGill AI Society Logo"
                 className="hover:scale-125 transition-transform duration-500 w-72 mx-auto"
-              />
-            </a>
-
-            <a href="https://mila.quebec/en">
-              <img
-                src={mila}
-                alt="Mila Logo in black"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-12 mx-auto"
               />
             </a>
 
@@ -188,7 +180,7 @@ function Home() {
               />
             </a>
 
-            <a href="https://www.building21.ca/">
+            <a href="https://www.building21.ca/" className="col-start-2" >
               <img
                 src={B21}
                 alt="Building 21 logo"
