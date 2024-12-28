@@ -131,12 +131,13 @@ function Home() {
             </div>
             <div>
 
-            <div className="grid grid-cols-3 sm:grid-cols-3   gap-4 p-4">
+            <div className="grid grid-cols-3 sm:grid-cols-3 gap-4 p-4">
+
             <a href="https://montrealethics.ai/">
               <img
                 src={maieiLogo}
                 alt="MAIEI Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-24 mt-12 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-12 mx-auto"
               />
             </a>
 
@@ -152,7 +153,7 @@ function Home() {
               <img
                 src={Mutek}
                 alt="Mutek Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-20 sm:h-24 mt-10 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto sm:h-24 mt-10 mx-auto"
               />
             </a>
 
@@ -184,7 +185,7 @@ function Home() {
               <img
                 src={B21}
                 alt="Building 21 logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-48 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-36 h-auto mx-auto"
               />
             </a>
             </div>
