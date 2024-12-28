@@ -114,10 +114,7 @@ function Home() {
               Encode Justice is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through political advocacy, community organizing, educational programming, and content creation.
             </p>
           </div>
-          <svg className='my-svg' width="1700" height="650" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 90">
-            <path id="line" d="M110,-100 L20,30 L90,60 L80,80 L50,90" stroke="white" stroke-width="0.5" fill="none" />
-            
-          </svg>
+         
           <div className="flex justify-between">
             <span></span>
             <p className="text-right text-[#f2f2f2] w-[50vw] mt-[60vh] text-2xl leading-10">
