@@ -17,6 +17,7 @@ function Home() {
   const navigate = useNavigate();
   const [isOpenHamburg, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   function onFormSubmit(event: FormEvent){
     event.preventDefault();
@@ -40,9 +41,11 @@ function Home() {
       <div className= "bg-[#A6242F] absolute w-full h-[10rem] z-20"></div>
       <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none rounded-[5rem] relative z-20 overflow-hidden px-5 md:px-20">
         <div className="drawer drawer-end">
-      <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked); } } />
-      <nav className="drawer-content">
-        <div className="top-0 right-0 z-10 hidden md:flex absolute">
+          <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked); } } />
+
+          {/* desktop nav */}
+          <nav className="drawer-content">
+          <div className="top-0 right-0 z-10 hidden md:flex absolute">
           <div className="flex flex-col items-end m-2">
             <div
               className={` w-full block flex-grow md:flex md:items-end md:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
@@ -68,7 +71,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <label htmlFor="my-drawer-4" className="absolute flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border-none md:hidden selection:outline-none">
+        <label htmlFor="my-drawer-4" className={`flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border md:hidden selection:outline-none ${isOpen ? "fixed right-5" : "absolute"} `}>
+          {/* burger menu */}
           <svg
             className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
             viewBox="0 0 24 24"
@@ -76,6 +80,8 @@ function Home() {
           >
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
+          
+          {/* 'x' out  */}
           <svg
             className={`fill-white h-8 w-8 bg-transparent ${isOpen ? "block fixed" : "hidden"}`}
             viewBox="0 0 24 24"
@@ -85,6 +91,7 @@ function Home() {
           </svg>
         </label>
       </nav>
+      {/* mobile nav */}
       <div className="drawer-side">
         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 min-h-full bg-[#8c1616] text-base-content relative z-50">
@@ -113,7 +120,7 @@ function Home() {
       </div>
     </div>
 
-        <div className=" flex-col container mx-auto p-5 justify-center sm:pt-[10vh]">
+        <div className="flex-col container mx-auto p-5 justify-center sm:pt-[10vh] ">
           <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20">
             <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
             <div className="flex flex-col">
@@ -160,7 +167,7 @@ function Home() {
       </div>
       <div className='h-[650px] md:h-[700px] lg:h-[500px]'></div>
       </div>
-      <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-10 text-[#F2BBBB] ">
+      <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-0 text-[#F2BBBB] ">
         <div className='absolute bottom-0 mb-[15%] md:mb-[100px] w-full px-[30px] lg:px-[200px]'>
           <img className="absolute rotate-2 opacity-[0.07] min-w-[1250px] -right-[500px] top-[325px] lg:min-w-[2000px] lg:-left-[200px] lg:top-[100px]" src={logo} />
           <div className='relative'>
