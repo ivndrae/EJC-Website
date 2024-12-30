@@ -10,6 +10,10 @@ const backToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
+const stopScroll = () => {
+  document.body.classList.toggle("overflow-hidden");
+};
+
 
 
 
@@ -17,6 +21,7 @@ function Home() {
   const navigate = useNavigate();
   const [isOpenHamburg, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   function onFormSubmit(event: FormEvent){
@@ -71,7 +76,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <label htmlFor="my-drawer-4" className={`flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border md:hidden selection:outline-none ${isOpen ? "fixed right-5" : "absolute"} `}>
+        <label htmlFor="my-drawer-4" className={`flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border md:hidden selection:outline-none ${isOpen ? "fixed right-5" : "absolute"} `} onClick={stopScroll}>
           {/* burger menu */}
           <svg
             className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
@@ -93,7 +98,7 @@ function Home() {
       </nav>
       {/* mobile nav */}
       <div className="drawer-side">
-        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay" onClick={stopScroll}></label>
         <ul className="menu p-4 w-80 min-h-full bg-[#8c1616] text-base-content relative z-50">
           <div className="flex flex-col items-end p-2">
             <div
