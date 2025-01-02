@@ -1,5 +1,3 @@
 - pictures in between paragraphs
-- fix z-index mobile menu
-- fix nav bar on ipad format
 
 - we should/could make our own resources. we make a vid on what ai is, etc.

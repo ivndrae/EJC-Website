@@ -50,8 +50,9 @@ function Home() {
 
           {/* desktop nav */}
           <nav className="drawer-content">
-          <div className="top-0 right-0 z-10 hidden md:flex absolute">
-          <div className="flex flex-col items-end m-2">
+          <div className="top-0 right-0 z-10 hidden md:flex w-[100vh] justify-between absolute">
+            <span></span>
+          <div className="flex flex-col m-2">
             <div
               className={` w-full block flex-grow md:flex md:items-end md:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
             >
@@ -76,7 +77,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <label htmlFor="my-drawer-4" className={`flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border md:hidden selection:outline-none ${isOpen ? "fixed right-5" : "absolute"} `} onClick={stopScroll}>
+        <label htmlFor="my-drawer-4" className={`flex -right-7 top-0 z-50  mt-4 w-24 drawer-button btn bg-transparent border-none md:hidden selection:outline-none ${isOpen ? "fixed -right-[10px]" : "absolute"} `} onClick={stopScroll}>
           {/* burger menu */}
           <svg
             className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
@@ -97,9 +98,9 @@ function Home() {
         </label>
       </nav>
       {/* mobile nav */}
-      <div className="drawer-side">
+      <div className="drawer-side z-40">
         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay" onClick={stopScroll}></label>
-        <ul className="menu p-4 w-80 min-h-full bg-[#8c1616] text-base-content relative z-50">
+        <ul className="menu p-4 w-80 min-h-full bg-[#8c1616] text-base-content">
           <div className="flex flex-col items-end p-2">
             <div
               className={` w-full block flex-grow ${isOpen ? "block" : "hidden"}`}
