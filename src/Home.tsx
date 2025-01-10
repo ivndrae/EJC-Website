@@ -134,7 +134,7 @@ function Home() {
               <img
                 src={maieiLogo}
                 alt="MAIEI Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:w-72  mx-auto"
               />
             </a>
 
@@ -142,7 +142,7 @@ function Home() {
               <img
                 src={Mutek}
                 alt="Mutek Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 sm:h-24 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 sm:ml-30 mt-2 w-72 mx-auto"
               />
             </a>
 
@@ -150,23 +150,23 @@ function Home() {
               <img
                 src={womInRob}
                 alt="Women In Robotics Logo"
-                className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:ml-50 w-72 mx-auto"
               />
             </a>
 
-            <a href="https://www.mcgill.ca/">
+            <a href="https://www.mcgill.ca/"  className="sm:col-span-2 sm:col-start-1">
               <img
                 src={Mcgill}
                 alt="McGill University Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:mt-12 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:w-72 mx-auto "
               />
             </a>
 
-            <a href="https://www.building21.ca/" className="col-start-1 sm:col-start-2 sm:col-span-1 mx-auto">
+            <a href="https://www.building21.ca/" className="sm:col-span-2 sm:col-start-2">
               <img
                 src={B21}
                 alt="Building 21 logo"
-                className="hover:scale-125 transition-transform duration-500 w-36 h-auto mt-2 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 w-36 h-auto mt-2 sm:w-36 mt-0 mx-auto"
               />
             </a>
           </div>
