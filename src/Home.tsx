@@ -173,6 +173,7 @@ function Home() {
           </div>
 
           <div className="flex-col container mx-auto p-5 justify-center sm:pt-[10vh] ">
+
             <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20">
               <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
@@ -208,6 +209,7 @@ function Home() {
             </div>
 
             <div className="flex sm:justify-between">
+              <span></span>
               <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10">
                 <span className="text-[2rem] sm:text-4xl font-bold"> Our mission </span> 
                 is to promote AI literacy and ethics among Gen Z. We create educational resources, 
@@ -271,7 +273,6 @@ function Home() {
         </div>
 
         <div className='h-[650px] md:h-[700px] lg:h-[500px]'></div>
-        
       </div>
 
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-0 text-[#F2BBBB] ">
