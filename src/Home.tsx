@@ -172,106 +172,106 @@ function Home() {
 
           </div>
 
-        </div>
-      </div>
+          <div className="flex-col container mx-auto p-5 justify-center sm:pt-[10vh] ">
+            <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20">
+              <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
-      <div className="flex-col container mx-auto p-5 justify-center sm:pt-[10vh] ">
+              <div className="flex flex-col">
+                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
+                  encode<br />
+                  <span className="relative w-[max-content] font-mono
+                      before:absolute before:inset-0 before:animate-typewriter
+                    before:bg-[#A6242F]
+                      after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
+                    after:bg-[#f2f2f2]">
+                    canada
+                  </span>
+                </p>
 
-        <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20">
-          <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
+                <p className=" text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
+                  Fighting for Justice in the age of Artificial Intelligence.
+                </p>
+              </div>
+            </div>
 
-          <div className="flex flex-col">
-            <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
-              encode<br />
-              <span className="relative w-[max-content] font-mono
-                  before:absolute before:inset-0 before:animate-typewriter
-                before:bg-[#A6242F]
-                  after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
-                after:bg-[#f2f2f2]">
-                canada
-              </span>
-            </p>
+            <div className="w-full text-[#f2f2f2] max-w-screen-md">
+              <p className="text-[#f2f2f2] text-[2.5rem] leading-none sm:text-5xl font-bold">
+                We are the Canadian Chapter <br /> of Encode
+              </p><br />
 
-            <p className=" text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
-              Fighting for Justice in the age of Artificial Intelligence.
-            </p>
+              <p className="text-2xl leading-10">
+                Encode is a global, youth-led organization that fights for human rights accountability and justice under AI. 
+                Harnessing a global network of volunteers from all over the world, we champion informed AI policy and 
+                encourage youth to confront the challenges of the age of automation through political advocacy, community 
+                organizing, educational programming, and content creation.
+              </p>
+            </div>
+
+            <div className="flex sm:justify-between">
+              <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10">
+                <span className="text-[2rem] sm:text-4xl font-bold"> Our mission </span> 
+                is to promote AI literacy and ethics among Gen Z. We create educational resources, 
+                and host events such as our Speaker Series, Hackathons ,etc. for students and 
+                professionals to collaborate, with challenge, and inspire each other.
+              </p>
+            </div>
+
+            <div className=" mt-[30vh]">
+              <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center">
+                We've Worked With
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
+                <a href="https://montrealethics.ai/">
+                  <img src={maieiLogo} alt="MAIEI Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:w-72  mx-auto"
+                  />
+                </a>
+
+                <a href="https://mutek.org/">
+                  <img src={Mutek} alt="Mutek Logo"
+                    // className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 sm:ml-30 mt-2 w-72 mx-auto"
+                    className="hover:scale-125 transition-transform duration-500 h-auto sm:ml-30 mt-2 w-72 mx-auto"
+                  />
+                </a>
+
+                <a href="https://www.womeninairobotics.de/">
+                  <img src={womInRob} alt="Women In Robotics Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:ml-50 w-72 mx-auto"
+                  />
+                </a>
+
+                <a href="https://www.mcgill.ca/" className="sm:col-span-2 sm:col-start-1">
+                  <img src={Mcgill} alt="McGill University Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:w-72 mx-auto "
+                  />
+                </a>
+
+                <a href="https://www.building21.ca/" className="sm:col-span-2 sm:col-start-2">
+                  <img src={B21} alt="Building 21 logo"
+                    // className="hover:scale-125 transition-transform duration-500 w-36 h-auto mt-2 sm:w-36 mt-0 mx-auto"
+                    className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-36 mt-0 mx-auto"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div onClick={backToTop} className='duration-500 hover:cursor-pointer text-[#f2bbbb] 
+              hover:text-white text-center h-20 w-56 m-auto mt-12'>
+              <div className='relative fill-current h-10 flex justify-center text-lg'>back to top
+                <svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500">
+                  <path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 
+                      46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/>
+                </svg>
+              </div>
+            </div>
+
           </div>
-        </div>
 
-        <div className="w-full text-[#f2f2f2] max-w-screen-md">
-          <p className="text-[#f2f2f2] text-[2.5rem] leading-none sm:text-5xl font-bold">
-            We are the Canadian Chapter <br /> of Encode
-          </p><br />
-
-          <p className="text-2xl leading-10">
-            Encode is a global, youth-led organization that fights for human rights accountability and justice under AI. 
-            Harnessing a global network of volunteers from all over the world, we champion informed AI policy and 
-            encourage youth to confront the challenges of the age of automation through political advocacy, community 
-            organizing, educational programming, and content creation.
-          </p>
-        </div>
-
-        <div className="flex sm:justify-between">
-          <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10">
-            <span className="text-[2rem] sm:text-4xl font-bold"> Our mission </span> 
-            is to promote AI literacy and ethics among Gen Z. We create educational resources, 
-            and host events such as our Speaker Series, Hackathons ,etc. for students and 
-            professionals to collaborate, with challenge, and inspire each other.
-          </p>
-        </div>
-
-        <div className=" mt-[30vh]">
-          <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center">
-            We've Worked With
+          <div className='h-[650px] md:h-[700px] lg:h-[500px]'>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
-            <a href="https://montrealethics.ai/">
-              <img src={maieiLogo} alt="MAIEI Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:w-72  mx-auto"
-              />
-            </a>
-
-            <a href="https://mutek.org/">
-              <img src={Mutek} alt="Mutek Logo"
-                // className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 sm:ml-30 mt-2 w-72 mx-auto"
-                className="hover:scale-125 transition-transform duration-500 h-auto sm:ml-30 mt-2 w-72 mx-auto"
-              />
-            </a>
-
-            <a href="https://www.womeninairobotics.de/">
-              <img src={womInRob} alt="Women In Robotics Logo"
-                className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:ml-50 w-72 mx-auto"
-              />
-            </a>
-
-            <a href="https://www.mcgill.ca/" className="sm:col-span-2 sm:col-start-1">
-              <img src={Mcgill} alt="McGill University Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:w-72 mx-auto "
-              />
-            </a>
-
-            <a href="https://www.building21.ca/" className="sm:col-span-2 sm:col-start-2">
-              <img src={B21} alt="Building 21 logo"
-                // className="hover:scale-125 transition-transform duration-500 w-36 h-auto mt-2 sm:w-36 mt-0 mx-auto"
-                className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-36 mt-0 mx-auto"
-              />
-            </a>
-          </div>
         </div>
-      </div>
-
-      <div onClick={backToTop} className='duration-500 hover:cursor-pointer text-[#f2bbbb] 
-        hover:text-white text-center h-20 w-56 m-auto mt-12'>
-        <div className='relative fill-current h-10 flex justify-center text-lg'>back to top
-          <svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500">
-            <path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 
-                46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/>
-          </svg>
-        </div>
-      </div>
-
-      <div className='h-[650px] md:h-[700px] lg:h-[500px]'>
       </div>
 
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-0 text-[#F2BBBB] ">
