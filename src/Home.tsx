@@ -268,10 +268,10 @@ function Home() {
 
           </div>
 
-          <div className='h-[650px] md:h-[700px] lg:h-[500px]'>
-          </div>
-
         </div>
+
+        <div className='h-[650px] md:h-[700px] lg:h-[500px]'></div>
+        
       </div>
 
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-0 text-[#F2BBBB] ">
