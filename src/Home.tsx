@@ -3,12 +3,9 @@ import { FormEvent, useState } from 'react';
 import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
 import './index.css';
 import maieiLogo from '/src/assets/logos/partners/MAIEI.png';
-// import mcgillAI from '/src/assets/logos/partners/mcgillAI.png'; 
-// import mila from '/src/assets/logos/partners/mila (black).png'; 
 import Mutek from '/src/assets/logos/partners/MUTEK.png';
 import womInRob from '/src/assets/logos/partners/Women in Robotics.png';
 import Mcgill from '/src/assets/logos/partners/Mcgill.png';
-// import SACS from '/src/assets/logos/partners/SACS.png'; 
 import B21 from '/src/assets/logos/partners/B21_logo-removebg-preview.png';
 import loading from './assets/progress_icon.svg';
 
@@ -224,36 +221,31 @@ function Home() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
-                <a href="https://montrealethics.ai/">
-                  <img src={maieiLogo} alt="MAIEI Logo"
-                    className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:w-72  mx-auto"
-                  />
+                <a href="https://montrealethics.ai/" className="sm:flex justify-center">
+                <img src={maieiLogo} alt="MAIEI Logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:w-72"/>
                 </a>
 
-                <a href="https://mutek.org/">
-                  <img src={Mutek} alt="Mutek Logo"
-                    // className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 sm:ml-30 mt-2 w-72 mx-auto"
-                    className="hover:scale-125 transition-transform duration-500 h-auto sm:ml-30 mt-2 w-72 mx-auto"
-                  />
+                <a href="https://mutek.org/" className="sm:flex justify-center">
+                <img src={Mutek} alt="Mutek Logo"
+                //className="hover:scale-125 transition-transform duration-500 h-auto sm:ml-30 mt-2 w-72 mx-auto"
+                className="hover:scale-125 transition-transform duration-500 h-auto mt-2 w-72 mx-auto sm:w-72 h-24 "/>
                 </a>
 
-                <a href="https://www.womeninairobotics.de/">
-                  <img src={womInRob} alt="Women In Robotics Logo"
-                    className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:ml-50 w-72 mx-auto"
-                  />
+                <a href="https://www.womeninairobotics.de/" className="sm:flex justify-center">
+                <img src={womInRob} alt="Women In Robotics Logo"
+                //className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:ml-50 w-72 mx-auto"/>
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-10 mx-auto sm:w-96 mt-[-20px]" />
                 </a>
 
-                <a href="https://www.mcgill.ca/" className="sm:col-span-2 sm:col-start-1">
-                  <img src={Mcgill} alt="McGill University Logo"
-                    className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:w-72 mx-auto "
-                  />
+                <a href="https://www.mcgill.ca/" className="sm:col-span-2 flex justify-center">
+                <img src={Mcgill} alt="McGill University Logo"
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:w-96 mx-auto "/>
                 </a>
 
-                <a href="https://www.building21.ca/" className="sm:col-span-2 sm:col-start-2">
-                  <img src={B21} alt="Building 21 logo"
-                    // className="hover:scale-125 transition-transform duration-500 w-36 h-auto mt-2 sm:w-36 mt-0 mx-auto"
-                    className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-36 mt-0 mx-auto"
-                  />
+                <a href="https://www.building21.ca/" className="sm:flex justify-center">
+                <img src={B21} alt="Building 21 logo"
+                className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 ml-[-400px]"/>
                 </a>
               </div>
             </div>
