@@ -221,31 +221,29 @@ function Home() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
-                <a href="https://montrealethics.ai/" className="sm:flex justify-center">
+                <a href="https://montrealethics.ai/" className="flex justify-center">
                 <img src={maieiLogo} alt="MAIEI Logo"
                 className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:w-72"/>
                 </a>
 
-                <a href="https://mutek.org/" className="sm:flex justify-center">
+                <a href="https://mutek.org/" className="flex justify-center">
                 <img src={Mutek} alt="Mutek Logo"
-                //className="hover:scale-125 transition-transform duration-500 h-auto sm:ml-30 mt-2 w-72 mx-auto"
-                className="hover:scale-125 transition-transform duration-500 h-auto mt-2 w-72 mx-auto sm:w-72 h-24 "/>
+                className="hover:scale-125 transition-transform duration-500 h-auto mt-2 w-72 mx-auto sm:w-72 sm:h-24"/>
                 </a>
 
-                <a href="https://www.womeninairobotics.de/" className="sm:flex justify-center">
+                <a href="https://www.womeninairobotics.de/" className="flex justify-center">
                 <img src={womInRob} alt="Women In Robotics Logo"
-                //className="hover:scale-125 transition-transform duration-500 w-100 h-auto mt-10 sm:ml-50 w-72 mx-auto"/>
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-10 mx-auto sm:w-96 mt-[-20px]" />
+                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto sm:w-96 sm:mt-[-20px]" />
                 </a>
 
                 <a href="https://www.mcgill.ca/" className="sm:col-span-2 flex justify-center">
                 <img src={Mcgill} alt="McGill University Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-2 sm:w-96 mx-auto "/>
+                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto "/>
                 </a>
 
-                <a href="https://www.building21.ca/" className="sm:flex justify-center">
+                <a href="https://www.building21.ca/" className="flex justify-center">
                 <img src={B21} alt="Building 21 logo"
-                className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 ml-[-400px]"/>
+                className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 sm:ml-[-400px]"/>
                 </a>
               </div>
             </div>
