@@ -23,19 +23,19 @@ function Newsletter() {
       .finally(() => setIsSubmitting(false))
   }
 
-  function Newsletters(volume: string, link: string) {
-    return (
-      <div className="collapse collapse-arrow odd:bg-[#1E1E20] even:bg-[#1A1A1B]">
-        <input type="checkbox" className="peer" />
-        <div className="collapse-title text-primary-content peer-checked:bg-red-800 peer-checked:text-secondary-content">
-          {volume}
-        </div>
-        <div className="collapse-content text-primary-content peer-checked:bg-red-800 peer-checked:text-secondary-content">
-          <iframe src={link} height="800px" width="100%" />
-        </div>
-      </div>
-    )
-  }
+  // function Newsletters(volume: string, link: string) {
+  //   return (
+  //     <div className="collapse collapse-arrow odd:bg-[#1E1E20] even:bg-[#1A1A1B]">
+  //       <input type="checkbox" className="peer" />
+  //       <div className="collapse-title text-primary-content peer-checked:bg-red-800 peer-checked:text-secondary-content">
+  //         {volume}
+  //       </div>
+  //       <div className="collapse-content text-primary-content peer-checked:bg-red-800 peer-checked:text-secondary-content">
+  //         <iframe src={link} height="800px" width="100%" />
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
   return (
     <Default>
