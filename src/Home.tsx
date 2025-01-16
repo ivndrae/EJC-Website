@@ -1,118 +1,379 @@
 import { useNavigate } from 'react-router-dom';
-import logo from './assets/EJC_White_Clear.svg';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
+import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
+import './index.css';
+import maieiLogo from '/src/assets/logos/partners/MAIEI.png';
+import Mutek from '/src/assets/logos/partners/MUTEK.png';
+import womInRob from '/src/assets/logos/partners/Women in Robotics.png';
+import Mcgill from '/src/assets/logos/partners/Mcgill.png';
+import B21 from '/src/assets/logos/partners/B21_logo-removebg-preview.png';
+import loading from './assets/progress_icon.svg';
 
-function Content() {
-  return (
-    <div className="h-full w-full fixed inset-0 bg-[#982216] p-7 flex flex-col select-none ">
-      <div className="flex flex-1 container mx-auto p-5 justify-center">
-        <div className="flex flex-col md:flex-row items-center justify-center mb-2 gap-6 lg:gap-12">
-          <img className="flex w-[11rem] lg:w-[15rem] animate-fadeIn rotate-2" src={logo} />
-          <div className="flex flex-col">
-            <p className=" text-white text-5xl md:text-6xl lg:text-8xl italic font-black text-center tracking-widest font-['Lato'] p-2 animate-fadeIn">ENCODE JUSTICE<br />CANADA</p>
-            <p className=" text-white text-lg lg:text-xl text-center md:mt-5 font-['KoHo'] tracking-wider animate-fadeIn">Fighting for Justice in the age of Artificial Intelligence.</p>
-          </div>
-        </div>
-      </div>
-      <div className="fixed bottom-0 left-0 w-full text-white p-4 m-1 flex items-center">
-        <div className="flex flex-col w-full">
-          <div className="flex gap-1 md:gap-3 justify-center items-center m-3">
-            <a className="flex w-14 h-14 items-center justify-center" href="https://www.instagram.com/encodecanada/"><i className="bi bi-instagram text-4xl"></i></a>
-            <a className="flex w-14 h-14 items-center justify-center" href="https://twitter.com/EncodeCanada"><i className="bi bi-twitter-x text-4xl"></i></a>
-            <a className="flex w-14 h-14 items-center justify-center" href="https://www.facebook.com/encodejustice/"><i className="bi bi-facebook text-4xl"></i></a>
-            <a className="flex w-14 h-14 items-center justify-center" href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><i className="bi bi-linkedin text-4xl"></i></a>
-            <a className="flex w-14 h-14 items-center justify-center" href="mailto:encodejusticecanada@gmail.com"><i className="bi bi-envelope-fill text-4xl"></i></a>
-          </div>
-          <div className="flex justify-center text-white font-['JetBrains_Mono']">
-            Connect with us!
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxr7wlZr-Gwb6kGEHshGmrwN5fNxhDBGrhK4aTWGTIO6_EnHQGGa_kEcJmxKDuuVnuHHg/exec'
+
+const backToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+const stopScroll = () => {
+  document.body.classList.toggle("overflow-hidden");
+};
+
 
 function Home() {
   const navigate = useNavigate();
+  const [isOpenHamburg, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  function onFormSubmit(event: FormEvent) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    fetch(scriptURL, { method: 'POST', body: new FormData(event.target as HTMLFormElement) })
+      .then(response => {
+        if (response.ok) {
+          alert("Thank you! Your are now subscribed to EJC's Newsletter.")
+          window.location.reload();
+        } else {
+          alert(`Could not submit form data: ${response.status}`)
+        }
+      })
+      .catch(error => console.error('Error!', error.message))
+  }
+
   return (
-    <div className="drawer drawer-end">
-      <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
-      <div className="drawer-content">
-        <div className="fixed top-0 right-0 z-10 hidden lg:flex">
-          <div className="flex flex-col items-end m-2">
-            <div
-              className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
-            >
-              <div className="text-sm text-white font-bold italic p-4 lg:flex-grow">
-                <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none ">About us</div>
-                  <ul tabIndex={0} className="p-2 menu dropdown-content z-[1] rounded w-max bg-[#121212] shadow">
-                    <li><a onClick={() => navigate("/about")}>Who We Are</a></li>
-                    <li><a onClick={() => navigate("/team")}>Meet Our Team</a></li>
-                  </ul>
+    <>
+
+      <input id="hamburg" type="checkbox" className="drawer-toggle"
+        onChange={(e) => { setIsOpenHamburg(e.target.checked) }} />
+      <input id="about_us_menu" type="checkbox" className="drawer-toggle"
+        onChange={(e) => { setIsOpen(e.target.checked) }} />
+
+      <div className='relative'>
+        <div className="bg-[#A6242F] absolute w-full h-[10rem] z-20"></div>
+
+        <div className="min-h-[100vh] w-full inset-0 bg-[#A6242F] flex flex-col select-none rounded-[5rem] 
+          relative z-20 overflow-hidden px-5 md:px-20">
+
+          <div className="drawer drawer-end">
+            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked); }} />
+
+            {/* desktop nav */}
+            <nav className="drawer-content">
+
+              <div className="top-0 right-0 z-10 hidden md:flex w-[100vh] justify-between absolute">
+                <span></span>
+                <div className="flex flex-col m-2">
+                  <div className={` w-full block flex-grow md:flex md:items-end md:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}>
+                    <div className="text-white font-bold md:flex-grow lowercase space-x-12 m-4">
+
+                      <div className="dropdown dropdown-hover">
+                        <div tabIndex={0} role="button" className="btn text-white text-lg tracking-wider font-bold 
+                          bg-transparent border-none lowercase hover:text-[#a6242f] hover:bg-[#f2f2f2]">
+                          About us
+                        </div>
+
+                        <ul tabIndex={0} className="menu dropdown-content rounded w-max bg-transparent">
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/about")}>Who We Are</a>
+                          </li>
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/team")}>Meet Our Team</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div className="dropdown dropdown-hover">
+                        <div tabIndex={0} role="button" className="m-1 btn text-white text-lg tracking-wider font-bold 
+                          bg-transparent border-none lowercase hover:text-[#a6242f] hover:bg-[#f2f2f2]">
+                          Our Work
+                        </div>
+
+                        <ul tabIndex={0} className="p-2 menu dropdown-content rounded w-max bg-transparent">
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/podcast")}>Podcast</a>
+                          </li>
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/publications")}>Publications</a>
+                          </li>
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/newsletter")}>Newsletter</a>
+                          </li>
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/interviews")}>Interviews</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <button className="m-1 btn bg-transparent font-bold text-white text-lg border-none hover:text-[#a6242f]
+                        hover:bg-[#f2f2f2] rounded-md px-6 lowercase tracking-wider" onClick={() => navigate("/events")}>
+                        EVENTS
+                      </button>
+
+                      <button className="m-1 btn bg-transparent font-bold text-white text-lg border-none hover:text-[#a6242f]
+                        hover:bg-[#f2f2f2] rounded-md px-6 lowercase tracking-wider" onClick={() => navigate("/resources")}>
+                        RESOURCES
+                      </button>
+
+                    </div>
+                  </div>
                 </div>
-                <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none">Our Work</div>
-                  <ul tabIndex={0} className="p-2 menu dropdown-content z-[1] rounded w-max bg-[#121212] shadow">
-                    <li><a onClick={() => navigate("/newsletter")}>Newsletter</a></li>
-                    <li><a onClick={() => navigate("/podcast")}>Podcast</a></li>
-                    <li><a onClick={() => navigate("/publications")}>Publications</a></li>
-                    <li><a onClick={() => navigate("/interviews")}>Interviews</a></li>
-                  </ul>
-                </div>
-                <button className="m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-[#121212] rounded-md px-6" onClick={() => navigate("/events")}>EVENTS</button>
-                <button className="m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-[#121212] rounded-md px-6" onClick={() => navigate("/resources")}>RESOURCES</button>
               </div>
+
+              <label htmlFor="my-drawer-4" className={`flex -right-7 top-0 z-50  mt-4 w-24 drawer-button btn bg-transparent 
+                border-none md:hidden selection:outline-none ${isOpen ? "fixed -right-[10px]" : "absolute"} `} onClick={stopScroll}>
+                {/* burger menu */}
+                <svg className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
+                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+
+                {/* 'x' out  */}
+                <svg className={`fill-white h-8 w-8 bg-transparent ${isOpen ? "block fixed" : "hidden"}`}
+                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 
+                    1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                </svg>
+              </label>
+
+            </nav>
+
+            {/* mobile nav */}
+            <div className="drawer-side z-40">
+              <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay" onClick={stopScroll}></label>
+
+              <ul className="menu p-4 w-80 min-h-full bg-[#8c1616] text-base-content">
+                <div className="flex flex-col items-end p-2">
+                  <div className={` w-full block flex-grow ${isOpen ? "block" : "hidden"}`}>
+
+                    <div className="text-xl text-[#f2f2f2] font-bold md:flex-grow mt-20 space-y-4">
+                      <br></br>
+                      <text className="hover:cursor-default pl-8">about us</text>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/about")}>who we are</div>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/team")}>meet our team</div>
+
+                      <br></br>
+                      <text className="hover:cursor-default pl-8">our work</text>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/podcast")}>podcast</div>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/publications")}>publications</div>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/newsletter")}>newsletter</div>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/interviews")}>Interviews</div>
+
+                      <br></br>
+                      <div className="hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] pl-8 py-2 rounded" onClick={() => navigate("/events")}>events</div>
+
+                      <br></br>
+                      <div className="hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] pl-8 py-2 rounded" onClick={() => navigate("/resources")}>resources</div>
+                    </div>
+
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className="flex-col container mx-auto p-5 justify-center">
+
+            <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20 pt-[15vh]">
+              <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
+
+              <div className="flex flex-col">
+                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato'] flex items-baseline justify-center gap-4">
+                  <span>encode</span>
+                  <span className="relative w-[max-content] font-mono
+              before:absolute before:inset-0 before:animate-typewriter
+              before:bg-[#A6242F]
+              after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
+              after:bg-[#f2f2f2]">
+                    canada
+                  </span>
+                </p>
+
+                <p className="text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
+                  Fighting for Justice in the age of Artificial Intelligence.
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full text-[#f2f2f2] max-w-screen-md pt-[15vh]">
+              <p className="text-[2.5rem] sm:text-5xl leading-normal md:leading-relaxed font-bold font-['Lato']">
+                We are the Canadian Chapter <br /> of Encode
+              </p><br />
+
+              <p className="text-2xl leading-10 font-['Lato']">
+                Encode is a global, youth-led organization that fights for human rights accountability and justice under AI.
+                Harnessing a global network of volunteers from all over the world, we champion informed AI policy and
+                encourage youth to confront the challenges of the age of automation through political advocacy, community
+                organizing, educational programming, and content creation.
+              </p>
+            </div>
+
+            <div className="flex sm:justify-between">
+            <span></span>
+              <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[30vh] text-2xl leading-10 font-['Lato']">
+                <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span>
+                is to promote AI literacy and ethics among Gen Z. We create educational resources,
+                and host events such as our Speaker Series, Hackathons ,etc. for students and
+                professionals to collaborate, with challenge, and inspire each other.
+              </p>
+            </div>
+
+            <div className=" mt-[30vh]">
+              <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center mb-9 font-['Lato']">
+                We've Worked With
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
+                <a href="https://montrealethics.ai/" className="flex justify-center">
+                  <img src={maieiLogo} alt="MAIEI Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 md:w-48" />
+                </a>
+
+                <a href="https://mutek.org/" className="flex justify-center">
+                  <img src={Mutek} alt="Mutek Logo"
+                    className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:mt-4 w-72 mx-auto md:w-48 md:h-20" />
+                </a>
+
+                <a href="https://www.womeninairobotics.de/" className="flex justify-center">
+                  <img src={womInRob} alt="Women In Robotics Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto md:w-80 sm:mt-[-20px]" />
+                </a>
+
+                <a href="https://www.mcgill.ca/" className="flex justify-center sm:col-span-2">
+                  <img src={Mcgill} alt="McGill University Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto" />
+                </a>
+
+                <a href="https://www.building21.ca/" className="flex justify-center">
+                  <img src={B21} alt="Building 21 logo"
+                    className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 sm:ml-[-400px]" />
+                </a>
+              </div>
+            </div>
+
+            <div onClick={backToTop} className='duration-500 hover:cursor-pointer text-[#f2bbbb] 
+              hover:text-white text-center h-20 w-56 m-auto mt-12'>
+              <div className='relative fill-current h-10 flex justify-center text-lg'>back to top
+                <svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500">
+                  <path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 
+                      46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className='h-[650px] md:h-[700px] lg:h-[500px]'></div>
+      </div>
+
+      <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-0 text-[#F2BBBB] ">
+        <div className='absolute bottom-0 mb-[15%] md:mb-[100px] w-full px-[30px] lg:px-[200px]'>
+
+          <img className="absolute rotate-2 opacity-[0.07] min-w-[1250px] -right-[500px] 
+            top-[325px] lg:min-w-[2000px] lg:-left-[200px] lg:top-[100px]" src={logo} />
+
+          <div className='relative'>
+            <div className="md:tracking-wider leading-8 md:leading-[3rem] text-[1.95rem] md:text-[3rem] font-bold mb-[75px]">
+              Let's get to know each<br /> other <span className="italic">better</span>
+            </div>
+
+            <div className="space-y-[55px] lg:space-y-[0px] flex flex-col lg:flex-row  justify-between w-full">
+              <div className="flex flex-col justify-between space-y-[10px]">
+
+                <div className='flex space-x-[12%] text-[2rem] lg:text-4xl'>
+
+                  <a href="https://www.instagram.com/encodecanada/">
+                    <i className="bi-instagram font-thin hover:text-[#f2f2f2] duration-300 "></i>
+                  </a>
+
+                  <a className=' fill-current hover:text-[#f2f2f2] duration-300'
+                    href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text">
+                    <svg className='w-10 fill-current' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512">
+                      <path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 
+                      24.7-62 57 0 31.6 23.8 57 60.5 57h.8zM177 500.2s1.5-298.6 0-329.5h109.6v47.7h-.8c14.4-22.4 40.4-55.5 99.5-55.5 
+                      72 0 126.1 47.1 126.1 148.3v189H402V324c0-44.3-15.9-74.5-55.5-74.5-30.3 0-48.3 20.4-56.2 40-3 7-3.6 17-3.6 
+                      26.8v184H177z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+
+                  <a href="https://twitter.com/EncodeCanada">
+                    <i className=" bi-twitter-x hover:text-[#f2f2f2] duration-300"></i>
+                  </a>
+
+                  <a className=" w-10" href="https://www.facebook.com/encodejustice/">
+                    <svg className='w-10 fill-current hover:text-[#f2f2f2] duration-300'
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xmlSpace="preserve">
+                      <path d="M81.7 165.1h34V305a5 5 0 0 0 5 5h57.6a5 5 0 0 0 5-5V165.8h39a5 5 0 0 0 5-4.5l6-51.5a5 5 0 0 
+                      0-5-5.5h-45V72c0-9.8 5.2-14.7 15.6-14.7h29.4a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5h-42.4c-7 0-31.5 1.4-50.8 
+                      19.2a53.3 53.3 0 0 0-17.7 47.3v37.8H81.7a5 5 0 0 0-5 5V160a5 5 0 0 0 5 5z" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div className="text-[1.35rem] md:text-[1.75rem]">
+                  <span>Join our </span>
+                  <a className="hover:text-[#f2f2f2] hover:underline duration-300"
+                    href="https://join.slack.com/t/encode-canada/shared_invite/zt-2qi3jy5si-trHbvtoDuc_r2ybjdmypAg" target='_blank'>
+                    <i className="bi bi-slack"></i> Slack!
+                  </a>
+                </div>
+
+                <a className="text-[1.2rem] md:text-[1.35rem] hover:text-[#f2f2f2] duration-300" href="mailto:encodejusticecanada@gmail.com">
+                  <div>encodejusticecanada@gmail.com</div>
+                </a>
+              </div>
+
+              <form method="post" action="" name="contact-form" onSubmit={onFormSubmit}
+                className=' md:w-[400px] text-[1.25rem] md:text-[1.5rem] leading-6'>
+                Subscribe to our newsletter to stay
+                <br className='md:hidden' /> connected with the latest updates
+                <br className='md:hidden' /> from the Encode community.
+
+                <div className='flex space-x-4 mt-7'>
+
+                  <div className='space-y-4'>
+                    <input name="Name" type="text" placeholder='name' className='rounded-[10px] border-[3px]
+                      border-[#f2bbbb] hover:border-white duration-300 bg-transparent placeholder-[#ffffff64] 
+                      hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white  text-white' />
+                    <input name="Email" type="text" placeholder='email address' className='rounded-[10px] border-[3px]
+                      border-[#f2bbbb] hover:border-white duration-300 bg-transparent placeholder-[#ffffff64] 
+                      hover:placeholder-[#ffffffa1] pl-4 w-full outline-none focus:border-white  text-white' />
+                  </div>
+
+                  <div className='flex flex-col justify-between'>
+                    <span></span>
+                    <button type="submit" id="submit" className='border-[3px] border-[#f2bbbb] bg-[#f2bbbb] 
+                      rounded-full min-w-[60px] h-9 text-center text-[#8C1616] hover:cursor-pointer 
+                      hover:bg-[#f2f2f2] hover:border-[#f2f2f2] duration-300'>
+
+                      <div className={`${isSubmitting ? 'hidden' : 'block'}`}>
+                        <i className="bi-arrow-right"></i>
+                      </div>
+
+                      <div className={`${isSubmitting ? 'block' : 'hidden'}`}>
+                        <img className="animate-spin ml-[15px]" src={loading}></img>
+                      </div>
+
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <Content />
-        <label htmlFor="my-drawer-4" className="fixed flex right-0 top-0 z-10  mt-4 w-24 drawer-button btn bg-transparent border-none lg:hidden">
-          <svg
-            className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-          <svg
-            className={`fill-white h-8 w-8 bg-transparent ${isOpen ? "block" : "hidden"}`}
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-          </svg>
-        </label>
-      </div>
-      <div className="drawer-side">
-        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 min-h-full  bg-[#121212] text-base-content">
-          <div className="flex flex-col items-end m-2">
-            <div
-              className={` w-full block flex-grow lg:flex lg:items-end lg:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}
-            >
-              <div className="text-sm text-white font-bold italic lg:flex-grow">
-                <br></br>
-                <text className="text-lg m-4 underline underline-offset-2">About Us</text>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/about")}>&gt; Who We Are</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/team")}>&gt; Meet Our Team</button>
-                <br></br>
-                <text className=" text-lg m-4 underline underline-offset-2">Our Work</text>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/newsletter")}>&gt; Newsletter</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/publications")}>&gt; Publications</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/podcast")}>&gt; Podcast</button>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6" onClick={() => navigate("/interviews")}>&gt; Interviews</button>
-                <br></br>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6 underline underline-offset-2" onClick={() => navigate("/events")}>&gt; EVENTS</button>
-                <br></br>
-                <button className="flex m-1 btn bg-transparent font-bold italic text-white text-lg border-none hover:bg-black rounded-md px-6 underline underline-offset-2" onClick={() => navigate("/resources")}>&gt; RESOURCES</button>
-              </div>
-            </div>
-          </div>
-        </ul>
-      </div>
-    </div>
+      </footer>
+
+    </>
   )
 }
+
 export default Home

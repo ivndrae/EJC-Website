@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import logo2 from './assets/logo.jpg'
+import logo2 from './assets/logos/own_logo/logo.jpg'
 import { ReactNode, useState } from 'react';
 
 const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
@@ -35,7 +35,7 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
             <div className="flex flex-row w-full items-center justify-between gap-4 pl-2 pr-2">
               <button className="flex items-center" onClick={() => navigate("/home")}>
                 <img className="flex w-8 h-8 md:w-12 md:h-12 ml-2 mt-2" src={logo2} />
-                <div className="flex ml-3 mt-2 text-lg md:ml-6 md:text-2xl text-white font-bold font-['JetBrains_Mono']"> ENCODE JUSTICE CANADA </div>
+                <div className="flex ml-3 mt-2 text-lg md:ml-6 md:text-2xl text-white font-bold font-['JetBrains_Mono']"> ENCODE CANADA </div>
               </button>
               <label htmlFor="my-drawer-4" className="flex mt-4 w-22 drawer-button btn bg-none border-none lg:hidden">
                 <svg
@@ -66,7 +66,7 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
             <div className="hidden lg:flex navbar-end bg-[#8C1616] justify-center w-full ">
               <div className="flex justify-center gap-32 text-white font-bold italic ">
               <div className="dropdown dropdown-hover px-6">
-                  <div tabIndex={0} role="button" className="m-1 btn text-white italic text-lg font-bold bg-transparent border-none hover:underline hover:underline-offset-2 hover:bg-transparent">About us</div>
+                  <div tabIndex={0} role="button" className="m-1 btn text-white text-lg font-bold bg-transparent border-none hover:underline hover:underline-offset-2 hover:bg-transparent">about us</div>
                   <ul tabIndex={0} className="p-2 menu dropdown-content z-[1] w-max bg-[#8C1616] border-b border-x">
                     <li><a className="underline underline-offset-4" onClick={() => navigate("/about")}>What is Encode Justice?</a></li>
                     <li><a className="underline underline-offset-4" onClick={() => navigate("/team")}> Meet Our Team</a></li>
