@@ -193,11 +193,11 @@ function Home() {
             </div>
 
             <div className="w-full text-[#f2f2f2] max-w-screen-md">
-              <p className="text-[#f2f2f2] text-[2.5rem] leading-none sm:text-5xl font-bold">
+              <p className="text-[2.5rem] sm:text-5xl leading-normal md:leading-relaxed font-bold font-['Lato']">
                 We are the Canadian Chapter <br /> of Encode
               </p><br />
 
-              <p className="text-2xl leading-10">
+              <p className="text-2xl leading-10 font-['Lato']">
                 Encode is a global, youth-led organization that fights for human rights accountability and justice under AI. 
                 Harnessing a global network of volunteers from all over the world, we champion informed AI policy and 
                 encourage youth to confront the challenges of the age of automation through political advocacy, community 
@@ -207,8 +207,8 @@ function Home() {
 
             <div className="flex sm:justify-between">
               <span></span>
-              <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10">
-                <span className="text-[2rem] sm:text-4xl font-bold"> Our mission </span> 
+              <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10 font-['Lato']">
+                <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span> 
                 is to promote AI literacy and ethics among Gen Z. We create educational resources, 
                 and host events such as our Speaker Series, Hackathons ,etc. for students and 
                 professionals to collaborate, with challenge, and inspire each other.
@@ -216,29 +216,29 @@ function Home() {
             </div>
 
             <div className=" mt-[30vh]">
-              <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center">
+              <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center mb-9 font-['Lato']">
                 We've Worked With
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
                 <a href="https://montrealethics.ai/" className="flex justify-center">
                 <img src={maieiLogo} alt="MAIEI Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 sm:w-72"/>
+                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 md:w-48"/>
                 </a>
 
                 <a href="https://mutek.org/" className="flex justify-center">
                 <img src={Mutek} alt="Mutek Logo"
-                className="hover:scale-125 transition-transform duration-500 h-auto mt-2 w-72 mx-auto sm:w-72 sm:h-24"/>
+                className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:mt-4 w-72 mx-auto md:w-48 md:h-20"/>
                 </a>
 
                 <a href="https://www.womeninairobotics.de/" className="flex justify-center">
                 <img src={womInRob} alt="Women In Robotics Logo"
-                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto sm:w-96 sm:mt-[-20px]" />
+                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto md:w-80 sm:mt-[-20px]" />
                 </a>
 
-                <a href="https://www.mcgill.ca/" className="sm:col-span-2 flex justify-center">
+                <a href="https://www.mcgill.ca/" className="flex justify-center sm:col-span-2">
                 <img src={Mcgill} alt="McGill University Logo"
-                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto "/>
+                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto"/>
                 </a>
 
                 <a href="https://www.building21.ca/" className="flex justify-center">
