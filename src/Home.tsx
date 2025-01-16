@@ -40,13 +40,13 @@ function Home() {
       })
       .catch(error => console.error('Error!', error.message))
   }
-  
+
   return (
     <>
 
-      <input id="hamburg" type="checkbox" className="drawer-toggle" 
+      <input id="hamburg" type="checkbox" className="drawer-toggle"
         onChange={(e) => { setIsOpenHamburg(e.target.checked) }} />
-      <input id="about_us_menu" type="checkbox" className="drawer-toggle" 
+      <input id="about_us_menu" type="checkbox" className="drawer-toggle"
         onChange={(e) => { setIsOpen(e.target.checked) }} />
 
       <div className='relative'>
@@ -60,7 +60,7 @@ function Home() {
 
             {/* desktop nav */}
             <nav className="drawer-content">
-              
+
               <div className="top-0 right-0 z-10 hidden md:flex w-[100vh] justify-between absolute">
                 <span></span>
                 <div className="flex flex-col m-2">
@@ -100,6 +100,14 @@ function Home() {
                             <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
                               tracking-wider' onClick={() => navigate("/publications")}>Publications</a>
                           </li>
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/newsletter")}>Newsletter</a>
+                          </li>
+                          <li>
+                            <a className='hover:text-[#a6242f] hover:bg-[#f2f2f2] text-lg 
+                              tracking-wider' onClick={() => navigate("/interviews")}>Interviews</a>
+                          </li>
                         </ul>
                       </div>
 
@@ -112,7 +120,7 @@ function Home() {
                         hover:bg-[#f2f2f2] rounded-md px-6 lowercase tracking-wider" onClick={() => navigate("/resources")}>
                         RESOURCES
                       </button>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -123,7 +131,7 @@ function Home() {
                 {/* burger menu */}
                 <svg className={`fill-white h-10 w-10 bg-transparent ${isOpen ? "hidden" : "block"}`}
                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                 </svg>
 
                 {/* 'x' out  */}
@@ -143,21 +151,23 @@ function Home() {
               <ul className="menu p-4 w-80 min-h-full bg-[#8c1616] text-base-content">
                 <div className="flex flex-col items-end p-2">
                   <div className={` w-full block flex-grow ${isOpen ? "block" : "hidden"}`}>
-                    
+
                     <div className="text-xl text-[#f2f2f2] font-bold md:flex-grow mt-20 space-y-4">
                       <br></br>
                       <text className="hover:cursor-default pl-8">about us</text>
                       <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/about")}>who we are</div>
                       <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/team")}>meet our team</div>
-                      
+
                       <br></br>
                       <text className="hover:cursor-default pl-8">our work</text>
                       <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/podcast")}>podcast</div>
                       <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/publications")}>publications</div>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/newsletter")}>newsletter</div>
+                      <div className="pl-16 py-2 hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] rounded" onClick={() => navigate("/interviews")}>Interviews</div>
 
                       <br></br>
                       <div className="hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] pl-8 py-2 rounded" onClick={() => navigate("/events")}>events</div>
-                      
+
                       <br></br>
                       <div className="hover:cursor-pointer hover:text-[#a6242f] hover:bg-[#f2f2f2] pl-8 py-2 rounded" onClick={() => navigate("/resources")}>resources</div>
                     </div>
@@ -169,24 +179,24 @@ function Home() {
 
           </div>
 
-          <div className="flex-col container mx-auto p-5 justify-center sm:pt-[10vh] ">
+          <div className="flex-col container mx-auto p-5 justify-center pt-[15vh] ">
 
             <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20">
               <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
               <div className="flex flex-col">
-                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
-                  encode<br />
+                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato'] flex items-baseline justify-center gap-2">
+                  <span>encode</span>
                   <span className="relative w-[max-content] font-mono
-                      before:absolute before:inset-0 before:animate-typewriter
-                    before:bg-[#A6242F]
-                      after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
-                    after:bg-[#f2f2f2]">
+              before:absolute before:inset-0 before:animate-typewriter
+              before:bg-[#A6242F]
+              after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
+              after:bg-[#f2f2f2]">
                     canada
                   </span>
                 </p>
 
-                <p className=" text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
+                <p className="text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
                   Fighting for Justice in the age of Artificial Intelligence.
                 </p>
               </div>
@@ -198,9 +208,9 @@ function Home() {
               </p><br />
 
               <p className="text-2xl leading-10 font-['Lato']">
-                Encode is a global, youth-led organization that fights for human rights accountability and justice under AI. 
-                Harnessing a global network of volunteers from all over the world, we champion informed AI policy and 
-                encourage youth to confront the challenges of the age of automation through political advocacy, community 
+                Encode is a global, youth-led organization that fights for human rights accountability and justice under AI.
+                Harnessing a global network of volunteers from all over the world, we champion informed AI policy and
+                encourage youth to confront the challenges of the age of automation through political advocacy, community
                 organizing, educational programming, and content creation.
               </p>
             </div>
@@ -208,9 +218,9 @@ function Home() {
             <div className="flex sm:justify-between">
               <span></span>
               <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10 font-['Lato']">
-                <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span> 
-                is to promote AI literacy and ethics among Gen Z. We create educational resources, 
-                and host events such as our Speaker Series, Hackathons ,etc. for students and 
+                <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span>
+                is to promote AI literacy and ethics among Gen Z. We create educational resources,
+                and host events such as our Speaker Series, Hackathons ,etc. for students and
                 professionals to collaborate, with challenge, and inspire each other.
               </p>
             </div>
@@ -222,28 +232,28 @@ function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
                 <a href="https://montrealethics.ai/" className="flex justify-center">
-                <img src={maieiLogo} alt="MAIEI Logo"
-                className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 md:w-48"/>
+                  <img src={maieiLogo} alt="MAIEI Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 md:w-48" />
                 </a>
 
                 <a href="https://mutek.org/" className="flex justify-center">
-                <img src={Mutek} alt="Mutek Logo"
-                className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:mt-4 w-72 mx-auto md:w-48 md:h-20"/>
+                  <img src={Mutek} alt="Mutek Logo"
+                    className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:mt-4 w-72 mx-auto md:w-48 md:h-20" />
                 </a>
 
                 <a href="https://www.womeninairobotics.de/" className="flex justify-center">
-                <img src={womInRob} alt="Women In Robotics Logo"
-                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto md:w-80 sm:mt-[-20px]" />
+                  <img src={womInRob} alt="Women In Robotics Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto md:w-80 sm:mt-[-20px]" />
                 </a>
 
                 <a href="https://www.mcgill.ca/" className="flex justify-center sm:col-span-2">
-                <img src={Mcgill} alt="McGill University Logo"
-                className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto"/>
+                  <img src={Mcgill} alt="McGill University Logo"
+                    className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto" />
                 </a>
 
                 <a href="https://www.building21.ca/" className="flex justify-center">
-                <img src={B21} alt="Building 21 logo"
-                className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 sm:ml-[-400px]"/>
+                  <img src={B21} alt="Building 21 logo"
+                    className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 sm:ml-[-400px]" />
                 </a>
               </div>
             </div>
@@ -285,7 +295,7 @@ function Home() {
                     <i className="bi-instagram font-thin hover:text-[#f2f2f2] duration-300 "></i>
                   </a>
 
-                  <a className=' fill-current hover:text-[#f2f2f2] duration-300' 
+                  <a className=' fill-current hover:text-[#f2f2f2] duration-300'
                     href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text">
                     <svg className='w-10 fill-current' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512">
                       <path d="M116.5 500.2V170.7H7v329.5h109.5zM61.8 125.7c38.1 0 62-25.4 62-57-.8-32.3-23.9-57-61.3-57-37.5 0-62 
@@ -300,7 +310,7 @@ function Home() {
                   </a>
 
                   <a className=" w-10" href="https://www.facebook.com/encodejustice/">
-                    <svg className='w-10 fill-current hover:text-[#f2f2f2] duration-300' 
+                    <svg className='w-10 fill-current hover:text-[#f2f2f2] duration-300'
                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xmlSpace="preserve">
                       <path d="M81.7 165.1h34V305a5 5 0 0 0 5 5h57.6a5 5 0 0 0 5-5V165.8h39a5 5 0 0 0 5-4.5l6-51.5a5 5 0 0 
                       0-5-5.5h-45V72c0-9.8 5.2-14.7 15.6-14.7h29.4a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5h-42.4c-7 0-31.5 1.4-50.8 
@@ -311,7 +321,7 @@ function Home() {
 
                 <div className="text-[1.35rem] md:text-[1.75rem]">
                   <span>Join our </span>
-                  <a className="hover:text-[#f2f2f2] hover:underline duration-300" 
+                  <a className="hover:text-[#f2f2f2] hover:underline duration-300"
                     href="https://join.slack.com/t/encode-canada/shared_invite/zt-2qi3jy5si-trHbvtoDuc_r2ybjdmypAg" target='_blank'>
                     <i className="bi bi-slack"></i> Slack!
                   </a>
@@ -324,8 +334,8 @@ function Home() {
 
               <form method="post" action="" name="contact-form" onSubmit={onFormSubmit}
                 className=' md:w-[400px] text-[1.25rem] md:text-[1.5rem] leading-6'>
-                Subscribe to our newsletter to stay 
-                <br className='md:hidden' /> connected with the latest updates 
+                Subscribe to our newsletter to stay
+                <br className='md:hidden' /> connected with the latest updates
                 <br className='md:hidden' /> from the Encode community.
 
                 <div className='flex space-x-4 mt-7'>
@@ -359,7 +369,7 @@ function Home() {
               </form>
             </div>
           </div>
-        </div> 
+        </div>
       </footer>
 
     </>
