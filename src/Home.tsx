@@ -179,13 +179,13 @@ function Home() {
 
           </div>
 
-          <div className="flex-col container mx-auto p-5 justify-center pt-[15vh] ">
+          <div className="flex-col container mx-auto p-5 justify-center">
 
-            <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20">
+            <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20 pt-[15vh]">
               <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
               <div className="flex flex-col">
-                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato'] flex items-baseline justify-center gap-2">
+                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato'] flex items-baseline justify-center gap-4">
                   <span>encode</span>
                   <span className="relative w-[max-content] font-mono
               before:absolute before:inset-0 before:animate-typewriter
@@ -202,7 +202,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="w-full text-[#f2f2f2] max-w-screen-md">
+            <div className="w-full text-[#f2f2f2] max-w-screen-md pt-[15vh]">
               <p className="text-[2.5rem] sm:text-5xl leading-normal md:leading-relaxed font-bold font-['Lato']">
                 We are the Canadian Chapter <br /> of Encode
               </p><br />
@@ -216,8 +216,8 @@ function Home() {
             </div>
 
             <div className="flex sm:justify-between">
-              <span></span>
-              <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[60vh] text-2xl leading-10 font-['Lato']">
+            <span></span>
+              <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[30vh] text-2xl leading-10 font-['Lato']">
                 <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span>
                 is to promote AI literacy and ethics among Gen Z. We create educational resources,
                 and host events such as our Speaker Series, Hackathons ,etc. for students and
