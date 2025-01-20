@@ -22,8 +22,7 @@ const stopScroll = () => {
 
 function Home() {
   const navigate = useNavigate();
-  // const [_, setIsOpenHamburg] = useState(false);
-  const [OpenHamburg, setIsOpenHamburg] = useState(false);
+  const [_, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
