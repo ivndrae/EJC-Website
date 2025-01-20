@@ -182,12 +182,12 @@ function Home() {
           <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20 pt-[15vh]">
             <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
-            <div className="flex flex-col">
-              <div className="flex flex-col sm:flex-row items-center justify-center">
-                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
+            <div className="flex flex-col items-center sm:items-start">
+              <div className="flex flex-col sm:flex-row items-baseline">
+                <span className="text-[#f2f2f2] text-5xl sm:text-6xl font-black tracking-wider font-['Lato']">
                   encode
-                </p>
-                <span className="relative w-[max-content] font-mono text-5xl sm:text-6xl text-[#f2f2f2] ml-0 sm:ml-4
+                </span>
+                <span className="relative w-[max-content] font-mono text-5xl sm:text-6xl text-[#f2f2f2] sm:ml-4 font-bold
         before:absolute before:inset-0 before:animate-typewriter
         before:bg-[#A6242F]
         after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
