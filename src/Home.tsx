@@ -22,7 +22,8 @@ const stopScroll = () => {
 
 function Home() {
   const navigate = useNavigate();
-  const [_, setIsOpenHamburg] = useState(false);
+  // const [_, setIsOpenHamburg] = useState(false);
+  const [OpenHamburg, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -179,101 +180,100 @@ function Home() {
 
           </div>
 
-          <div className="flex-col container mx-auto p-5 justify-center">
+          <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20 pt-[15vh]">
+            <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
-            <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20 pt-[15vh]">
-              <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
-
-              <div className="flex flex-col">
-                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato'] flex items-baseline justify-center gap-4">
-                  <span>encode</span>
-                  <span className="relative w-[max-content] font-mono
-              before:absolute before:inset-0 before:animate-typewriter
-              before:bg-[#A6242F]
-              after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
-              after:bg-[#f2f2f2]">
-                    canada
-                  </span>
+            <div className="flex flex-col">
+              <div className="flex flex-col sm:flex-row items-center justify-center">
+                <p className="text-[#f2f2f2] text-5xl sm:text-6xl font-black text-center tracking-wider font-['Lato']">
+                  encode
                 </p>
-
-                <p className="text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
-                  Fighting for Justice in the age of Artificial Intelligence.
-                </p>
+                <span className="relative w-[max-content] font-mono text-5xl sm:text-6xl text-[#f2f2f2] ml-0 sm:ml-4
+        before:absolute before:inset-0 before:animate-typewriter
+        before:bg-[#A6242F]
+        after:absolute after:inset-1 after:w-[0.125em] after:animate-caret
+        after:bg-[#f2f2f2]">
+                  canada
+                </span>
               </div>
-            </div>
 
-            <div className="w-full text-[#f2f2f2] max-w-screen-md pt-[15vh]">
-              <p className="text-[2.5rem] sm:text-5xl leading-normal md:leading-relaxed font-bold font-['Lato']">
-                We are the Canadian Chapter <br /> of Encode
-              </p><br />
-
-              <p className="text-2xl leading-10 font-['Lato']">
-                Encode is a global, youth-led organization that fights for human rights accountability and justice under AI.
-                Harnessing a global network of volunteers from all over the world, we champion informed AI policy and
-                encourage youth to confront the challenges of the age of automation through political advocacy, community
-                organizing, educational programming, and content creation.
+              <p className="text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
+                Fighting for Justice in the age of Artificial Intelligence.
               </p>
             </div>
+          </div>
 
-            <div className="flex sm:justify-between">
+          <div className="w-full text-[#f2f2f2] max-w-screen-md pt-[15vh]">
+            <p className="text-[2.5rem] sm:text-5xl leading-normal md:leading-relaxed font-bold font-['Lato']">
+              We are the Canadian Chapter <br /> of Encode
+            </p><br />
+
+            <p className="text-2xl leading-10 font-['Lato']">
+              Encode is a global, youth-led organization that fights for human rights accountability and justice under AI.
+              Harnessing a global network of volunteers from all over the world, we champion informed AI policy and
+              encourage youth to confront the challenges of the age of automation through political advocacy, community
+              organizing, educational programming, and content creation.
+            </p>
+          </div>
+
+          <div className="flex sm:justify-between">
             <span></span>
-              <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[30vh] text-2xl leading-10 font-['Lato']">
-                <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span>
-                is to promote AI literacy and ethics among Gen Z. We create educational resources,
-                and host events such as our Speaker Series, Hackathons ,etc. for students and
-                professionals to collaborate, with challenge, and inspire each other.
-              </p>
+            <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[30vh] text-2xl leading-10 font-['Lato']">
+              <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span>
+              is to promote AI literacy and ethics among Gen Z. We create educational resources,
+              and host events such as our Speaker Series, Hackathons ,etc. for students and
+              professionals to collaborate, with challenge, and inspire each other.
+            </p>
+          </div>
+
+          <div className=" mt-[30vh]">
+            <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center mb-9 font-['Lato']">
+              We've Worked With
             </div>
 
-            <div className=" mt-[30vh]">
-              <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center mb-9 font-['Lato']">
-                We've Worked With
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
+              <a href="https://montrealethics.ai/" className="flex justify-center">
+                <img src={maieiLogo} alt="MAIEI Logo"
+                  className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 md:w-48" />
+              </a>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
-                <a href="https://montrealethics.ai/" className="flex justify-center">
-                  <img src={maieiLogo} alt="MAIEI Logo"
-                    className="hover:scale-125 transition-transform duration-500 w-72 h-auto mt-4 mb-10 md:w-48" />
-                </a>
+              <a href="https://mutek.org/" className="flex justify-center">
+                <img src={Mutek} alt="Mutek Logo"
+                  className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:mt-4 w-72 mx-auto md:w-48 md:h-20" />
+              </a>
 
-                <a href="https://mutek.org/" className="flex justify-center">
-                  <img src={Mutek} alt="Mutek Logo"
-                    className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:mt-4 w-72 mx-auto md:w-48 md:h-20" />
-                </a>
+              <a href="https://www.womeninairobotics.de/" className="flex justify-center">
+                <img src={womInRob} alt="Women In Robotics Logo"
+                  className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto md:w-80 sm:mt-[-20px]" />
+              </a>
 
-                <a href="https://www.womeninairobotics.de/" className="flex justify-center">
-                  <img src={womInRob} alt="Women In Robotics Logo"
-                    className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-10 mx-auto md:w-80 sm:mt-[-20px]" />
-                </a>
+              <a href="https://www.mcgill.ca/" className="flex justify-center sm:col-span-2">
+                <img src={Mcgill} alt="McGill University Logo"
+                  className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto" />
+              </a>
 
-                <a href="https://www.mcgill.ca/" className="flex justify-center sm:col-span-2">
-                  <img src={Mcgill} alt="McGill University Logo"
-                    className="hover:scale-125 transition-transform duration-500 w-96 h-auto mt-2 sm:w-96 sm:mx-auto" />
-                </a>
-
-                <a href="https://www.building21.ca/" className="flex justify-center">
-                  <img src={B21} alt="Building 21 logo"
-                    className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 sm:ml-[-400px]" />
-                </a>
-              </div>
+              <a href="https://www.building21.ca/" className="flex justify-center">
+                <img src={B21} alt="Building 21 logo"
+                  className="hover:scale-125 transition-transform duration-500 w-36 h-auto sm:w-48 sm:ml-[-400px]" />
+              </a>
             </div>
+          </div>
 
-            <div onClick={backToTop} className='duration-500 hover:cursor-pointer text-[#f2bbbb] 
+          <div onClick={backToTop} className='duration-500 hover:cursor-pointer text-[#f2bbbb] 
               hover:text-white text-center h-20 w-56 m-auto mt-12'>
-              <div className='relative fill-current h-10 flex justify-center text-lg'>back to top
-                <svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500">
-                  <path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 
+            <div className='relative fill-current h-10 flex justify-center text-lg'>back to top
+              <svg className='absolute -top-10 w-56 h-56' version="1.0" xmlns="http://www.w3.org/2000/svg" width="666.667" height="666.667" viewBox="0 0 500 500">
+                <path d="M147.2 205.2c-74.8 30.2-99.8 40.7-100.9 42.4-1.8 2.9-.4 6 3.1 6.6 1.8.4 32.2-11.5 100.8-39.4 67.5-27.3 99.1-39.7 100.8-39.4 1.4.3 
                       46.3 18.2 99.8 39.9 68 27.6 98 39.3 99.7 38.9 3.6-.6 5-3.7 3.2-6.6-1.9-2.9-198.8-82.6-203.9-82.6-1.9.1-44.2 16.6-102.6 40.2z"/>
-                </svg>
-              </div>
+              </svg>
             </div>
-
           </div>
 
         </div>
 
-        <div className='h-[650px] md:h-[700px] lg:h-[500px]'></div>
       </div>
+
+      <div className='h-[650px] md:h-[700px] lg:h-[500px]'></div>
 
       <footer className=" bg-[#8C1616] fixed bottom-0 right-0 w-full h-full z-0 text-[#F2BBBB] ">
         <div className='absolute bottom-0 mb-[15%] md:mb-[100px] w-full px-[30px] lg:px-[200px]'>
