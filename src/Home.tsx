@@ -238,7 +238,7 @@ function Home() {
 
               <a href="https://mutek.org/" className="flex justify-center">
                 <img src={Mutek} alt="Mutek Logo"
-                  className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:mt-4 w-72 mx-auto md:w-48 md:h-20" />
+                  className="hover:scale-125 transition-transform duration-500 h-auto mt-2 md:w-72 md:h-16" />
               </a>
 
               <a href="https://www.womeninairobotics.de/" className="flex justify-center">
