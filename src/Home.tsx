@@ -8,6 +8,8 @@ import womInRob from '/src/assets/logos/partners/Women in Robotics.png';
 import Mcgill from '/src/assets/logos/partners/Mcgill.png';
 import B21 from '/src/assets/logos/partners/B21_logo-removebg-preview.png';
 import loading from './assets/progress_icon.svg';
+import photo1 from '/src/assets/event_pics/homapage_photo1.JPG';
+import photo2 from  '/src/assets/event_pics/homepage_photo2.JPG';
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxr7wlZr-Gwb6kGEHshGmrwN5fNxhDBGrhK4aTWGTIO6_EnHQGGa_kEcJmxKDuuVnuHHg/exec'
 
@@ -206,24 +208,29 @@ function Home() {
             <p className="text-[2.5rem] sm:text-5xl leading-normal md:leading-relaxed font-bold font-['Lato']">
               We are the Canadian Chapter <br /> of Encode
             </p><br />
+            </div>
 
-            <p className="text-2xl leading-10 font-['Lato']">
-              Encode is a global, youth-led organization that fights for human rights accountability and justice under AI.
-              Harnessing a global network of volunteers from all over the world, we champion informed AI policy and
-              encourage youth to confront the challenges of the age of automation through political advocacy, community
-              organizing, educational programming, and content creation.
-            </p>
-          </div>
+              <div className="w-full text-[#f2f2f2] grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-4">
+                <p className="text-2xl leading-10 font-['Lato'] md:pr-20">
+                  Encode is a global, youth-led organization that fights for human rights accountability and justice under AI.
+                  Harnessing a global network of volunteers from all over the world, we champion informed AI policy and
+                  encourage youth to confront the challenges of the age of automation through political advocacy, community
+                  organizing, educational programming, and content creation.
+                </p>
+                <img src={photo1} alt="Photo of event" className="w-full h-[400px] object-cover mt-[-20px] rounded-xl" />
+              </div>
 
-          <div className="flex sm:justify-between">
-            <span></span>
-            <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] mt-[30vh] text-2xl leading-10 font-['Lato']">
-              <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']"> Our mission </span>
-              is to promote AI literacy and ethics among Gen Z. We create educational resources,
-              and host events such as our Speaker Series, Hackathons ,etc. for students and
-              professionals to collaborate, with challenge, and inspire each other.
-            </p>
-          </div>
+              <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-4 mt-[30vh]">
+                <img src={photo2} alt="Photo of event" className="w-full h-auto object-contain rounded-xl" />
+                <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] text-2xl leading-10 font-['Lato'] md:pl-20">
+                  <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']">
+                    Our mission
+                  </span>{" "}
+                    is to promote AI literacy and ethics among Gen Z. We create educational resources,
+                    and host events such as our Speaker Series, Hackathons, etc. for students and
+                    professionals to collaborate, challenge, and inspire each other.
+                </p>
+            </div>
 
           <div className=" mt-[30vh]">
             <div className="text-[#f2f2f2] text-[2.5rem] sm:text-5xl font-bold text-center mb-9 font-['Lato']">
