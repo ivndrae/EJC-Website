@@ -217,11 +217,11 @@ function Home() {
                   encourage youth to confront the challenges of the age of automation through political advocacy, community
                   organizing, educational programming, and content creation.
                 </p>
-                <img src={photo1} alt="Photo of event" className="w-full h-[400px] object-cover mt-[-20px] rounded-xl" />
+                <img src={photo1} alt="Photo of event" className="w-full h-[400px] object-cover mt-[-20px] rounded-lg" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-4 mt-[30vh]">
-                <img src={photo2} alt="Photo of event" className="w-full h-auto object-contain rounded-xl" />
+                <img src={photo2} alt="Photo of event" className="w-full h-auto object-contain rounded-lg" />
                 <p className="lg:text-right text-[#f2f2f2] lg:w-[50vw] text-2xl leading-10 font-['Lato'] md:pl-20">
                   <span className="text-[2rem] sm:text-4xl leading-normal md:leading-relaxed font-bold font-['Lato']">
                     Our mission
