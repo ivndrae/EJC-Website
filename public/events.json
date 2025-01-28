@@ -43,5 +43,54 @@
         "category": "Workshop",
         "description": "The Montreal Youth core team of Women in AI & Robotics, in collaboration with McGill Robotics, McWiCS - McGill Women in Computer Science, Women in Tech - WIT and Encode Justice Canada is bringing you an AI & Robotics Workshop where you'll gain valuable hands-on skills and knowledge on computervision, reinforcementlearning, and ROS programming language. ",
         "thumbnail": "airoboticsworkshop.png"
+        
+    },
+    {
+        "name": "Chit-Chat",
+        "date": "2025-01-30T17:00",
+        "endDate": "2025-01-30T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "Speaker Series - Skyler Wang",
+        "date": "2025-02-13T17:00",
+        "endDate": "2025-02-13T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "AI Lightning Brainstorm",
+        "date": "2025-02-20T17:00",
+        "endDate": "2025-02-20T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "Movie Screening - Ex Machina",
+        "date": "2025-02-27T17:00",
+        "endDate": "2025-02-27T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "Panel Speaker Event",
+        "date": "2025-03-20T17:00",
+        "endDate": "2025-03-20T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "Student Presentations",
+        "date": "2025-03-27T17:00",
+        "endDate": "2025-03-27T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
     }
 ]
