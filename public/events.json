@@ -43,5 +43,56 @@
         "category": "Workshop",
         "description": "The Montreal Youth core team of Women in AI & Robotics, in collaboration with McGill Robotics, McWiCS - McGill Women in Computer Science, Women in Tech - WIT and Encode Justice Canada is bringing you an AI & Robotics Workshop where you'll gain valuable hands-on skills and knowledge on computervision, reinforcementlearning, and ROS programming language. ",
         "thumbnail": "airoboticsworkshop.png"
+        
+    },
+    {
+        "name": "Chit-Chat - AI and Humans: The Imitation Game",
+        "date": "2025-01-30T17:00",
+        "endDate": "2025-01-30T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png",
+        "description": "Come chat about the opportunities and challenges of AI as we explore AI and Humans: The Imitation Game. See you there!"
+    },
+    {
+        "name": "Skyler Wang: On-Demand Intimacy and the Future of Human-AI Intimacy",
+        "date": "2025-02-13T17:00",
+        "endDate": "2025-02-13T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "Speaker Series",
+        "thumbnail":"AI_HUB.png",
+        "description": "Encode Canada is excited to welcome Skyler Wang as the first speaker of the 2025 speaker series. Skyler Wang is an Assistant Professor at McGill University and is currently teaching both SOCI235 Technology & Society and SOCI345 Social and Intimate Relationships in the Digital Age. Trained sociologist, he used to work at the Foundational AI Research (FAIR) lab at Meta. Some of his research areas of interest include social-centered AI, technology, foundational machine translation, and human-AI interactions.  His work transcends disciplinary boundaries and has been featured in journals and platforms such as Nature, Big Data & Society, TIME, CNN and WIRED. His most recent projects explore how relationships and intimacy are shaped by digital platforms in this day and age. It also examines human-AI interactions; with the emergence of artificial companions, our norms around intimacy are bound to change, and so will on-demand intimacy. Enjoy a short presentation and bring your questions for an interactive panel-style discussion to dive deeper into the topics of intimacy in the context of the rise of AI on our everyday life. What can AI teach us about our view of intimate relationships? Are AI companions mirroring human-human relationship? What are the benefits of starting a human-AI relationship?"
+    },
+    {
+        "name": "AI Lightning Brainstorm",
+        "date": "2025-02-20T17:00",
+        "endDate": "2025-02-20T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "Movie Screening - Ex Machina",
+        "date": "2025-02-27T17:00",
+        "endDate": "2025-02-27T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "“AI in the Arts” featuring Maurice Jones from MUTEK",
+        "date": "2025-03-20T17:00",
+        "endDate": "2025-03-20T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "Speaker Series",
+        "thumbnail":"AI_HUB.png"
+    },
+    {
+        "name": "Student Presentations",
+        "date": "2025-03-27T17:00",
+        "endDate": "2025-03-27T18:30",
+        "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
+        "category": "AI Hub",
+        "thumbnail":"AI_HUB.png"
     }
 ]
