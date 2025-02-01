@@ -8,8 +8,8 @@ import womInRob from '/src/assets/logos/partners/Women in Robotics.png';
 import Mcgill from '/src/assets/logos/partners/Mcgill.png';
 import B21 from '/src/assets/logos/partners/B21_logo-removebg-preview.png';
 import loading from './assets/progress_icon.svg';
-import photo1 from '/src/assets/event_pics/homapage_photo1.JPG';
-import photo2 from  '/src/assets/event_pics/homepage_photo2.JPG';
+import photo1 from '/src/assets/event_pics/homapage_photo1.jpg';
+import photo2 from  '/src/assets/event_pics/homepage_photo2.jpg';
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxr7wlZr-Gwb6kGEHshGmrwN5fNxhDBGrhK4aTWGTIO6_EnHQGGa_kEcJmxKDuuVnuHHg/exec'
 
