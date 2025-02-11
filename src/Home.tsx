@@ -184,7 +184,7 @@ function Home() {
           <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20 pt-[15vh]">
             <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
-            <div className="flex flex-col items-center sm:items-start">
+            <div className="flex flex-col items-center">
               <div className="flex flex-col sm:flex-row items-baseline">
                 <span className="text-[#f2f2f2] text-5xl sm:text-6xl font-black tracking-wider font-['Lato']">
                   encode
@@ -197,9 +197,8 @@ function Home() {
                   canada
                 </span>
               </div>
-
               <p className="text-[#f2f2f2] text-lg sm:text-xl text-center mt-5 font-['KoHo']">
-                Fighting for Justice in the age of Artificial Intelligence.
+                Safe and Equitable AI for all.
               </p>
             </div>
           </div>

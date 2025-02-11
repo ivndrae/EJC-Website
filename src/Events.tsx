@@ -114,7 +114,7 @@ function Events() {
       </div>
       {events.map(event => {
         return <dialog id={`event${event.id}dialog`} className="modal">
-          <div className="modal-box text-white font-['KoHo']">
+          <div className="modal-box bg-[#232427] text-white font-['KoHo']">
             <div className="flex rounded-md bg-[#8C1616] px-4 py-1 justify-center w-full uppercase text-white">{event.category}</div>
             <h3 className="mt-3 text-xl font-bold text-center">{event.name}</h3>
             <div className="flex flex-col divide-y divide-dotted gap-3">
