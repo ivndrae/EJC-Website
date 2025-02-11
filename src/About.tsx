@@ -11,9 +11,9 @@ function About() {
           <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
             <div className="flex flex-col w-full md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
               <p className=" text-red-800 uppercase tracking-loose font-bold">About us</p>
-              <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-bold font-['Lato']">We are the Canadian Chapter of Encode Justice</p>
+              <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-bold font-['Lato']">We are the Canadian Chapter of Encode</p>
               <p className="text-sm md:text-base text-gray-50 mb-4 font-['KoHo']">
-                Encode Justice is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through
+                Encode is a global, youth-led organization that fights for human rights accountability and justice under AI. Harnessing a global network of volunteers from all over the world, we champion informed AI policy and encourage youth to confront the challenges of the age of automation through
                 political advocacy, community organizing, educational programming, and content creation. <br />  <br />
                 Our mission is to promote AI literacy and ethics among Gen Z. We create educational resources, and host events such as our Speaker Series, Hackathons ,etc. for students and professionals to collaborate, with challenge, and inspire each other.
               </p>

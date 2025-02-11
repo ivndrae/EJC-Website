@@ -69,7 +69,8 @@
         "endDate": "2025-02-20T18:30",
         "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
         "category": "AI Hub",
-        "thumbnail":"AI_HUB.png"
+        "thumbnail":"AI_HUB.png",
+        "description": "Join us for another AI Hub where we give students a chance to explore some of their own thoughts, projects, and ideas related to responsible AI. This event will feature an open table discussion where people can brainstorm together. Whether you want to learn from others, receive insights on an ongoing project, or approach an AI related problem from a new perspective, this event is for you! You might also be inspired to present at Encode Canada’s Student Presentations happening later in March (more to come soon!). Come chat with us and get creative!"
     },
     {
         "name": "Movie Screening - Ex Machina",
