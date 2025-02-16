@@ -25,7 +25,7 @@ function Events() {
       e.dateParsed = new Date(e.date);
       e.endDateParsed = new Date(e.endDate);
     }
-    evs.sort((a, b) => b.dateParsed.getTime() - a.dateParsed.getTime());
+    evs.sort((a, b) => a.dateParsed.getTime() - b.dateParsed.getTime());
     for (let i = 0; i < evs.length; i++) {
       evs[i].id = i
     }
