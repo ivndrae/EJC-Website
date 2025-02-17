@@ -13,6 +13,7 @@ interface Event {
   media: string[]
   thumbnail: string,
   location: string,
+  link: string
 }
 
 function Events() {
@@ -25,7 +26,7 @@ function Events() {
       e.dateParsed = new Date(e.date);
       e.endDateParsed = new Date(e.endDate);
     }
-    evs.sort((a, b) => b.dateParsed.getTime() - a.dateParsed.getTime());
+    evs.sort((a, b) => a.dateParsed.getTime() - b.dateParsed.getTime());
     for (let i = 0; i < evs.length; i++) {
       evs[i].id = i
     }
@@ -43,28 +44,28 @@ function Events() {
           </figure>
         </div>
         <div className="card-body flex flex-col gap-2 h-7 basis-3/4 items-center md:items-start">
-            <div className="flex rounded-md bg-[#4e4745] bg-opacity-20 px-4 py-1 justify-center w-full uppercase text-white">
-              {event.category}
-            </div>
-            <div className="flex p-3 gap-2 items-center card-title font-['Lato'] italic uppercase text-2xl text-white tracking-wider text-center md:text-left">
-              {event.name}
-            </div>
-            <div className="flex flex-col">
-              <p className="p-2"><i className="bi bi-calendar"></i> Date and Time: {event.dateParsed.toLocaleString()} - {event.dateParsed.getDate() == event.endDateParsed.getDate() ? event.endDateParsed.toLocaleTimeString() : event.endDateParsed.toLocaleString()}</p>
-              <p className="p-2"><i className="bi bi-geo-alt"></i> Location: {event.location}</p>
-            </div>
-            <div className="card-actions justify-bottom items-center order-4">
-              <button
-                className="btn btn-outline btn-error text-white"
-                onClick={() => {
-                  (document.getElementById(`event${event.id}dialog`) as HTMLDialogElement)?.showModal();
-                  console.log(event.id);
-                }}
-              >
-                Click For More Details
-              </button>
-            </div>
+          <div className="flex rounded-md bg-[#4e4745] bg-opacity-20 px-4 py-1 justify-center w-full uppercase text-white">
+            {event.category}
           </div>
+          <div className="flex p-3 gap-2 items-center card-title font-['Lato'] italic uppercase text-2xl text-white tracking-wider text-center md:text-left">
+            {event.name}
+          </div>
+          <div className="flex flex-col">
+            <p className="p-2"><i className="bi bi-calendar"></i> Date and Time: {event.dateParsed.toLocaleString()} - {event.dateParsed.getDate() == event.endDateParsed.getDate() ? event.endDateParsed.toLocaleTimeString() : event.endDateParsed.toLocaleString()}</p>
+            <p className="p-2"><i className="bi bi-geo-alt"></i> Location: {event.location}</p>
+          </div>
+          <div className="card-actions justify-bottom items-center order-4">
+            <button
+              className="btn btn-outline btn-error text-white"
+              onClick={() => {
+                (document.getElementById(`event${event.id}dialog`) as HTMLDialogElement)?.showModal();
+                console.log(event.id);
+              }}
+            >
+              Click For More Details
+            </button>
+          </div>
+        </div>
       </div>
 
 
@@ -118,7 +119,21 @@ function Events() {
             <div className="flex rounded-md bg-[#8C1616] px-4 py-1 justify-center w-full uppercase text-white">{event.category}</div>
             <h3 className="mt-3 text-xl font-bold text-center">{event.name}</h3>
             <div className="flex flex-col divide-y divide-dotted gap-3">
-              <p className="p-2">{event.description}</p>
+              <p className="p-2">{event.description}
+                <br></br>
+                {event.link && (
+                  <div className="mt-4 flex justify-center">
+                    <a
+                      href={event.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-accent"
+                    >
+                      Register Now
+                    </a>
+                  </div>
+                )}
+              </p>
               <p className="p-2"><i className="bi bi-calendar"></i> Date and Time: {event.dateParsed.toLocaleString()} - {event.dateParsed.getDate() == event.endDateParsed.getDate() ? event.endDateParsed.toLocaleTimeString() : event.endDateParsed.toLocaleString()}</p>
               <p className="p-2"><i className="bi bi-geo-alt"></i> Location: {event.location}</p>
             </div>
