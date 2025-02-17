@@ -60,7 +60,7 @@
         "endDate": "2025-02-20T18:30",
         "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
         "category": "Speaker Series",
-        "thumbnail":"AI_HUB.png",
+        "thumbnail":"Skyler_Wang_Speaker.png",
         "description": "Encode Canada is excited to welcome Skyler Wang as the first speaker of the 2025 speaker series. Skyler Wang is an Assistant Professor at McGill University and is currently teaching both SOCI235 Technology & Society and SOCI345 Social and Intimate Relationships in the Digital Age. Trained sociologist, he used to work at the Foundational AI Research (FAIR) lab at Meta. Some of his research areas of interest include social-centered AI, technology, foundational machine translation, and human-AI interactions.  His work transcends disciplinary boundaries and has been featured in journals and platforms such as Nature, Big Data & Society, TIME, CNN and WIRED. His most recent projects explore how relationships and intimacy are shaped by digital platforms in this day and age. It also examines human-AI interactions; with the emergence of artificial companions, our norms around intimacy are bound to change, and so will on-demand intimacy. Enjoy a short presentation and bring your questions for an interactive panel-style discussion to dive deeper into the topics of intimacy in the context of the rise of AI on our everyday life. What can AI teach us about our view of intimate relationships? Are AI companions mirroring human-human relationship? What are the benefits of starting a human-AI relationship?"
     },
     {
@@ -85,6 +85,8 @@
         "endDate": "2025-03-27T18:30",
         "location": "Building 21 - 651 Sherbrooke St. W, Montreal, QC",
         "category": "AI Hub",
-        "thumbnail":"AI_HUB.png"
+        "thumbnail":"AI_HUB.png",
+        "description": "The Student Presentations Event is an opportunity for university students from all disciplines to present their projects and/or research related to responsible AI, AI ethics, and AI literacy. Through these presentations, we hope to give everyone a chance to connect, learn, and share. Our goal at the AI hub is to make conversations around AI accessible to everyone of all backgrounds and knowledge in AI. Fill out the interest form by February 28th if you want to showcase your project.",
+        "link": "https://forms.gle/3eeAHmtWWggfKK3m7"
     }
 ]
