@@ -144,12 +144,12 @@ function Home() {
                 </div>
               </div>
 
-              <button 
-                      className="m-1 btn bg-transparent font-bold text-white text-lg border-none hover:text-[#a6242f]
-                      hover:bg-[#f2f2f2] rounded-md px-6 absolute top-5 "
-                      onClick={toggleLanguage}>
-                      {language === "en" ? "FR" : "EN"}
-                    </button>
+                <button 
+                    className="m-1 btn bg-transparent font-bold text-white text-xl border-none hover:text-[#a6242f]
+                    hover:bg-[#f2f2f2] mt-[-4px] lg:rounded-md px-6 absolute top-7"
+                    onClick={toggleLanguage}>
+                    {language === "en" ? "FR" : "EN"}
+                  </button>
 
               <label htmlFor="my-drawer-4" className={`flex -right-7 top-0 z-50  mt-4 w-24 drawer-button btn bg-transparent 
                 border-none md:hidden selection:outline-none ${isOpen ? "fixed -right-[10px]" : "absolute"} `} onClick={stopScroll}>
