@@ -15,6 +15,12 @@ import "@fontsource/koho"; // Defaults to weight 400
 import "@fontsource/koho/400.css"; // Specify weight
 import "@fontsource/koho/400-italic.css"; // Specify weight and style
 
+//site tranlation 
+import i18n from "./utils/i18n";
+
+// Initialize i18n
+i18n.init();
+
 ReactDOM.createRoot(document.body!).render(
   <React.StrictMode>
     <App />

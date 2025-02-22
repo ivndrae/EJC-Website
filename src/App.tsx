@@ -9,9 +9,11 @@ import Events from "./Events"
 import Interviews from "./Interviews"
 import Podcast from "./Podcast"
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
 function App() {
+  const { t } = useTranslation();
   return (
     <HashRouter basename="/">
       <Routes>
