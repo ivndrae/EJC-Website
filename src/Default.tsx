@@ -1,10 +1,22 @@
 import { useNavigate } from 'react-router-dom';
 import logo2 from './assets/logos/own_logo/logo.jpg'
 import { ReactNode, useState } from 'react';
+import { useTranslation } from "react-i18next";
+
 
 const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+
+  //setting up translation button 
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+
+  const toggleLanguage = () => {
+    const newLang = language === "en" ? "fr" : "en";
+    i18n.changeLanguage(newLang);
+    setLanguage(newLang);
+};
   return (
     <div className="drawer drawer-end">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" onChange={(e) => { setIsOpen(e.target.checked) }} />
@@ -61,6 +73,17 @@ const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
                   <a className="flex w-14 h-14 items-center justify-center" href="https://www.linkedin.com/company/encode-justice-canada/?trk=organization_guest_main-feed-card-text"><i className="bi bi-linkedin text-3xl"></i></a>
                   <a className="flex w-14 h-14 items-center justify-center" href="mailto:encodejusticecanada@gmail.com"><i className="bi bi-envelope-fill text-3xl"></i></a>
                 </div>
+             
+                {/* Line Separator */}
+                <div className="h-15 w-[2px] bg-white mx-4"></div>
+                
+                {/* Language Toggle Button */}
+                <button 
+                  onClick={toggleLanguage} 
+                  className="text-white font-bold italic text-lg border border-white px-2 py-0.5 rounded hover:bg-white hover:text-black transition"
+                >
+                  {language === "en" ? "FR" : "EN"} {/* Still working on the mechanics of this */}
+                </button>
               </div>
             </div>
             <div className="hidden lg:flex navbar-end bg-[#8C1616] justify-center w-full ">

@@ -10,6 +10,8 @@ import B21 from '/src/assets/logos/partners/B21_logo-removebg-preview.png';
 import loading from './assets/progress_icon.svg';
 import photo1 from '/src/assets/event_pics/homepage_photo1.jpg';
 import photo2 from  '/src/assets/event_pics/homepage_photo(2).jpg';
+import { useTranslation } from "react-i18next";
+
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxr7wlZr-Gwb6kGEHshGmrwN5fNxhDBGrhK4aTWGTIO6_EnHQGGa_kEcJmxKDuuVnuHHg/exec'
 
@@ -26,8 +28,16 @@ function Home() {
   const navigate = useNavigate();
   const [_, setIsOpenHamburg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
   const [isSubmitting, setIsSubmitting] = useState(false);
+  //setting up translation button 
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+  
+  const toggleLanguage = () => {
+    const newLang = language === "en" ? "fr" : "en";
+    i18n.changeLanguage(newLang);
+    setLanguage(newLang);
+  };
   function onFormSubmit(event: FormEvent) {
     event.preventDefault();
     setIsSubmitting(true);
@@ -66,6 +76,7 @@ function Home() {
               <div className="top-0 right-0 z-10 hidden md:flex w-[100vh] justify-between absolute">
                 <span></span>
                 <div className="flex flex-col m-2">
+                  
                   <div className={` w-full block flex-grow md:flex md:items-end md:w-auto bg-transparent ${isOpen ? "block" : "hidden"}`}>
                     <div className="text-white font-bold md:flex-grow lowercase space-x-12 m-4">
 
@@ -113,6 +124,8 @@ function Home() {
                         </ul>
                       </div>
 
+                      
+
                       <button className="m-1 btn bg-transparent font-bold text-white text-lg border-none hover:text-[#a6242f]
                         hover:bg-[#f2f2f2] rounded-md px-6 lowercase tracking-wider" onClick={() => navigate("/events")}>
                         EVENTS
@@ -123,10 +136,20 @@ function Home() {
                         RESOURCES
                       </button>
 
+
+                      
+
                     </div>
                   </div>
                 </div>
               </div>
+
+              <button 
+                      className="m-1 btn bg-transparent font-bold text-white text-lg border-none hover:text-[#a6242f]
+                      hover:bg-[#f2f2f2] rounded-md px-6 absolute top-5 "
+                      onClick={toggleLanguage}>
+                      {language === "en" ? "FR" : "EN"}
+                    </button>
 
               <label htmlFor="my-drawer-4" className={`flex -right-7 top-0 z-50  mt-4 w-24 drawer-button btn bg-transparent 
                 border-none md:hidden selection:outline-none ${isOpen ? "fixed -right-[10px]" : "absolute"} `} onClick={stopScroll}>
