@@ -24,6 +24,11 @@ import emma from './assets/ppl/Emma.jpg'
 import jovan from './assets/ppl/Jovan.png'
 import nika from './assets/ppl/Nika.jpg'
 import sarah from './assets/ppl/Sarah.jpg'
+import aiba from './assets/ppl/aiba.jpg'
+import alessandra from './assets/ppl/alessandra.jpg'
+import nina from './assets/ppl/nina.png'
+import rosa from './assets/ppl/rosa.jpg'
+import thien from './assets/ppl/thien.jpg'
 
 
 import Default from './Default';
@@ -55,6 +60,24 @@ function Alumni(imgSrc: string, name: string, position: string, year: string) {
             <div className="flex flex-wrap text-white text-2xl md:text-3xl pl-3 pt-3 font-bold font-['JetBrains_Mono'] tracking-wide">{name}</div>
             <div className="flex flex-wrap text-white font-['KoHo'] md:text-xl font-bold ">{position}</div>
             <div className="flex flex-wrap text-white font-['KoHo'] md:text-lg font-bold ">{year}</div>
+        </div>
+    )
+}
+
+function policyFellow(imgSrc: string, name: string, bio: string){
+    return (
+        <div className="flex flex-col md:flex-row p-3 my-2">
+            <div className="flex w-full justify-center basis-1/4">
+                <img className="flex-[0_0_auto] p-4 w-56 h-56" src={imgSrc} />
+            </div>
+            <div className="flex flex-col basis-3/4">
+                <div className="flex flex-wrap text-white text-2xl md:text-3xl pl-3 pt-3 font-bold font-['JetBrains_Mono'] tracking-wider">
+                    <div className="flex font-bold">&lt;{name}&gt;</div>
+               </div>
+                <div className="flex p-3 font-['KoHo'] md:text-xl font-bold ">
+                    {bio}
+                </div>
+            </div>
         </div>
     )
 }
@@ -95,6 +118,17 @@ function Team() {
                 {Person(nika, "Nika Aghili", "Co-director of Marketing", "Nika is a third-year economics student at Concordia University with a strong interest in technology and its social impact. As Co-Director of Marketing at Encode Canada, she is excited to work on initiatives that promote fairness and ethical standards in AI. Outside of school, Nika loves playing pool and is always up for a game.","mailto:nikaaghili01@gmail.com")}
                 {Person(jovan, "Jovan Rohac", "Director of Partnerships", "Jovan is a U2 student at McGill University, pursuing a dual degree in Economics and Computer Science. His passion for artificial intelligence stems from a keen interest in exploring the balance between innovation and ethics, emphasizing the importance of public policy in the AI landscape. In his spare time, Jovan enjoys hiking and running, with aspirations to tackle ultra-marathons in the future.","mailto:jovanrohac2004@gmail.com")}
             </div>
+
+            <div className="flex m-16 bg-[#222430] p-5 lg:p-14 justify-center text-white text-3xl md:text-5xl mb-5 italic font-black  text-center tracking-widest font-['Lato'] underline underline-offset-8"> POLICY FELLOWS</div>
+            <div className="flex flex-col text-white p-3 lg:mx-3">
+                {policyFellow(aiba,"Aibakyt Baekova","Aiba is a first-year BCL/JD student at McGill University’s Faculty of Law. She holds a Bachelor’s degree in Global Politics (Summa Cum Laude) and is an experienced researcher with a background in policy and consulting, both in Canada and internationally. Aiba’s interests lie in AI law, policy, and ethics, with a particular focus on protecting the rights and interests of marginalized groups.")}
+                {policyFellow(alessandra, "Alessandra Destison","Alessandra is a U2 Joint Honours student in Political Science and Philosophy. She is passionate about the intersection of artificial intelligence, ethics, and policymaking! She aspires to contribute to the development of an AI policy framework that prioritizes human well-being.")}
+                {policyFellow(nina, "Nina Soula","Nina is a third-year student at McGill University, pursuing a degree in Political Science and International Development. Her academic research focuses on platform power, algorithmic governance, state surveillance, and the emerging field of tech diplomacy shaping global politics. Passionate about the intersection of technology and human rights, Nina is eager to contribute to the reevaluation of human rights frameworks in the digital era, ensuring they remain robust and adaptive in the face of rapid technological advancements.")}
+                {policyFellow(rosa, "Rosa Lee", "Rosa is a Master of Information student at the University of Toronto specialising in Human-Centred Data Science. She is passionate about enacting ethical AI governance and equitable AI policies.")}
+                {policyFellow(thien, "Thien-Lam Nguyen","Born and raised in Vietnam, Thien-Lam recently discovered her passion for exploring how emerging technologies shape global mobility, labor markets, and governance structures, with a focus on automation’s impact on migrant workers and the digital economy’s role in shaping migration patterns. When she’s not analyzing policy frameworks, she can be found traveling for debate tournaments, enjoying Vietnamese coffee at Stanley Park, or exploring art museums.")}
+            </div>
+
+
             <div className="flex m-16 bg-[#222430] p-5 lg:p-14 justify-center text-white text-3xl md:text-5xl mb-5 italic font-black  text-center tracking-widest font-['Lato'] underline underline-offset-8"> EJC ALUMNI</div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-3 my-2">
                 {Alumni(sara, "Sara Parker", "EJC FOUNDER", "2021-2023")}
