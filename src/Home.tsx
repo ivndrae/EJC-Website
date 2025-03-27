@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { FormEvent, useState } from 'react';
-import logo from './assets/logos/own_logo/EJC_White_Clear.svg';
+import logo from './assets/logos/own_logo/logo.png';
+import leaf from './assets/logos/own_logo/EJC_White_Clear.svg'
 import './index.css';
 import maieiLogo from '/src/assets/logos/partners/MAIEI.png';
 import Mutek from '/src/assets/logos/partners/MUTEK.png';
@@ -182,7 +183,7 @@ function Home() {
           </div>
 
           <div className="sm:flex items-center justify-center h-[100vh] mt-32 sm:-mt-20 pt-[15vh]">
-            <img className="w-[10rem] sm:w-[11.75rem] rotate-2 mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
+            <img className="w-[10rem] mx-auto sm:ml-0 sm:mr-10 mb-7" src={logo} />
 
             <div className="flex flex-col items-center">
               <div className="flex flex-col sm:flex-row items-baseline">
@@ -297,7 +298,7 @@ function Home() {
         <div className='absolute bottom-0 mb-[15%] md:mb-[100px] w-full px-[30px] lg:px-[200px]'>
 
           <img className="absolute rotate-2 opacity-[0.07] min-w-[1250px] -right-[500px] 
-            top-[325px] lg:min-w-[2000px] lg:-left-[200px] lg:top-[100px]" src={logo} />
+            top-[325px] lg:min-w-[2000px] lg:-left-[200px] lg:top-[100px]" src={leaf} />
 
           <div className='relative'>
             <div className="md:tracking-wider leading-8 md:leading-[3rem] text-[1.95rem] md:text-[3rem] font-bold mb-[75px]">

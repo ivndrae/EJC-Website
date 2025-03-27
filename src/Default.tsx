@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import logo2 from './assets/logos/own_logo/logo.jpg'
+import logo2 from './assets/logos/own_logo/logo.png'
 import { ReactNode, useState } from 'react';
 
 const Default = ({ children }: { children?: ReactNode[] | ReactNode }) => {
