@@ -1,4 +1,3 @@
-import cella from './assets/ppl/cella.jpg'
 import andrae from './assets/ppl/andrae.jpg'
 import thuy from './assets/ppl/Thuy.jpg'
 import cleo from './assets/ppl/Cleo.png'
