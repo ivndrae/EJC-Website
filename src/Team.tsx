@@ -135,7 +135,7 @@ function Team() {
                 {Alumni(dane, "Dane Malenfant", "CONTENT WRITER", "2021-2023")}
                 {Alumni(chloe, "Chloe Currie", "DIRECTOR OF CONTENT", "2021-2023")}
                 {Alumni(itai, "Itai Epstein", "DIRECTOR OF WEB OPERATIONS / CONTENT WRITER", "2021-2023")}
-                {Alumni(nils, "Nils Aoun", "Director of Communications", "2021-2023")}
+                {Alumni(nils, "Nils Aoun!", "Director of Communications", "2021-2023")}
                 {Alumni(cleo, "Cleo Norris", "CO-DIRECTOR", "2023-2024")}
                 {Alumni(julia, "Julia Houwen", "DIRECTOR OF EVENTS", "2023-2024")}
                 {Alumni(molka, "Molka Mehri", "DIRECTOR OF MARKETING", "2023-2024")}
