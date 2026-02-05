@@ -132,10 +132,10 @@ function Team() {
             <div className="flex m-16 bg-[#222430] p-5 lg:p-14 justify-center text-white text-3xl md:text-5xl mb-5 italic font-black  text-center tracking-widest font-['Lato'] underline underline-offset-8"> EJC ALUMNI</div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-3 my-2">
                 {Alumni(sara, "Sara Parker", "EJC FOUNDER", "2021-2023")}
+                {Alumni(nils, "Nils Aoun", "DIRECTOR OF COMMUNICATIONS", "2021-2023")}
                 {Alumni(dane, "Dane Malenfant", "CONTENT WRITER", "2021-2023")}
                 {Alumni(chloe, "Chloe Currie", "DIRECTOR OF CONTENT", "2021-2023")}
                 {Alumni(itai, "Itai Epstein", "DIRECTOR OF WEB OPERATIONS / CONTENT WRITER", "2021-2023")}
-                {Alumni(nils, "Nils Aoun", "Director of Communications", "2021-2023")}
                 {Alumni(cleo, "Cleo Norris", "CO-DIRECTOR", "2023-2024")}
                 {Alumni(julia, "Julia Houwen", "DIRECTOR OF EVENTS", "2023-2024")}
                 {Alumni(molka, "Molka Mehri", "DIRECTOR OF MARKETING", "2023-2024")}
